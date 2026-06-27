@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Interconnection &amp; Permitting (CZ) — Newman Energy Sales Academy</title>
+<meta name="description" content="Why the grid connection is the critical-path risk in any project — how the TSO/DSO connection process works, what connection capacity means, and how Czech permitting (building permit / stavební povolení, EIA) fits in.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/newman.css">
+<link rel="stylesheet" href="../assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="../index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="../index.html#why">Why a business</a>
+      <a href="../index.html#curriculum">Curriculum</a>
+      <a href="../index.html#tools">Tools</a>
+      <a class="btn" href="../index.html#curriculum">All lessons</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- LESSON HEADER -->
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Track 05 · Building the project · Lesson 2 of 4</div>
+    <h1>Interconnection &amp; permitting (CZ)</h1>
+    <p class="sub">A plant that can't connect to the grid is a field full of expensive glass. The <em>connection</em> — not the panels — is almost always the thing that decides whether a project lives or dies, and how long it takes. Here is how it works, and why it dominates the timeline.</p>
+    <div class="facts">
+      <span><b>Level</b> Intermediate</span>
+      <span><b>Time</b> 22 min</span>
+      <span><b>Tool</b> None — concept lesson</span>
+      <span><b>Example</b> 5&nbsp;MW solar, Czechia</span>
+    </div>
+  </div>
+</header>
+
+<!-- LESSON BODY -->
+<div class="lesson">
+
+  <!-- ASIDE / TOC -->
+  <aside class="lesson-aside">
+    <a class="back" href="../index.html#curriculum">← All tracks</a>
+    <nav aria-label="On this page">
+      <ul class="toc">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#critical">The critical path</a></li>
+        <li><a href="#tsodso">TSO vs DSO</a></li>
+        <li><a href="#capacity">Connection capacity</a></li>
+        <li><a href="#permits">Czech permitting</a></li>
+        <li><a href="#worked">Worked connection path</a></li>
+        <li><a href="#script">In the room</a></li>
+        <li><a href="#objections">Objections</a></li>
+        <li><a href="#check">Knowledge check</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="lesson-main">
+
+    <section id="objective">
+      <div class="callout objective" data-rise>
+        <div class="lbl">Learning objective</div>
+        <p>By the end you can explain why <strong>grid interconnection is the critical-path risk</strong> in a renewable project — distinguish the <strong>TSO from the DSO</strong>, say what <strong>connection capacity</strong> means, and place the Czech <strong>building permit (stavební povolení)</strong> and an <strong>EIA</strong> in the development sequence.</p>
+      </div>
+    </section>
+
+    <section id="critical">
+      <h2>The critical path</h2>
+      <p>In project planning, the <strong>critical path</strong> is the chain of tasks that determines the earliest possible finish — delay anything on it and the whole project slips. In renewables, the critical path almost always runs through the <strong>grid connection</strong>.</p>
+      <p>Why? You can buy panels in weeks and build the plant in months, but you cannot manufacture grid capacity. A connection requires the grid operator to study your project, reserve room on their network, possibly reinforce a substation or line, and issue a formal offer. That process is queued, regulated and slow — and it is mostly outside the developer's control. This is why an experienced developer applies for the connection on day one, before almost anything else.</p>
+      <p>The hard truth to internalise: <strong>a great site with no connection is worth nothing; a mediocre site with a firm connection offer is worth real money.</strong> The connection, not the sunshine, is the scarce resource.</p>
+    </section>
+
+    <section id="tsodso">
+      <h2>TSO vs DSO — who you connect to</h2>
+      <p>The grid has two layers, and which one you join depends on your project's size.</p>
+      <p>The <strong>TSO (Transmission System Operator)</strong> runs the high-voltage backbone — the big pylons that move bulk power across the country. In Czechia the TSO is <strong>ČEPS</strong>. Large generators connect here.</p>
+      <p>The <strong>DSO (Distribution System Operator)</strong> runs the lower-voltage networks that deliver power to towns, factories and homes. In Czechia these are regional distributors (for example ČEZ Distribuce, EG.D and PREdistribuce). Most C&amp;I-scale solar and storage — a few hundred kW up to tens of MW — connects to a DSO.</p>
+      <p>For a 5&nbsp;MW project, you are almost certainly talking to a <strong>DSO</strong>, applying to connect at medium voltage. The principle is the same at either layer: you apply, they study, they make an offer, you accept and pay.</p>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Key term · TSO &amp; DSO</div>
+        <p>The <strong>TSO</strong> operates the high-voltage transmission backbone (ČEPS in Czechia); the <strong>DSO</strong> operates the medium- and low-voltage distribution networks (regional distributors in Czechia). Your project's capacity decides which one issues your connection — and the regulated tariffs for using both are set by the energy regulator, the <strong>ERÚ</strong> (Energetický regulační úřad).</p>
+      </div>
+    </section>
+
+    <section id="capacity">
+      <h2>Connection capacity — the scarce commodity</h2>
+      <p><strong>Connection capacity</strong> is the amount of power (in MW) the local grid will physically accept from your plant at a given point. It is finite. Once a stretch of network is full, new generators must wait for reinforcement or find another point — at their own cost.</p>
+      <p>The operator answers your application with a <strong>connection offer</strong> (in Czech practice, a study and reservation of capacity), stating how much capacity is available, where, by when, and what you must pay toward any network upgrades. A signed, paid connection offer is one of the most valuable documents a project can hold, because it converts "we hope to connect" into "we are allowed to connect."</p>
+      <p>Two phrases worth knowing: a <strong>firm</strong> connection guarantees you can always export your full capacity; a <strong>non-firm</strong> (flexible) connection may be curtailed when the grid is congested, in exchange for connecting sooner or cheaper. Which you hold materially affects revenue and value.</p>
+    </section>
+
+    <section id="permits">
+      <h2>Czech permitting, in sequence</h2>
+      <p>Alongside the connection, the project needs land-use and construction consent. In Czechia the key approvals are:</p>
+      <p><strong>Územní rozhodnutí / souhlas (zoning / land-use decision)</strong> — confirms the site may be used for this purpose under local spatial planning.</p>
+      <p><strong>Stavební povolení (building permit)</strong> — the formal authorisation to construct, issued by the building authority (stavební úřad). Nothing is built until this is granted. This is the Czech equivalent of the "consent to build" milestone that defines ready-to-build.</p>
+      <p><strong>EIA (Environmental Impact Assessment)</strong> — for larger or sensitive projects, an environmental study (in Czech, posuzování vlivů na životní prostředí, the "EIA process") may be required before permitting. Many smaller C&amp;I solar projects fall below the threshold or need only a screening, but you must check the specific case — never assume.</p>
+      <p>The EU's <strong>RED III</strong> directive pushes member states to speed renewable permitting and designate "acceleration areas," so timelines are improving — but the developer still has to run the process. Treat all of the above as illustrative of the structure; confirm current thresholds and steps for any real site.</p>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Key term · Stavební povolení (building permit)</div>
+        <p>The Czech construction permit issued by the local building authority — the legal green light to build. Until it is in hand, a project cannot reach ready-to-build, no matter how good the site or the offtake. Together with an accepted grid connection offer, it is one of the two consents that define a de-risked, bankable project.</p>
+      </div>
+    </section>
+
+    <section id="worked">
+      <h2>Worked connection path — a 5&nbsp;MW Czech solar plant</h2>
+      <p>Illustrative sequence for a medium-voltage DSO connection. The grid steps (left) and consent steps (right) run largely in parallel, but the connection usually finishes last.</p>
+      <div class="worked" data-rise>
+        <div class="lbl">Grid &amp; permitting steps → typical duration</div>
+        <table class="calc-table">
+          <tr><th>Step</th><th>Who</th><th style="text-align:right">Typical duration</th></tr>
+          <tr><td>Connection application lodged</td><td>Developer → DSO</td><td class="num">Month 0</td></tr>
+          <tr><td>Network study / capacity assessment</td><td>DSO</td><td class="num">3–9 mo</td></tr>
+          <tr><td>Connection offer issued &amp; accepted</td><td>DSO → Developer</td><td class="num">+1–2 mo</td></tr>
+          <tr><td>Zoning / land-use decision</td><td>Building authority</td><td class="num">3–6 mo</td></tr>
+          <tr><td>EIA screening / assessment (if required)</td><td>Environmental authority</td><td class="num">0–12 mo</td></tr>
+          <tr><td>Building permit (stavební povolení)</td><td>Building authority (stavební úřad)</td><td class="num">3–6 mo</td></tr>
+          <tr class="total"><td>Ready-to-build reached</td><td>All consents in hand</td><td class="num">≈ 12–24 mo</td></tr>
+        </table>
+        <p class="muted" style="margin:12px 0 0">The single longest, least-controllable item is the grid study and offer. That is why connection is the critical path: every other task can be worked in parallel, but the network operator sets a clock you cannot wind faster.</p>
+      </div>
+    </section>
+
+    <section id="script">
+      <h2>In the room</h2>
+      <p>How you explain delay risk to a customer or investor without losing their confidence:</p>
+      <div class="script" data-rise>
+        <div class="lbl">Sales script</div>
+        <p>The panels are the easy part. The thing that sets our timeline is the grid connection — the distribution operator has to study the network and reserve capacity for us, and that's a regulated queue nobody can jump. So we file for it first, on day one, and run the building permit alongside it. When we hand you a signed connection offer and the building permit, the project is genuinely de-risked — that's the moment it goes from "hopeful" to "happening."</p>
+      </div>
+    </section>
+
+    <section id="objections">
+      <h2>Objections you will hear</h2>
+      <div class="objections">
+        <div class="obj" data-rise>
+          <div class="q">Can't you just connect it like a normal building?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Connecting a generator is different from connecting a load — you're pushing power back into a shared network, so the operator must study capacity and protection before they'll allow it. That study is mandatory and regulated. We can't skip it, but we start it before anything else so it runs while the rest of the work happens.</p>
+        </div>
+        <div class="obj" data-rise>
+          <div class="q">What if there's no grid capacity at my site?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">That's exactly why the connection application is our first move — it tells us early whether capacity exists, before we spend on design or permits. If it's tight, we can size the plant to fit, take a flexible connection, or look at a nearby point. Better to know in month one than month twelve.</p>
+        </div>
+        <div class="obj" data-rise>
+          <div class="q">Do we need a full environmental assessment? That sounds like years.</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Often not — many C&amp;I-scale solar projects sit below the EIA threshold or need only a quick screening. We check the specific site against current rules up front. And EU permitting reforms are actively shortening these timelines for renewables, not lengthening them.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="check">
+      <div class="quiz">
+        <div class="lbl">Knowledge check</div>
+
+        <div class="q-item">
+          <div class="stem">Why is grid interconnection usually the critical-path risk?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>Because panels take years to manufacture.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q1"><span>Because the operator's study, capacity reservation and offer are slow, queued and largely outside the developer's control.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>Because building permits are never required for solar.</span></label>
+          </div>
+          <p class="q-feedback">You can build fast but you can't manufacture grid capacity. The connection sets a clock you cannot wind faster — so you apply on day one.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">A 5&nbsp;MW C&amp;I solar plant in Czechia most likely connects to whom?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>ČEPS, the high-voltage transmission operator (TSO).</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q2"><span>A regional distribution operator (DSO), at medium voltage.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>The energy regulator ERÚ directly.</span></label>
+          </div>
+          <p class="q-feedback">The TSO (ČEPS) runs the high-voltage backbone for large generators; most C&amp;I-scale projects join a DSO at medium voltage.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">What does the Czech stavební povolení represent?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>The PPA price agreed with the customer.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>A reservation of grid capacity from the DSO.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q3"><span>The building permit — legal authorisation to construct, without which a project can't reach ready-to-build.</span></label>
+          </div>
+          <p class="q-feedback">Together with an accepted connection offer, the building permit is one of the two consents that define a de-risked, bankable project.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a class="prev" href="build-01-origination-to-cod.html"><small>Previous lesson</small>← Origination to commercial operation</a>
+      <a class="next" href="build-03-dev-gates.html"><small>Next lesson</small>Development gates &amp; de-risking →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/newman.js"></script>
+<script src="../assets/js/academy.js"></script>
+</body>
+</html>

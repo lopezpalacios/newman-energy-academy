@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LCOE, Built Cell by Cell — Newman Energy Sales Academy</title>
+<meta name="description" content="Build the levelised cost of energy from first principles — capex plus discounted operating cost over discounted lifetime generation — and see why the discount rate quietly decides whether a project beats the grid.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/newman.css">
+<link rel="stylesheet" href="../assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="../index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="../index.html#why">Why a business</a>
+      <a href="../index.html#curriculum">Curriculum</a>
+      <a href="../index.html#tools">Tools</a>
+      <a class="btn" href="../index.html#curriculum">All lessons</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- LESSON HEADER -->
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Track 03 · Financial models · Lesson 1 of 4</div>
+    <h1>LCOE, built cell by cell</h1>
+    <p class="sub">One number decides whether a solar project is a business or a hobby: the <em>levelised cost of energy</em>. We are going to build it from scratch — capex, operating cost, generation, and the one input nobody mentions but everybody hides behind: the discount rate.</p>
+    <div class="facts">
+      <span><b>Level</b> Core</span>
+      <span><b>Time</b> 22 min</span>
+      <span><b>Tool</b> Live LCOE builder</span>
+      <span><b>Example</b> 1&nbsp;kWp solar, Czechia</span>
+    </div>
+  </div>
+</header>
+
+<!-- LESSON BODY -->
+<div class="lesson">
+
+  <!-- ASIDE / TOC -->
+  <aside class="lesson-aside">
+    <a class="back" href="../index.html#curriculum">← All tracks</a>
+    <nav aria-label="On this page">
+      <ul class="toc">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#what">What LCOE is</a></li>
+        <li><a href="#formula">The formula</a></li>
+        <li><a href="#discount">Why the discount rate matters</a></li>
+        <li><a href="#worked">Worked example</a></li>
+        <li><a href="#calc">Live calculator</a></li>
+        <li><a href="#script">In the room</a></li>
+        <li><a href="#objections">Objections</a></li>
+        <li><a href="#check">Knowledge check</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="lesson-main">
+
+    <section id="objective">
+      <div class="callout objective" data-rise>
+        <div class="lbl">Learning objective</div>
+        <p>By the end you can build <strong>LCOE</strong> on a napkin from four inputs, state the formula, and explain to a CFO why moving the <strong>discount rate</strong> by a few points changes the answer more than haggling over panel prices ever will.</p>
+      </div>
+    </section>
+
+    <section id="what">
+      <h2>What LCOE actually is</h2>
+      <p>Every generation project has lumpy money going out and a long, thin stream of electricity coming back. You cannot compare a €600 panel to a €120 power bill directly — one is a one-off cost, the other is a yearly flow. <strong>LCOE (Levelised Cost of Energy)</strong> is the device that makes them comparable.</p>
+      <p>The definition in plain English: <strong>LCOE is the constant price per unit of energy that, charged over the asset's whole life, exactly pays back every euro you spent — both the upfront build and the running costs — once all of it is brought to today's money.</strong> Quoted in <strong>€/MWh</strong>, it is the project's true break-even price. If your LCOE is below the customer's grid tariff, there is a deal. If it is above, there is no business no matter how green the story.</p>
+      <p>Think of it as the cost floor under your PPA price. You sell power above LCOE; the gap is margin. The grid sells power above its own (much higher) all-in cost; that gap is your opening.</p>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Key term · LCOE</div>
+        <p>Levelised Cost of Energy — total lifetime cost (capex + discounted opex) divided by total lifetime generation (discounted), expressed in €/MWh. The lowest price at which the project breaks even. For C&I solar in Czechia it lands around <strong>€50–70/MWh</strong>, comfortably under an industrial grid tariff of €100–180/MWh.</p>
+      </div>
+    </section>
+
+    <section id="formula">
+      <h2>The formula — four inputs, one ratio</h2>
+      <p>LCOE is a ratio. The top is everything you spend, the bottom is everything you generate — and crucially, <em>both</em> are discounted to present value so a euro of cost or a kilowatt-hour of output in year 20 counts for less than one today.</p>
+      <div class="formula">LCOE = ( Capex + Σ Opexₜ / (1+r)ᵗ ) ÷ ( Σ Energyₜ / (1+r)ᵗ )</div>
+      <p>Read it left to right. The numerator is the upfront <strong>capex</strong> plus the present value of every future year's <strong>opex</strong> (operations &amp; maintenance, land lease, insurance). The denominator is the present value of every future year's <strong>energy</strong> — the kWh the plant actually produces. Divide and you get a cost per unit.</p>
+      <ul>
+        <li><strong>Capex</strong> — the build cost, paid once at the start (no discounting needed). C&I solar ≈ €500–750/kWp.</li>
+        <li><strong>Opex</strong> — yearly running cost, ≈ €10–15/kWp/yr. Small, but it compounds over 25 years.</li>
+        <li><strong>Energy</strong> — the <strong>specific yield</strong>, the kWh each kWp produces per year. In Czechia ≈ 950–1,100 kWh/kWp/yr (Iberia gets 1,500+; sun is geography).</li>
+        <li><strong>r</strong> — the <strong>discount rate</strong>, your cost of capital. The quiet input that does the most damage.</li>
+      </ul>
+    </section>
+
+    <section id="discount">
+      <h2>Why the discount rate matters most</h2>
+      <p>The <strong>discount rate</strong> is the return your money could earn elsewhere — your weighted cost of debt and equity, often called the <strong>WACC (Weighted Average Cost of Capital)</strong>. It appears in <em>both</em> the cost and the energy side of the ratio, so its effect is not obvious until you run it.</p>
+      <p>Here is the intuition: a higher discount rate shrinks the value of future kWh faster than it shrinks the small future opex. The denominator collapses while the big capex sits there undiscounted. So <strong>a higher discount rate pushes LCOE up — sometimes brutally.</strong> Same panels, same sun, same site; just a more demanding investor, and suddenly the project is no longer below the grid.</p>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Key term · Discount rate (WACC)</div>
+        <p>The annual return an investor requires, used to convert future euros to today's value. Built from the cost of debt and the cost of equity, weighted by how much of each funds the project. A developer might use 7–11%; a de-risked operating asset is valued at 6–8%. Lower rate → lower LCOE → more projects clear.</p>
+      </div>
+    </section>
+
+    <section id="worked">
+      <h2>Worked example — LCOE of 1&nbsp;kWp of Czech solar</h2>
+      <p>We build LCOE per kWp so the number scales to any plant size. Realistic, conservative inputs:</p>
+      <div class="worked" data-rise>
+        <div class="lbl">The build (per kWp, 25-year life, 7% discount rate)</div>
+        <table class="calc-table">
+          <tr><td>Capex (build cost)</td><td class="num">€600</td></tr>
+          <tr><td>Opex per year (O&amp;M, lease, insurance)</td><td class="num">€12</td></tr>
+          <tr><td>Specific yield (annual generation)</td><td class="num">1,050 kWh</td></tr>
+          <tr><td>Discounted opex over 25 yrs @ 7% (× 11.65 annuity factor)</td><td class="num">€140</td></tr>
+          <tr><td>Discounted energy over 25 yrs @ 7% (× 11.65 annuity factor)</td><td class="num">12,236 kWh</td></tr>
+          <tr class="total"><td>LCOE = (€600 + €140) ÷ 12,236 kWh</td><td class="num">≈ €60.5 / MWh</td></tr>
+        </table>
+        <p class="muted" style="margin:12px 0 0">€60.5/MWh against a Czech industrial tariff of, say, €120/MWh leaves roughly <strong>€60/MWh of headroom</strong> — room for a PPA price the customer loves and a margin you can sell. This is a real business.</p>
+      </div>
+
+      <div class="worked" data-rise>
+        <div class="lbl">Same plant, three discount rates — watch LCOE move</div>
+        <table class="calc-table">
+          <tr><th>Discount rate</th><th style="text-align:right">LCOE</th></tr>
+          <tr><td>3% (cheap institutional debt)</td><td class="num">≈ €44 / MWh</td></tr>
+          <tr><td>7% (developer base case)</td><td class="num">≈ €60 / MWh</td></tr>
+          <tr class="total"><td>12% (expensive equity / risky market)</td><td class="num">≈ €84 / MWh</td></tr>
+        </table>
+        <p class="muted" style="margin:12px 0 0">Nothing physical changed — same panels, same Czech sun, same opex. The cost of power swung <strong>~90%</strong> on financing alone. That is why getting the asset cheap money (and de-risking it) is worth more than any procurement saving.</p>
+      </div>
+      <p>Move any input and the whole answer moves. Do it yourself below.</p>
+    </section>
+
+    <section id="calc">
+      <h2>Live LCOE builder</h2>
+      <p>This is the tool you open across the table. Set the capex and yield for the real site, then drag the discount rate to show a CFO exactly how sensitive the cost of power is to financing.</p>
+
+      <div class="calc" data-calc="lcoe" data-rise>
+        <div class="calc-head"><h3>Levelised cost of energy (LCOE)</h3>
+          <p>The all-in cost of a unit of generated power, per kWp of solar.</p></div>
+        <div class="calc-body">
+          <div class="inputs">
+            <div class="row"><label for="lcapex">Capex <span class="val" data-val="capex"></span></label>
+              <input id="lcapex" type="number" data-field="capex" value="600" step="25" min="0"> <small class="note">€ / kWp</small></div>
+            <div class="row"><label for="lopex">Opex / yr <span class="val" data-val="opex"></span></label>
+              <input id="lopex" type="number" data-field="opex" value="12" step="1" min="0"> <small class="note">€ / kWp / yr</small></div>
+            <div class="row"><label for="lky">Specific yield <span class="val" data-val="kyield"></span></label>
+              <input id="lky" type="range" data-field="kyield" data-val-target data-suffix=" kWh/kWp" value="1050" min="700" max="1400" step="10"></div>
+            <div class="row"><label for="llife">Asset life <span class="val" data-val="life"></span></label>
+              <input id="llife" type="range" data-field="life" data-val-target data-suffix=" yrs" value="25" min="10" max="35" step="1"></div>
+            <div class="row"><label for="ldisc">Discount rate <span class="val" data-val="disc"></span></label>
+              <input id="ldisc" type="range" data-field="disc" data-val-target data-suffix="%" value="7" min="3" max="14" step="0.5"></div>
+            <div class="row"><label for="ltar">Grid tariff to beat <span class="val" data-val="tariff"></span></label>
+              <input id="ltar" type="number" data-field="tariff" value="120" step="5" min="0"> <small class="note">€ / MWh</small></div>
+          </div>
+          <div class="outputs">
+            <div class="kpi hero"><div class="k">LCOE</div><div class="v" data-out="lcoe">—</div></div>
+            <div class="kpi"><div class="k">Margin vs grid</div><div class="v" data-out="margin">—</div></div>
+            <div class="kpi"><div class="k">Discount to grid</div><div class="v" data-out="marginpct">—</div></div>
+            <div class="kpi"><div class="k">Verdict</div><div class="v" data-out="verdict" style="font-size:20px">—</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="script">
+      <h2>In the room</h2>
+      <p>How you frame LCOE to a factory owner who only cares about the bill:</p>
+      <div class="script" data-rise>
+        <div class="lbl">Sales script</div>
+        <p>Your grid power costs about a hundred and twenty euros a megawatt-hour, all in. The solar on your roof produces power at roughly sixty — and that cost is fixed for twenty-five years while the grid keeps moving. We are not asking you to gamble on energy prices. We are selling you a known, lower number, locked in. The only real question is how cheaply we can finance it, because that is what sets the sixty.</p>
+      </div>
+    </section>
+
+    <section id="objections">
+      <h2>Objections you will hear</h2>
+      <div class="objections">
+        <div class="obj" data-rise>
+          <div class="q">€60/MWh sounds too good — solar can't be that cheap.</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">It is a build cost, not a retail price. There are no fuel, no network charges and no margins stacked on top — the sun is free. At €600/kWp and a 25-year life, the maths lands at €50–70 every time. The grid's €120 carries fuel, network and supplier margin you simply do not pay behind the meter.</p>
+        </div>
+        <div class="obj" data-rise>
+          <div class="q">Czech sun is weak — won't that wreck the number?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">It softens it, it does not break it. Czechia yields about 1,050 kWh/kWp against Spain's 1,500, so our LCOE is higher than Iberia's — and still well under €120. Drag the yield slider down to 950 in the tool; you are still beating the grid by a wide margin. Lower sun, smaller-but-real saving.</p>
+        </div>
+        <div class="obj" data-rise>
+          <div class="q">You're hiding behind a discount rate I can't check.</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Fair — so let's make it transparent. I'll show you LCOE at 3, 7 and 12 percent live. The rate is just our cost of money; the cheaper we fund it, the lower your price. That's why we chase low-cost debt and de-risk the asset — it flows straight through to your tariff, and you can watch it move.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="check">
+      <div class="quiz">
+        <div class="lbl">Knowledge check</div>
+
+        <div class="q-item">
+          <div class="stem">What does LCOE represent?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="true"><input type="radio" name="q1"><span>The constant €/MWh price that exactly repays all lifetime costs in present-value terms — the break-even cost of power.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>The price the grid charges industrial customers.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>The profit margin on a solar project.</span></label>
+          </div>
+          <p class="q-feedback">LCOE is the cost floor: total discounted cost ÷ total discounted generation. Sell above it for margin.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">Raise the discount rate from 7% to 12% on the same plant. LCOE…</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>Falls — higher rates make energy cheaper.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q2"><span>Rises sharply (≈ €60 → €84/MWh) — future generation is discounted harder while the upfront capex stays put.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>Stays the same — the discount rate cancels out.</span></label>
+          </div>
+          <p class="q-feedback">A higher rate shrinks the discounted-energy denominator faster than the cost, so LCOE climbs. Financing is the biggest lever.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">Which input does NOT enter the LCOE numerator (the cost side)?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>Capex.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>Discounted opex.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q3"><span>Specific yield (generation) — that is the denominator.</span></label>
+          </div>
+          <p class="q-feedback">Numerator = capex + discounted opex. Denominator = discounted lifetime energy. Yield sits on the bottom.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a class="prev" href="prod-04-eaas.html"><small>Previous</small>Energy-as-a-Service &amp; the no-capex pitch</a>
+      <a class="next" href="fin-02-savings.html"><small>Next lesson</small>Customer savings: tariff vs PPA →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/newman.js"></script>
+<script src="../assets/js/academy.js"></script>
+</body>
+</html>

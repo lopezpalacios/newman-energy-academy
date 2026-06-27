@@ -1,0 +1,146 @@
+/* ============================================================
+   Newman Energy Sales Academy — academy layer on top of newman.css
+   Adds: track grid, lesson layout, calculator widgets, quiz,
+   sales-script + objection blocks, progress, glossary.
+   Inherits all tokens from newman.css. Flat, light, accent-purple.
+   ============================================================ */
+
+/* ---------- track grid (landing) ---------- */
+.track-card{position:relative;display:flex;flex-direction:column;gap:var(--s-12)}
+.track-card .tnum{font-family:var(--display);font-weight:var(--w-light);font-size:14px;letter-spacing:.18em;color:var(--accent);text-transform:uppercase}
+.track-card .meta{display:flex;gap:var(--s-12);flex-wrap:wrap;margin-top:auto;padding-top:var(--s-16);font-size:var(--text-label);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.track-card .meta span{display:inline-flex;align-items:center;gap:6px}
+.track-card .meta span::before{content:"";width:5px;height:5px;background:var(--accent);flex:none;border-radius:50%}
+.track-card ul{list-style:none;margin:var(--s-8) 0 0}
+.track-card li{font-size:var(--text-body-sm);color:var(--muted);padding:6px 0 6px 18px;position:relative;border-top:1px solid var(--line)}
+.track-card li:first-child{border-top:0}
+.track-card li::before{content:"";position:absolute;left:0;top:13px;width:6px;height:1px;background:var(--accent)}
+
+/* ---------- lesson layout: sticky aside + main ---------- */
+.lesson{display:grid;grid-template-columns:240px 1fr;gap:var(--s-60);align-items:start;max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(20px,5vw,40px);padding-block:var(--s-60)}
+.lesson-aside{position:sticky;top:96px}
+.lesson-aside .back{font-family:var(--display);font-size:var(--text-body-sm);color:var(--accent);text-decoration:none;display:inline-flex;gap:6px;margin-bottom:var(--s-24)}
+.lesson-aside .toc{list-style:none;border-left:1px solid var(--line)}
+.lesson-aside .toc a{display:block;padding:8px 0 8px 16px;margin-left:-1px;border-left:2px solid transparent;font-size:var(--text-body-sm);color:var(--muted);text-decoration:none;transition:color .15s,border-color .15s}
+.lesson-aside .toc a:hover,.lesson-aside .toc a.active{color:var(--navy);border-left-color:var(--accent)}
+.lesson-main{min-width:0}
+.lesson-main > section{scroll-margin-top:96px;margin-bottom:var(--s-48)}
+.lesson-main h2{font-family:var(--display);font-weight:var(--w-light);font-size:clamp(26px,3.4vw,38px);line-height:1.1;color:var(--navy);margin-bottom:var(--s-16)}
+.lesson-main h3{font-size:var(--text-subheading);font-weight:var(--w-med);margin:var(--s-24) 0 var(--s-12);color:var(--navy)}
+.lesson-main p{margin-bottom:var(--s-16);max-width:68ch;color:var(--text)}
+.lesson-main ul,.lesson-main ol{margin:0 0 var(--s-16) var(--s-24);color:var(--text);max-width:66ch}
+.lesson-main li{margin-bottom:var(--s-8);padding-left:var(--s-8)}
+.lesson-main strong{color:var(--navy);font-weight:var(--w-semi)}
+
+/* lesson header bar */
+.lesson-head{background:var(--bg-2);border-bottom:1px solid var(--line)}
+.lesson-head .wrap{padding-block:var(--s-48) var(--s-36)}
+.lesson-head .trail{font-family:var(--display);font-size:var(--text-label);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:var(--s-12)}
+.lesson-head h1{font-family:var(--display);font-weight:var(--w-light);font-size:clamp(30px,5vw,52px);line-height:1.03;color:var(--navy);max-width:20ch}
+.lesson-head .sub{margin-top:var(--s-16);max-width:60ch;color:var(--text);font-size:clamp(16px,2vw,19px);line-height:1.6}
+.lesson-head .facts{display:flex;gap:var(--s-24);flex-wrap:wrap;margin-top:var(--s-24);font-size:var(--text-body-sm);color:var(--muted)}
+.lesson-head .facts b{color:var(--navy);font-weight:var(--w-med)}
+
+/* ---------- callouts ---------- */
+.callout{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:var(--r-sm);background:var(--surface);padding:var(--s-24);margin-bottom:var(--s-24)}
+.callout .lbl{font-family:var(--display);font-size:var(--text-label);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:var(--s-8);display:flex;align-items:center;gap:8px}
+.callout .lbl::before{content:"";width:6px;height:6px;background:var(--magenta);flex:none}
+.callout p:last-child{margin-bottom:0}
+.callout.objective{background:var(--accent-tint);border-left-color:var(--accent)}
+.callout.keyterm{border-left-color:var(--magenta)}
+
+/* ---------- worked example box ---------- */
+.worked{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);padding:var(--s-36);margin-bottom:var(--s-24)}
+.worked .lbl{font-family:var(--display);font-size:var(--text-label);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:var(--s-16);display:flex;align-items:center;gap:8px}
+.worked .lbl::before{content:"";width:6px;height:6px;background:var(--magenta);flex:none}
+table.calc-table{width:100%;border-collapse:collapse;font-size:var(--text-body-sm);margin:var(--s-8) 0}
+table.calc-table th,table.calc-table td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+table.calc-table th{font-family:var(--display);font-weight:var(--w-med);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:var(--text-label)}
+table.calc-table td.num{text-align:right;font-variant-numeric:tabular-nums;color:var(--navy);font-weight:var(--w-med)}
+table.calc-table tr.total td{border-top:2px solid var(--accent);border-bottom:0;font-weight:var(--w-semi);color:var(--navy)}
+.formula{font-family:var(--display);font-weight:var(--w-light);background:var(--bg-2);border-radius:var(--r-sm);padding:14px 18px;color:var(--navy);letter-spacing:.01em;margin:var(--s-12) 0;overflow-x:auto}
+
+/* ---------- sales script ---------- */
+.script{border-radius:var(--r-card);background:var(--navy);color:var(--on-dark);padding:var(--s-36);margin-bottom:var(--s-24)}
+.script .lbl{font-family:var(--display);font-size:var(--text-label);letter-spacing:.12em;text-transform:uppercase;color:#fff;opacity:.65;margin-bottom:var(--s-12)}
+.script p{color:#fff;font-size:18px;line-height:1.6;font-weight:var(--w-light);max-width:60ch}
+.script p::before{content:"\201C"}.script p::after{content:"\201D"}
+
+/* ---------- objection / rebuttal ---------- */
+.objections{display:grid;gap:var(--s-16)}
+.obj{display:grid;grid-template-columns:auto 1fr;gap:var(--s-16);border:1px solid var(--line);border-radius:var(--r-card);padding:var(--s-24);background:var(--surface)}
+.obj .q{grid-column:1/-1;font-family:var(--display);font-weight:var(--w-med);color:var(--navy);font-size:var(--text-subheading)}
+.obj .q::before{content:"\201C";color:var(--accent)}.obj .q::after{content:"\201D";color:var(--accent)}
+.obj .tag{font-family:var(--display);font-size:var(--text-label);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);align-self:start}
+.obj .a{color:var(--text);margin:0}
+
+/* ---------- interactive calculator widget ---------- */
+.calc{border:1px solid var(--line);border-radius:var(--r-card);background:var(--surface);overflow:hidden;margin-bottom:var(--s-24)}
+.calc .calc-head{background:var(--bg-2);padding:var(--s-24) var(--s-36);border-bottom:1px solid var(--line)}
+.calc .calc-head h3{margin:0;font-size:var(--text-subheading);font-weight:var(--w-med);color:var(--navy)}
+.calc .calc-head p{margin:6px 0 0;font-size:var(--text-body-sm);color:var(--muted)}
+.calc .calc-body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.calc .inputs{padding:var(--s-36);border-right:1px solid var(--line)}
+.calc .outputs{padding:var(--s-36);background:var(--accent-tint)}
+.calc .row{margin-bottom:var(--s-16)}
+.calc label{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s-8);font-family:var(--display);font-size:var(--text-label);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.calc label .val{font-size:14px;letter-spacing:0;text-transform:none;color:var(--accent);font-weight:var(--w-semi);font-variant-numeric:tabular-nums}
+.calc input[type=number],.calc input[type=text]{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:var(--r-input);font-family:var(--body);font-size:var(--text-body);color:var(--text);background:#fff}
+.calc input:focus{outline:0;border-color:var(--accent);box-shadow:var(--ring)}
+.calc input[type=range]{width:100%;accent-color:var(--accent);margin-top:6px}
+.calc .kpi{margin-bottom:var(--s-24)}
+.calc .kpi:last-child{margin-bottom:0}
+.calc .kpi .k{font-family:var(--display);font-size:var(--text-label);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.calc .kpi .v{font-family:var(--display);font-weight:var(--w-light);font-size:clamp(28px,4vw,40px);line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+.calc .kpi .v small{font-size:16px;color:var(--muted);font-weight:var(--w-reg);margin-left:6px}
+.calc .kpi.hero .v{color:var(--navy);font-weight:var(--w-med)}
+.calc .note{font-size:12.5px;color:var(--muted);margin-top:var(--s-16);line-height:1.5}
+@media (max-width:720px){.calc .calc-body{grid-template-columns:1fr}.calc .inputs{border-right:0;border-bottom:1px solid var(--line)}}
+
+/* ---------- quiz / knowledge check ---------- */
+.quiz{border:1px solid var(--line);border-radius:var(--r-card);padding:var(--s-36);background:var(--surface)}
+.quiz .lbl{font-family:var(--display);font-size:var(--text-label);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:var(--s-24);display:flex;align-items:center;gap:8px}
+.quiz .lbl::before{content:"";width:6px;height:6px;background:var(--magenta);flex:none}
+.q-item{border-top:1px solid var(--line);padding:var(--s-24) 0}
+.q-item:first-of-type{border-top:0;padding-top:0}
+.q-item .stem{font-family:var(--display);font-weight:var(--w-med);color:var(--navy);font-size:18px;margin-bottom:var(--s-16)}
+.q-opts{display:grid;gap:var(--s-8)}
+.q-opt{display:flex;gap:var(--s-12);align-items:flex-start;padding:12px 16px;border:1px solid var(--line);border-radius:var(--r-input);cursor:pointer;background:#fff;transition:border-color .15s,background .15s;font-size:var(--text-body-sm)}
+.q-opt:hover{border-color:var(--accent)}
+.q-opt.correct{border-color:#1f7a57;background:#f0f8f4}
+.q-opt.wrong{border-color:#b3382c;background:#fbf1f0}
+.q-opt input{margin-top:3px;accent-color:var(--accent)}
+.q-feedback{margin-top:var(--s-12);font-size:var(--text-body-sm);color:var(--muted);display:none}
+.q-item.answered .q-feedback{display:block}
+
+/* ---------- prev/next pager ---------- */
+.pager{display:flex;justify-content:space-between;gap:var(--s-16);border-top:1px solid var(--line);margin-top:var(--s-48);padding-top:var(--s-24)}
+.pager a{text-decoration:none;font-family:var(--display);font-size:var(--text-body-sm);color:var(--accent);max-width:45%}
+.pager a small{display:block;color:var(--muted);font-size:var(--text-label);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.pager a.next{text-align:right;margin-left:auto}
+
+/* ---------- animations ---------- */
+.read-progress{position:fixed;top:0;left:0;right:0;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:0 50%;z-index:60;will-change:transform}
+[data-rise]{opacity:0;transform:translateY(22px);transition:opacity .6s cubic-bezier(.22,.61,.36,1),transform .6s cubic-bezier(.22,.61,.36,1)}
+[data-rise].in{opacity:1;transform:none}
+[data-rise][data-delay="1"]{transition-delay:.08s}
+[data-rise][data-delay="2"]{transition-delay:.16s}
+[data-rise][data-delay="3"]{transition-delay:.24s}
+[data-rise][data-delay="4"]{transition-delay:.32s}
+/* KPI value flips with a soft cue when it recomputes */
+.calc .kpi .v{transition:color .2s}
+.calc:focus-within .kpi.hero .v{color:var(--accent)}
+/* track + card lift already in newman.css; add accent underline sweep on lesson links */
+.lesson-main a:not(.btn):not(.btn-text){color:var(--accent);text-decoration:none;background-image:linear-gradient(var(--accent),var(--accent));background-size:0% 1.5px;background-position:0 100%;background-repeat:no-repeat;transition:background-size .25s}
+.lesson-main a:not(.btn):not(.btn-text):hover{background-size:100% 1.5px}
+@media (prefers-reduced-motion:reduce){
+  .read-progress{display:none}
+  [data-rise]{opacity:1;transform:none;transition:none}
+}
+
+/* ---------- responsive lesson ---------- */
+@media (max-width:920px){
+  .lesson{grid-template-columns:1fr;gap:var(--s-36)}
+  .lesson-aside{position:static}
+  .lesson-aside .toc{display:none}
+}

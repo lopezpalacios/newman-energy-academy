@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yield Compression in Depth — Newman Energy Sales Academy</title>
+<meta name="description" content="Why an infrastructure fund accepts a 6–8% yield on an operating renewable asset when a developer needed 10–13% to build it — cost of capital, the drivers of a buyer's required yield, and how to stress-test the exit premium.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/newman.css">
+<link rel="stylesheet" href="../assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="../index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="../index.html#why">Why a business</a>
+      <a href="../index.html#curriculum">Curriculum</a>
+      <a href="../index.html#tools">Tools</a>
+      <a class="btn" href="../index.html#curriculum">All lessons</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- LESSON HEADER -->
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Track 06 · The Exit · Lesson 2 of 4</div>
+    <h1>Yield compression in depth</h1>
+    <p class="sub">Last lesson you saw the premium. Now you learn <em>why it exists and what moves it</em>: why a fund happily accepts a 6–8% return where you demanded 10–13%, what sits inside the buyer's required yield, and how to pressure-test the exit before you promise anyone a number.</p>
+    <div class="facts">
+      <span><b>Level</b> Advanced</span>
+      <span><b>Time</b> 25 min</span>
+      <span><b>Tool</b> Live exit calculator</span>
+      <span><b>Example</b> 5&nbsp;MW solar, Czechia</span>
+    </div>
+  </div>
+</header>
+
+<!-- LESSON BODY -->
+<div class="lesson">
+
+  <!-- ASIDE / TOC -->
+  <aside class="lesson-aside">
+    <a class="back" href="../index.html#curriculum">← All tracks</a>
+    <nav aria-label="On this page">
+      <ul class="toc">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#twoworlds">Two costs of capital</a></li>
+        <li><a href="#drivers">What sets the yield</a></li>
+        <li><a href="#worked">Worked example</a></li>
+        <li><a href="#calc">Live calculator</a></li>
+        <li><a href="#script">In the room</a></li>
+        <li><a href="#objections">Objections</a></li>
+        <li><a href="#check">Knowledge check</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="lesson-main">
+
+    <section id="objective">
+      <div class="callout objective" data-rise>
+        <div class="lbl">Learning objective</div>
+        <p>By the end you can explain <strong>why two rational parties value the identical asset differently</strong>, list the four things that move a buyer's required yield, and stress-test the compression premium instead of quoting it as a certainty.</p>
+      </div>
+    </section>
+
+    <section id="twoworlds">
+      <h2>Two parties, two costs of capital</h2>
+      <p>The premium is not a trick and it is not luck. It comes from a simple fact: <strong>a developer and an infrastructure fund do not have the same cost of money.</strong></p>
+      <p>The <strong>cost of capital</strong> is the blended return a business must earn to satisfy everyone who funded it — its lenders (who want interest) and its equity backers (who want a return for the risk they carry). A developer's backers are taking early-stage, binary risk: a grid connection that might not come, a permit that might be refused, a contractor that might overrun. They price that risk high — they want <strong>10–13%</strong> or they put their money elsewhere.</p>
+      <p>A pension or infrastructure fund is the opposite kind of money. It manages decades-long liabilities and wants long, boring, inflation-linked cash. An operating solar plant with a signed 15-year offtake is almost exactly that. The risky part — building it — is already done. So the fund is content with <strong>6–8%</strong>, and it can pay a price that delivers only that return.</p>
+      <p>Discount the <em>same</em> cash flows at 7% instead of 11% and the present value jumps. The four-point gap between the two costs of capital, applied to a long cash-flow stream, is the entire exit premium.</p>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Key term · Cost of capital</div>
+        <p>The minimum blended return an investor requires to put money into an asset, given its risk. Higher perceived risk → higher required return → lower price they will pay. Yield compression is just the buyer's cost of capital being lower than yours.</p>
+      </div>
+    </section>
+
+    <section id="drivers">
+      <h2>What actually sets the buyer's required yield</h2>
+      <p>Funds do not pull 7% out of the air. The <strong>required yield</strong> is built up from a base rate plus a stack of risk premia. Four levers move it most, and you should know each because every one is a negotiation point in a sale.</p>
+      <ul>
+        <li><strong>The risk-free rate.</strong> Government bond yields are the floor. When central-bank rates rose in 2022–23, the 10-year benchmark moved several points, and required yields on every infrastructure asset moved up with it. Rates are the tide that lifts or sinks all valuations.</li>
+        <li><strong>Contract quality &amp; counterparty credit.</strong> A 15-year PPA with an investment-grade industrial offtaker is worth far more than three years left on a deal with an unrated SME. The longer and more creditworthy the contracted cash, the lower the yield a buyer accepts.</li>
+        <li><strong>Merchant (price) exposure.</strong> Cash that depends on the volatile <strong>OTE</strong> spot market — not a fixed PPA — is risky, so buyers discount it harder. The share of revenue that is contracted versus merchant is one of the biggest single drivers of the yield.</li>
+        <li><strong>Technology, scale &amp; track record.</strong> Proven solar at scale, with a clean operating history and a credible O&amp;M provider, prices tighter than a first-of-its-kind battery or a sub-scale one-off.</li>
+      </ul>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Key term · Required yield</div>
+        <p>The return a buyer demands on an operating asset = risk-free rate + premia for contract length, counterparty credit, merchant exposure and technology risk. Lower it by one point on a 25-year asset and the price moves materially — which is why de-risking before you sell pays for itself.</p>
+      </div>
+    </section>
+
+    <section id="worked">
+      <h2>Worked example — what one point of yield is worth</h2>
+      <p>Back to the 5&nbsp;MW Brno plant: €350,000 of net cash a year, 25 years of life remaining. Watch how sensitive the sale price is to the buyer's required yield — this is the single most important table in the whole track.</p>
+      <div class="worked" data-rise>
+        <div class="lbl">Sale price (NPV of €350k/yr for 25 yrs) at different fund yields</div>
+        <table class="calc-table">
+          <tr><th>Fund's required yield</th><th style="text-align:right">Sale price</th><th style="text-align:right">Gain vs €3.0M build</th></tr>
+          <tr><td>6%</td><td class="num">≈ €4,474,000</td><td class="num">+€1.47M</td></tr>
+          <tr><td>7%</td><td class="num">≈ €4,080,000</td><td class="num">+€1.08M</td></tr>
+          <tr><td>8%</td><td class="num">≈ €3,736,000</td><td class="num">+€0.74M</td></tr>
+          <tr class="total"><td>11% (your build hurdle)</td><td class="num">≈ €2,948,000</td><td class="num">−€0.05M</td></tr>
+        </table>
+        <p class="muted" style="margin:12px 0 0">Read the last row carefully: priced at <em>your own</em> 11% hurdle, the asset is worth roughly what it cost — there is <strong>no premium without a lower-cost buyer.</strong> The whole exit lives in the gap between rows. Moving from 8% to 6% — two points — is worth about <strong>€0.7M</strong> on a single 5&nbsp;MW plant.</p>
+      </div>
+      <div class="worked" data-rise>
+        <div class="lbl">Where one point comes from — the de-risking lever</div>
+        <table class="calc-table">
+          <tr><td>Signing the offtaker from SME to investment-grade</td><td class="num">≈ −0.5 to −1.0 pt yield</td></tr>
+          <tr><td>Extending contracted term 10 → 15 yrs</td><td class="num">≈ −0.5 pt yield</td></tr>
+          <tr><td>Clean 12-month operating track record</td><td class="num">≈ −0.25 to −0.5 pt yield</td></tr>
+          <tr class="total"><td>Each point shaved ≈</td><td class="num">+€350–400k of price</td></tr>
+        </table>
+        <p class="muted" style="margin:12px 0 0">These are illustrative orders of magnitude, but the lesson is exact: you do not just hand a fund a plant. You hand it a <strong>de-risked, well-contracted</strong> plant, because every point of yield you compress is six figures of price.</p>
+      </div>
+      <p>Drag the sliders below and feel how steep the curve is — especially the fund-yield slider.</p>
+    </section>
+
+    <section id="calc">
+      <h2>Live exit calculator</h2>
+      <p>The same model from Lesson 1. This time, drive the <strong>fund's required yield</strong> deliberately: drag it from 8% down to 6% and watch the sale price and the compression premium climb. Then push it back up toward your build hurdle and watch the whole premium evaporate — that is the rate-risk you are managing.</p>
+
+      <div class="calc" data-calc="exit" data-rise>
+        <div class="calc-head">
+          <h3>Operating-asset exit valuation</h3>
+          <p>Discounted cash flow of a contracted renewable asset — build vs sell.</p>
+        </div>
+        <div class="calc-body">
+          <div class="inputs">
+            <div class="row">
+              <label for="cf">Net cash flow / year <span class="val" data-val="cf"></span></label>
+              <input id="cf" type="number" data-field="cf" data-val-target value="350000" step="10000" min="0">
+            </div>
+            <div class="row">
+              <label for="capex">Build cost (capex) <span class="val" data-val="capex"></span></label>
+              <input id="capex" type="number" data-field="capex" value="3000000" step="100000" min="0">
+            </div>
+            <div class="row">
+              <label for="term">Asset life <span class="val" data-val="term"></span></label>
+              <input id="term" type="range" data-field="term" data-val-target data-suffix=" yrs" value="25" min="5" max="35" step="1">
+            </div>
+            <div class="row">
+              <label for="build">Your build hurdle rate <span class="val" data-val="build"></span></label>
+              <input id="build" type="range" data-field="build" data-val-target data-suffix="%" value="11" min="4" max="20" step="0.5">
+            </div>
+            <div class="row">
+              <label for="exit">Fund's required yield <span class="val" data-val="exit"></span></label>
+              <input id="exit" type="range" data-field="exit" data-val-target data-suffix="%" value="7" min="3" max="15" step="0.5">
+            </div>
+            <div class="row">
+              <label for="tv">Terminal / residual value <span class="val" data-val="tv"></span></label>
+              <input id="tv" type="number" data-field="tv" value="0" step="50000" min="0">
+            </div>
+          </div>
+          <div class="outputs">
+            <div class="kpi hero">
+              <div class="k">Sale price (NPV @ fund yield)</div>
+              <div class="v" data-out="sale">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Gain over build cost</div>
+              <div class="v" data-out="uplift">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Money multiple</div>
+              <div class="v" data-out="moic">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Value from yield compression</div>
+              <div class="v" data-out="compression">—<small data-out="spread"></small></div>
+            </div>
+            <p class="note">Level cash-flow approximation for teaching. "Value from yield compression" isolates the premium created purely by the gap between your build hurdle and the buyer's yield, holding the cash flows constant.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="script">
+      <h2>In the room</h2>
+      <p>How you frame compression to an investor who worries the premium is fragile:</p>
+      <div class="script" data-rise>
+        <div class="lbl">Sales script</div>
+        <p>The price we get isn't a guess — it's mechanical. A fund buys our cash flow at its cost of capital, which is six to eight percent because the building risk is gone. Ours was eleven. Every point we shave off the buyer's yield is roughly three-fifty thousand of price on a plant this size, so we don't just build it — we sign a long, investment-grade offtake and run it clean for a year first. That's what turns an eleven-percent project into a seven-percent asset someone else is glad to own.</p>
+      </div>
+    </section>
+
+    <section id="objections">
+      <h2>Objections you will hear</h2>
+      <div class="objections" data-rise>
+        <div class="obj">
+          <div class="q">Rates are higher now — hasn't compression disappeared?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">It narrowed, it didn't vanish. Higher rates lifted our build hurdle too, so the gap between developer and fund cost of capital is still there — funds remain structurally cheaper money for de-risked assets. We just underwrite to a conservative exit yield and treat any tightening as upside, not the base case.</p>
+        </div>
+        <div class="obj">
+          <div class="q">Why would a fund pay you a premium instead of building its own?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Because development risk is not what they're paid to take — their investors want operating yield, not permitting lottery tickets. Buying finished, contracted assets is cheaper and faster for them than standing up a development team. We're the specialist supplier; the premium is our margin for absorbing the risk they don't want.</p>
+        </div>
+        <div class="obj">
+          <div class="q">How do I know the yield you're assuming is realistic?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">We benchmark it against recent operating-asset transactions in the same market and technology, and we model the exit one to two points wide of the best comparable. The calculator lets you push the yield yourself — at any reasonable number the premium is positive, because our build hurdle is genuinely higher than a pension fund's.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="check">
+      <div class="quiz" data-rise>
+        <div class="lbl">Knowledge check</div>
+
+        <div class="q-item">
+          <div class="stem">Fundamentally, why can a fund accept 7% where you needed 11% on the same asset?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="true"><input type="radio" name="q1"><span>The two parties have different costs of capital — the fund's money is cheaper because the building risk is already resolved.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>The fund is simply less informed and overpays.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>The asset generates more electricity once a fund owns it.</span></label>
+          </div>
+          <p class="q-feedback">Same cash, two different costs of capital. The fund's lower required return is what lets it pay more.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">Which change would most reduce the buyer's required yield (and so raise the price)?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>Leaving more revenue exposed to the OTE spot market.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q2"><span>Signing a longer PPA with an investment-grade offtaker.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>Shortening the contracted term.</span></label>
+          </div>
+          <p class="q-feedback">Longer, higher-credit contracted cash is exactly what compresses yield. Merchant exposure does the opposite.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">In the worked example, what happens to the premium if the asset is priced at your own 11% hurdle?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>It roughly doubles.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>It stays around €1M.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q3"><span>It vanishes — the asset is worth about what it cost, because there's no lower-cost buyer.</span></label>
+          </div>
+          <p class="q-feedback">No yield gap, no premium. The whole exit lives in the spread between your hurdle and the buyer's.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a class="prev" href="exit-npv-dcf.html"><small>Previous</small>← NPV, DCF &amp; the exit valuation</a>
+      <a class="next" href="exit-03-buyers.html"><small>Next lesson</small>The institutional buyer landscape →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/newman.js"></script>
+<script src="../assets/js/academy.js"></script>
+</body>
+</html>

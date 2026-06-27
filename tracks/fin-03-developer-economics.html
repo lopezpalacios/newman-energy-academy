@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Developer Economics: IRR, DSCR, Debt — Newman Energy Sales Academy</title>
+<meta name="description" content="How a renewable project is financed: capex, project IRR and NPV, the debt-service coverage ratio lenders demand, how debt is sized and geared, and why cheap leverage lifts equity returns into the high teens.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/newman.css">
+<link rel="stylesheet" href="../assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="../index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="../index.html#why">Why a business</a>
+      <a href="../index.html#curriculum">Curriculum</a>
+      <a href="../index.html#tools">Tools</a>
+      <a class="btn" href="../index.html#curriculum">All lessons</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- LESSON HEADER -->
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Track 03 · Financial models · Lesson 3 of 4</div>
+    <h1>Developer economics: IRR, DSCR, debt</h1>
+    <p class="sub">The customer cares about their bill. The <em>investor</em> cares about four letters: IRR, NPV, DSCR and the gearing. This lesson takes the same 5&nbsp;MW plant and looks at it from the money side — how it gets financed, what the lender demands, and why borrowing makes the equity work harder.</p>
+    <div class="facts">
+      <span><b>Level</b> Advanced</span>
+      <span><b>Time</b> 26 min</span>
+      <span><b>Tool</b> Live IRR / NPV calculator</span>
+      <span><b>Example</b> 5&nbsp;MW solar, Czechia</span>
+    </div>
+  </div>
+</header>
+
+<!-- LESSON BODY -->
+<div class="lesson">
+
+  <!-- ASIDE / TOC -->
+  <aside class="lesson-aside">
+    <a class="back" href="../index.html#curriculum">← All tracks</a>
+    <nav aria-label="On this page">
+      <ul class="toc">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#capex">Capex &amp; cash flow</a></li>
+        <li><a href="#irr">Project IRR &amp; NPV</a></li>
+        <li><a href="#debt">Debt, DSCR &amp; gearing</a></li>
+        <li><a href="#equity">Equity returns &amp; leverage</a></li>
+        <li><a href="#worked">Worked example</a></li>
+        <li><a href="#calc">Live calculator</a></li>
+        <li><a href="#script">In the room</a></li>
+        <li><a href="#objections">Objections</a></li>
+        <li><a href="#check">Knowledge check</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="lesson-main">
+
+    <section id="objective">
+      <div class="callout objective" data-rise>
+        <div class="lbl">Learning objective</div>
+        <p>By the end you can walk an investment committee through a project's financing: define <strong>IRR</strong>, <strong>NPV</strong>, <strong>DSCR</strong> and <strong>gearing</strong>, size the debt a lender will lend, and explain why cheap debt lifts the <strong>equity IRR</strong> well above the unlevered project return.</p>
+      </div>
+    </section>
+
+    <section id="capex">
+      <h2>Start with capex and the cash flow</h2>
+      <p>Same plant as the savings lesson, now seen by the investor. <strong>Capex</strong> — capital expenditure, the all-in build cost — is the money out the door on day one. Against it sits the project's annual <strong>net cash flow</strong>: revenue from selling the power, minus operating costs. Everything in this lesson is built on those two figures.</p>
+      <div class="worked" data-rise>
+        <div class="lbl">The 5 MW plant — capex and steady-state cash flow</div>
+        <table class="calc-table">
+          <tr><td>Capacity</td><td class="num">5 MWp</td></tr>
+          <tr><td>Capex (≈ €600 / kWp)</td><td class="num">€3,000,000</td></tr>
+          <tr><td>Annual generation (≈ 1,050 kWh/kWp)</td><td class="num">5,250 MWh</td></tr>
+          <tr><td>Revenue @ €75 / MWh PPA</td><td class="num">€393,750</td></tr>
+          <tr><td>Operating cost (O&amp;M, lease, insurance)</td><td class="num">−€43,750</td></tr>
+          <tr class="total"><td>Net cash flow per year (CFADS)</td><td class="num">€350,000</td></tr>
+        </table>
+        <p class="muted" style="margin:12px 0 0">This €350k of yearly cash is the raw material every financing metric is cut from. In project finance it is called <strong>CFADS — Cash Flow Available for Debt Service</strong>.</p>
+      </div>
+    </section>
+
+    <section id="irr">
+      <h2>Project IRR and NPV</h2>
+      <p>Two ways to judge whether €3.0M for €350k/yr over 25 years is a good deal:</p>
+      <p><strong>NPV (Net Present Value)</strong> discounts every future cash flow back to today at a chosen discount rate and subtracts the capex. Positive NPV means the project clears that required return; negative means it does not. (We built the discounting machinery in the LCOE lesson — same engine.)</p>
+      <p><strong>IRR (Internal Rate of Return)</strong> flips the question around. Instead of picking a rate, it solves for <em>the</em> rate at which NPV equals exactly zero — the project's own annualised return. Here, €3.0M in and €350k/yr out for 25 years solves to an <strong>IRR of roughly 11%</strong>. That is the <strong>unlevered project IRR</strong>: the return on the whole project assuming you paid all cash, no borrowing.</p>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Key term · IRR &amp; NPV</div>
+        <p><strong>NPV</strong> = sum of discounted cash flows minus capex; positive = beats your hurdle. <strong>IRR</strong> = the discount rate that makes NPV zero, i.e. the project's intrinsic annual return. Compare IRR to your <strong>hurdle rate</strong> (the minimum you'll accept); a 11% IRR against a 10% hurdle is a go.</p>
+      </div>
+    </section>
+
+    <section id="debt">
+      <h2>Debt, DSCR and gearing</h2>
+      <p>Nobody funds these with all equity — that wastes the cheapest money available. You borrow most of the capex as <strong>project-finance debt</strong> secured on the asset's cash flows, and put up <strong>equity</strong> for the rest. The split has a name: <strong>gearing</strong> (or leverage) — the percentage of capex funded by debt. Solar typically gears <strong>70–80%</strong>.</p>
+      <p>The lender's whole world is one ratio: the <strong>DSCR (Debt Service Coverage Ratio)</strong> — the project's annual cash (CFADS) divided by its annual <strong>debt service</strong> (interest + principal repayment). It measures how comfortably the cash covers the loan. Lenders to contracted renewables want a DSCR of about <strong>1.2–1.4×</strong>: at 1.3×, every €1.00 of debt payment is backed by €1.30 of cash, a 30% safety buffer before a missed payment.</p>
+      <div class="formula">DSCR = CFADS ÷ Annual debt service&nbsp;&nbsp;·&nbsp;&nbsp;lenders want ≈ 1.2–1.4×</div>
+      <p>The DSCR also <em>sizes</em> the debt. The lender takes your CFADS, divides by their required DSCR to get the maximum debt service they'll allow, then works back — given the interest rate and loan tenor — to the largest loan that service can support. Cash flow sets the loan; the loan sets the equity.</p>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Key term · DSCR &amp; gearing</div>
+        <p><strong>Gearing</strong> = debt ÷ total capex (how much is borrowed). <strong>DSCR</strong> = cash available ÷ debt service (how safely the loan is covered). Higher gearing lifts equity returns but lowers DSCR — push gearing up until DSCR hits the lender's floor of ~1.2–1.4×, and no further.</p>
+      </div>
+    </section>
+
+    <section id="equity">
+      <h2>Equity returns and why leverage helps</h2>
+      <p>The <strong>equity IRR</strong> is the return to <em>your</em> money — the slice left after the bank is paid. Here is the key insight: if the project earns 11% and the debt costs only ~5%, every euro you borrow earns 11% but only costs 5%. That 6-point spread accrues to equity. This is <strong>positive leverage</strong>: cheap debt below the project return drags the equity IRR <em>up</em>, typically into the <strong>mid-to-high teens</strong> on a 70%-geared solar asset.</p>
+      <p>The trade-off: leverage cuts both ways. More debt = higher equity returns <em>and</em> higher risk if cash flows disappoint, because debt service is fixed and must be paid first. The DSCR floor is the lender's guardrail against you gearing into fragility.</p>
+    </section>
+
+    <section id="worked">
+      <h2>Worked example — financing the 5&nbsp;MW plant</h2>
+      <p>Take the €350k CFADS and gear it 70% with cheap, long debt:</p>
+      <div class="worked" data-rise>
+        <div class="lbl">Debt sizing, DSCR and the equity cheque</div>
+        <table class="calc-table">
+          <tr><td>Capex</td><td class="num">€3,000,000</td></tr>
+          <tr><td>Gearing (debt share of capex)</td><td class="num">70%</td></tr>
+          <tr><td>Debt drawn (70% × €3.0M)</td><td class="num">€2,100,000</td></tr>
+          <tr><td>Equity (the remaining 30%)</td><td class="num">€900,000</td></tr>
+          <tr><td>Debt service @ 5%, 15-yr amortisation</td><td class="num">≈ €202,000 / yr</td></tr>
+          <tr><td>CFADS</td><td class="num">€350,000 / yr</td></tr>
+          <tr><td>DSCR (€350k ÷ €202k)</td><td class="num">≈ 1.73×</td></tr>
+          <tr class="total"><td>Cash to equity after debt service</td><td class="num">≈ €148,000 / yr</td></tr>
+        </table>
+        <p class="muted" style="margin:12px 0 0">DSCR of 1.73× sits comfortably above the ~1.35× a lender requires — there is headroom to gear higher if you want more leverage. Equity puts in €900k and collects ~€148k/yr for 15 years, then the full €350k once the loan is repaid. That lifts the <strong>equity IRR into the high teens</strong>, well above the 11% unlevered project IRR. That gap is the work the debt is doing.</p>
+      </div>
+      <p>The calculator below isolates the unlevered mechanics — IRR and NPV on the all-cash project — so you can see the foundation the leverage is built on. Drag the inputs and watch the project IRR move.</p>
+    </section>
+
+    <section id="calc">
+      <h2>Live IRR / NPV calculator</h2>
+      <p>This is the model an investment committee opens. Set the cash flow and capex of the real project; the <strong>developer IRR</strong> output is the unlevered project IRR, and the NPV (sale price) shows what those cash flows are worth at any required yield.</p>
+
+      <div class="calc" data-calc="exit" data-rise>
+        <div class="calc-head">
+          <h3>Project return &amp; valuation</h3>
+          <p>Unlevered IRR and discounted cash flow of a contracted renewable asset.</p>
+        </div>
+        <div class="calc-body">
+          <div class="inputs">
+            <div class="row">
+              <label for="cf">Net cash flow / year <span class="val" data-val="cf"></span></label>
+              <input id="cf" type="number" data-field="cf" data-val-target value="350000" step="10000" min="0">
+            </div>
+            <div class="row">
+              <label for="capex">Build cost (capex) <span class="val" data-val="capex"></span></label>
+              <input id="capex" type="number" data-field="capex" value="3000000" step="100000" min="0">
+            </div>
+            <div class="row">
+              <label for="term">Asset life <span class="val" data-val="term"></span></label>
+              <input id="term" type="range" data-field="term" data-val-target data-suffix=" yrs" value="25" min="5" max="35" step="1">
+            </div>
+            <div class="row">
+              <label for="build">Your build hurdle rate <span class="val" data-val="build"></span></label>
+              <input id="build" type="range" data-field="build" data-val-target data-suffix="%" value="11" min="4" max="20" step="0.5">
+            </div>
+            <div class="row">
+              <label for="exit">Fund's required yield <span class="val" data-val="exit"></span></label>
+              <input id="exit" type="range" data-field="exit" data-val-target data-suffix="%" value="7" min="3" max="15" step="0.5">
+            </div>
+            <div class="row">
+              <label for="tv">Terminal / residual value <span class="val" data-val="tv"></span></label>
+              <input id="tv" type="number" data-field="tv" value="0" step="50000" min="0">
+            </div>
+          </div>
+          <div class="outputs">
+            <div class="kpi hero">
+              <div class="k">NPV (value @ required yield)</div>
+              <div class="v" data-out="sale">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Project IRR (unlevered)</div>
+              <div class="v" data-out="devirr">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">NPV over build cost</div>
+              <div class="v" data-out="uplift">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Value of yield gap</div>
+              <div class="v" data-out="compression">—<small data-out="spread"></small></div>
+            </div>
+            <p class="note">Level cash-flow approximation for teaching. "Project IRR" solves for the rate that makes NPV zero on the all-equity project; add debt and the equity IRR rises above it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="script">
+      <h2>In the room</h2>
+      <p>How you brief an investor weighing whether to back the equity:</p>
+      <div class="script" data-rise>
+        <div class="lbl">Sales script</div>
+        <p>The project earns about eleven percent all-cash — solid for contracted solar. But we don't fund it all-cash. We borrow seventy percent at five against a fifteen-year offtake, and the bank is comfortable because the cash covers their payment one-point-seven times over. That cheap debt does the heavy lifting: your nine hundred thousand of equity targets the high teens, not eleven. Same plant, better return, because the leverage is positive.</p>
+      </div>
+    </section>
+
+    <section id="objections">
+      <h2>Objections you will hear</h2>
+      <div class="objections">
+        <div class="obj" data-rise>
+          <div class="q">An 11% project IRR isn't exciting — funds want more.</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Eleven is the unlevered number — the project on all cash. Nobody holds it that way. Gear it 70% with 5% debt and the equity IRR moves into the high teens, because every borrowed euro earns 11 and costs 5. The 11% is the foundation; the leverage is the building.</p>
+        </div>
+        <div class="obj" data-rise>
+          <div class="q">A 1.7× DSCR means you've under-borrowed — that's lazy.</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">It's a deliberate margin of safety, and yes, there's room to gear higher toward the 1.35× lenders accept — which we can flex if equity wants more leverage. We start conservative so a bad solar year never threatens debt service. You can dial gearing up; you can't dial a covenant breach back down.</p>
+        </div>
+        <div class="obj" data-rise>
+          <div class="q">If rates rise, your cheap debt disappears and the model breaks.</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Which is why we fix the rate and the tenor at financial close, sized against a contracted PPA — the debt service is locked for 15 years regardless of what the central bank does next. Rising rates hit the next project's pricing, not this one's covenants. The DSCR we underwrite to is the rate we've already secured.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="check">
+      <div class="quiz">
+        <div class="lbl">Knowledge check</div>
+
+        <div class="q-item">
+          <div class="stem">What does the IRR of a project represent?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="true"><input type="radio" name="q1"><span>The discount rate at which NPV equals zero — the project's own annualised return.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>The interest rate the bank charges on the debt.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>The customer's saving as a percentage.</span></label>
+          </div>
+          <p class="q-feedback">IRR solves for the rate that zeroes NPV. Compare it to your hurdle rate to decide go / no-go.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">A lender requires DSCR ≥ 1.3×. What does that mean?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>The loan must be repaid within 1.3 years.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q2"><span>Annual cash (CFADS) must be at least 1.3× the annual debt service — a 30% buffer.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>Gearing must be at least 130%.</span></label>
+          </div>
+          <p class="q-feedback">DSCR = CFADS ÷ debt service. 1.3× means €1.30 of cash backs every €1.00 of payment. It also caps how much can be borrowed.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">Why does adding 70% debt at 5% raise the equity IRR above the 11% project IRR?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>Because debt makes the panels generate more power.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q3"><span>Positive leverage — borrowed euros earn the 11% project return but only cost 5%, and the spread accrues to equity.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>Because the lender shares its profits with equity.</span></label>
+          </div>
+          <p class="q-feedback">When debt costs less than the project return, leverage lifts equity returns — at the price of higher risk if cash flows fall.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a class="prev" href="fin-02-savings.html"><small>Previous</small>Customer savings: tariff vs PPA</a>
+      <a class="next" href="fin-04-bess-stack.html"><small>Next lesson</small>BESS revenue stacking →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/newman.js"></script>
+<script src="../assets/js/academy.js"></script>
+</body>
+</html>

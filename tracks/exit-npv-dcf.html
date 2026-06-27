@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NPV, DCF &amp; the Exit Valuation — Newman Energy Sales Academy</title>
+<meta name="description" content="How an operating solar or storage asset is valued and sold to an infrastructure fund — discounted cash flow, net present value and the yield-compression premium that is where the real money is made.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/newman.css">
+<link rel="stylesheet" href="../assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="../index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="../index.html#why">Why a business</a>
+      <a href="../index.html#curriculum">Curriculum</a>
+      <a href="../index.html#tools">Tools</a>
+      <a class="btn" href="../index.html#curriculum">All lessons</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- LESSON HEADER -->
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Track 06 · The Exit · Lesson 1 of 4</div>
+    <h1>NPV, DCF &amp; the exit valuation</h1>
+    <p class="sub">You do not get rich generating electricity. You get rich <em>selling the machine that generates it</em> — to a fund that accepts a lower return than you did. This lesson shows exactly how that valuation works, and why the gap is the whole business.</p>
+    <div class="facts">
+      <span><b>Level</b> Advanced</span>
+      <span><b>Time</b> 25 min</span>
+      <span><b>Tool</b> Live exit calculator</span>
+      <span><b>Example</b> 5&nbsp;MW solar, Czechia</span>
+    </div>
+  </div>
+</header>
+
+<!-- LESSON BODY -->
+<div class="lesson">
+
+  <!-- ASIDE / TOC -->
+  <aside class="lesson-aside">
+    <a class="back" href="../index.html#curriculum">← All tracks</a>
+    <nav aria-label="On this page">
+      <ul class="toc">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#money">Where the money is</a></li>
+        <li><a href="#dcf">DCF in one idea</a></li>
+        <li><a href="#worked">Worked example</a></li>
+        <li><a href="#calc">Live calculator</a></li>
+        <li><a href="#script">In the room</a></li>
+        <li><a href="#objections">Objections</a></li>
+        <li><a href="#check">Knowledge check</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="lesson-main">
+
+    <section id="objective">
+      <div class="callout objective">
+        <div class="lbl">Learning objective</div>
+        <p>By the end you can explain, on a whiteboard, why a renewable asset is worth <strong>more to a fund than it cost you to build</strong> — and put a number on that premium using discounted cash flow.</p>
+      </div>
+    </section>
+
+    <section id="money">
+      <h2>Where the money actually is</h2>
+      <p>A newcomer assumes the profit in a solar or battery project is the spread between what it costs to generate power and what the customer pays. That spread is real, but it is thin and it dribbles in over decades.</p>
+      <p>The large, fast profit is the <strong>development premium</strong>: you take on the messy, risky work of finding a site, signing a customer, getting a grid connection and building the plant. Once it is switched on and selling power under a signed contract, almost all of that risk is gone. The asset becomes a <strong>bond-like stream of contracted cash</strong> — exactly what a pension fund or infrastructure fund wants to buy.</p>
+      <p>And here is the trick: <strong>they will pay more for that safety than you required to take the risk.</strong> You needed, say, an 11% return to justify building. They are happy with 7% because the risk is gone. A lower required return on the <em>same</em> cash flows means a <em>higher</em> price. That re-pricing is called <strong>yield compression</strong>, and it is the engine of the whole industry.</p>
+      <div class="callout keyterm">
+        <div class="lbl">Key term · Yield compression</div>
+        <p>When a buyer values an asset at a lower discount rate (required yield) than the developer did, the same future cash flows translate into a higher present value. Build at a high yield, sell at a low one, pocket the difference.</p>
+      </div>
+    </section>
+
+    <section id="dcf">
+      <h2>Discounted cash flow, in one idea</h2>
+      <p>A euro next year is worth less than a euro today, because today's euro can be invested. <strong>Discounting</strong> just reverses that: it asks "how much is a future euro worth right now?" The answer depends on the <strong>discount rate</strong> — the return the buyer demands.</p>
+      <div class="formula">PV = CF₁ / (1 + r)¹ &nbsp;+&nbsp; CF₂ / (1 + r)² &nbsp;+&nbsp; … &nbsp;+&nbsp; CFₙ / (1 + r)ⁿ</div>
+      <p>Add up the present value of every year's cash flow and you get the <strong>Net Present Value (NPV)</strong> — the price a buyer should rationally pay. The lower the discount rate <code>r</code>, the bigger every term, the higher the price. That single lever — <code>r</code> — is where yield compression lives.</p>
+      <ul>
+        <li><strong>CF</strong> — the net cash the asset throws off each year (revenue minus operating cost).</li>
+        <li><strong>r</strong> — the discount rate / required yield. Yours when you build; the fund's when they buy.</li>
+        <li><strong>n</strong> — the asset's contracted (and useful) life in years.</li>
+      </ul>
+    </section>
+
+    <section id="worked">
+      <h2>Worked example — a 5&nbsp;MW Czech solar plant</h2>
+      <p>Take a ground-mounted solar plant outside Brno. Round, realistic numbers:</p>
+      <div class="worked">
+        <div class="lbl">The build</div>
+        <table class="calc-table">
+          <tr><td>Capacity</td><td class="num">5 MWp</td></tr>
+          <tr><td>Build cost (capex, ≈ €600 / kWp)</td><td class="num">€3,000,000</td></tr>
+          <tr><td>Annual generation (≈ 1,050 kWh / kWp)</td><td class="num">5,250 MWh</td></tr>
+          <tr><td>Contracted PPA price</td><td class="num">€75 / MWh</td></tr>
+          <tr><td>Revenue</td><td class="num">€393,750</td></tr>
+          <tr><td>Operating cost (O&amp;M, lease, insurance)</td><td class="num">−€43,750</td></tr>
+          <tr class="total"><td>Net cash flow per year</td><td class="num">€350,000</td></tr>
+        </table>
+        <p class="muted" style="margin:12px 0 0">At a build cost of €3.0M for €350k/yr over a 25-year life, you are earning roughly an <strong>11% return</strong> for taking the development risk. Good — but now watch what happens at sale.</p>
+      </div>
+
+      <div class="worked">
+        <div class="lbl">The sale — present value of the same cash flows at a 7% fund yield</div>
+        <table class="calc-table">
+          <tr><th>Input</th><th style="text-align:right">Value</th></tr>
+          <tr><td>Net cash flow per year</td><td class="num">€350,000</td></tr>
+          <tr><td>Life remaining</td><td class="num">25 years</td></tr>
+          <tr><td>Your build hurdle rate</td><td class="num">11%</td></tr>
+          <tr><td>Fund's required yield</td><td class="num">7%</td></tr>
+          <tr class="total"><td>Sale price = NPV of cash flows @ 7%</td><td class="num">≈ €4,080,000</td></tr>
+        </table>
+        <p class="muted" style="margin:12px 0 0">You spent <strong>€3.0M</strong>. A fund pays <strong>≈ €4.08M</strong> for the identical asset — a <strong>~€1.08M gain</strong>, a 1.36× money multiple — purely because they discount the same cash at 7% instead of 11%. <em>That</em> is the exit.</p>
+      </div>
+      <p>Change any of those four numbers and the whole story moves. Do it yourself below.</p>
+    </section>
+
+    <section id="calc">
+      <h2>Live exit calculator</h2>
+      <p>This is the model you can open across the table from a CFO or an investment committee. Drag the yields and watch the sale price and the premium recompute.</p>
+
+      <div class="calc" data-calc="exit">
+        <div class="calc-head">
+          <h3>Operating-asset exit valuation</h3>
+          <p>Discounted cash flow of a contracted renewable asset — build vs sell.</p>
+        </div>
+        <div class="calc-body">
+          <div class="inputs">
+            <div class="row">
+              <label for="cf">Net cash flow / year <span class="val" data-val="cf"></span></label>
+              <input id="cf" type="number" data-field="cf" data-val-target value="350000" step="10000" min="0">
+            </div>
+            <div class="row">
+              <label for="capex">Build cost (capex) <span class="val" data-val="capex"></span></label>
+              <input id="capex" type="number" data-field="capex" value="3000000" step="100000" min="0">
+            </div>
+            <div class="row">
+              <label for="term">Asset life <span class="val" data-val="term"></span></label>
+              <input id="term" type="range" data-field="term" data-val-target data-suffix=" yrs" value="25" min="5" max="35" step="1">
+            </div>
+            <div class="row">
+              <label for="build">Your build hurdle rate <span class="val" data-val="build"></span></label>
+              <input id="build" type="range" data-field="build" data-val-target data-suffix="%" value="11" min="4" max="20" step="0.5">
+            </div>
+            <div class="row">
+              <label for="exit">Fund's required yield <span class="val" data-val="exit"></span></label>
+              <input id="exit" type="range" data-field="exit" data-val-target data-suffix="%" value="7" min="3" max="15" step="0.5">
+            </div>
+            <div class="row">
+              <label for="tv">Terminal / residual value <span class="val" data-val="tv"></span></label>
+              <input id="tv" type="number" data-field="tv" value="0" step="50000" min="0">
+            </div>
+          </div>
+          <div class="outputs">
+            <div class="kpi hero">
+              <div class="k">Sale price (NPV @ fund yield)</div>
+              <div class="v" data-out="sale">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Gain over build cost</div>
+              <div class="v" data-out="uplift">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Money multiple</div>
+              <div class="v" data-out="moic">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Value from yield compression</div>
+              <div class="v" data-out="compression">—<small data-out="spread"></small></div>
+            </div>
+            <p class="note">Level cash-flow approximation for teaching. "Value from yield compression" isolates the premium created purely by the gap between your build hurdle and the buyer's yield, holding the cash flows constant.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="script">
+      <h2>In the room</h2>
+      <p>How you say this to a non-technical investor or business owner who is deciding whether to back the project:</p>
+      <div class="script">
+        <div class="lbl">Sales script</div>
+        <p>We build the plant for three million and it earns about three-fifty a year on a signed, fifteen-year contract — that is roughly an eleven percent return just for holding it. But once it is operating and de-risked, the pension funds buying these assets are happy with seven. Same cash, lower required return, higher price. That re-rating is worth about a million euros, and it is why we build to sell, not to hold.</p>
+      </div>
+    </section>
+
+    <section id="objections">
+      <h2>Objections you will hear</h2>
+      <div class="objections">
+        <div class="obj">
+          <div class="q">If it's such a good asset, why are you selling it?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Because our edge is development, not holding. Funds have a lower cost of capital than we do — they can pay more for the safe cash flow than it is worth to us. Selling recycles our capital into the next three projects. Everyone wins at their own cost of money.</p>
+        </div>
+        <div class="obj">
+          <div class="q">What if interest rates rise and the fund's yield goes up?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Then the compression premium shrinks — drag the fund-yield slider up and you will see it. That is exactly why we lock the offtake contract and sell into a competitive process. We also model the exit at a conservative yield; anything better is upside, not the base case.</p>
+        </div>
+        <div class="obj">
+          <div class="q">Isn't the premium just financial engineering?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">No — it is paid for real risk transfer. We absorbed permitting, construction and offtake risk; the buyer pays to step in after all of it is resolved. The premium is the market price of the certainty we created. That is a service, not a trick.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="check">
+      <div class="quiz">
+        <div class="lbl">Knowledge check</div>
+
+        <div class="q-item">
+          <div class="stem">A buyer values your asset at a lower discount rate than you used. What happens to the price?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="true"><input type="radio" name="q1"><span>It rises — lower <code>r</code> means each future cash flow is discounted less, so present value goes up.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>It falls — a lower rate always reduces value.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>Nothing — the discount rate doesn't affect price.</span></label>
+          </div>
+          <p class="q-feedback">Lower required yield → higher NPV on identical cash flows. That gap is the exit premium.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">In the worked example, where does the ~€1.08M gain come from?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>Selling more electricity than expected.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q2"><span>The buyer accepting a 7% yield where you required 11% on the same cash flows — yield compression.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>A subsidy from the Czech government.</span></label>
+          </div>
+          <p class="q-feedback">Same cash, lower discount rate, higher price. The four-point yield gap is the whole gain.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">Why is the asset worth more <em>after</em> it is built and contracted than during development?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>Because construction makes electricity cheaper.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>Because the PPA price goes up over time.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q3"><span>Because permitting, construction and offtake risk are resolved, so buyers accept a lower yield.</span></label>
+          </div>
+          <p class="q-feedback">De-risking is what compresses the yield. The buyer pays for certainty you created.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a class="prev" href="../index.html#curriculum"><small>Back to</small>All tracks</a>
+      <a class="next" href="exit-02-yield-compression.html"><small>Next lesson</small>Yield compression in depth →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/newman.js"></script>
+<script src="../assets/js/academy.js"></script>
+</body>
+</html>

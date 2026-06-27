@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The European power market in 90 minutes — Newman Energy Sales Academy</title>
+<meta name="description" content="A plain-English tour of how electricity is bought and sold in Europe — wholesale vs retail, the day-ahead spot market, and the players (generators, suppliers, TSO, regulator, market operator) you must know before you sell a single PPA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/newman.css">
+<link rel="stylesheet" href="../assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="../index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="../index.html#why">Why a business</a>
+      <a href="../index.html#curriculum">Curriculum</a>
+      <a href="../index.html#tools">Tools</a>
+      <a class="btn" href="../index.html#curriculum">All lessons</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- LESSON HEADER -->
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Track 01 · Why this is a business · Lesson 1 of 4</div>
+    <h1>The European power market in 90 minutes</h1>
+    <p class="sub">Before you can sell clean power, you need to know how power itself is bought and sold. Electricity is a <em>traded commodity</em> like oil or wheat — and once you see the market behind the wall socket, every pitch you make afterwards gets sharper.</p>
+    <div class="facts">
+      <span><b>Level</b> Foundation</span>
+      <span><b>Time</b> 20 min</span>
+      <span><b>Tool</b> None</span>
+      <span><b>Example</b> Czech market (OTE)</span>
+    </div>
+  </div>
+</header>
+
+<!-- LESSON BODY -->
+<div class="lesson">
+
+  <!-- ASIDE / TOC -->
+  <aside class="lesson-aside">
+    <a class="back" href="../index.html#curriculum">← All tracks</a>
+    <nav aria-label="On this page">
+      <ul class="toc">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#commodity">Electricity is a commodity</a></li>
+        <li><a href="#wholesale">Wholesale vs retail</a></li>
+        <li><a href="#players">Who the players are</a></li>
+        <li><a href="#worked">Worked example</a></li>
+        <li><a href="#script">In the room</a></li>
+        <li><a href="#objections">Objections</a></li>
+        <li><a href="#check">Knowledge check</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="lesson-main">
+
+    <section id="objective">
+      <div class="callout objective">
+        <div class="lbl">Learning objective</div>
+        <p>By the end you can explain, to a factory owner who has never thought about it, <strong>how a megawatt-hour gets priced and sold in Europe</strong> — and name the five players whose decisions land on their electricity bill.</p>
+      </div>
+    </section>
+
+    <section id="commodity">
+      <h2>Electricity is a traded commodity</h2>
+      <p>Most people picture electricity as a service that simply arrives. In a market it is a <strong>commodity</strong> — a standardised product bought and sold in bulk, exactly like crude oil or natural gas. The unit of trade is the <strong>megawatt-hour (MWh)</strong>: one megawatt of power delivered for one hour. A mid-size Czech factory might consume a few thousand MWh a year; a household, a handful.</p>
+      <p>Two features make electricity an unusual commodity, and both matter for your pitch. First, it is <strong>near-impossible to store cheaply at scale</strong> — so supply and demand must match every single second, which is why prices swing. Second, it is <strong>physically identical whoever makes it</strong> — an electron from a coal plant and one from a solar panel are the same on the wire. That is why "green" power needs a paper certificate (you will meet <strong>Guarantees of Origin</strong> later) to prove where it came from.</p>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Key term · Megawatt-hour (MWh)</div>
+        <p>The standard unit of energy traded in power markets: one megawatt of power sustained for one hour. Prices are quoted in <strong>€/MWh</strong>. Roughly, 1 MWh = the electricity a typical Czech household uses in about three months.</p>
+      </div>
+    </section>
+
+    <section id="wholesale">
+      <h2>Wholesale vs retail — two different prices</h2>
+      <p>There are really two markets stacked on top of each other, and confusing them is the single most common newcomer mistake.</p>
+      <p>The <strong>wholesale market</strong> is where generators sell bulk power to suppliers and large buyers. The headline reference is the <strong>day-ahead spot market</strong>: every afternoon, buyers and sellers submit bids for each hour of the next day, and an auction sets one clearing price per hour. In Czechia this auction is run by <strong>OTE, a.s.</strong> (the market operator), and OTE's auction is coupled to almost every other EU country through <strong>SDAC — Single Day-Ahead Coupling</strong>, the mechanism that joins national auctions into one European price-finding system. The effect: a gas shortage in Germany pushes up the price your Czech client pays.</p>
+      <p>The <strong>retail market</strong> is what the end customer actually signs: their supplier bundles the wholesale energy cost with <strong>network charges</strong> (paying for the wires), regulated levies, and a margin. So the customer's <strong>all-in tariff</strong> is always well above the raw wholesale number.</p>
+      <div class="callout keyterm" data-rise data-delay="2">
+        <div class="lbl">Key term · Day-ahead spot market</div>
+        <p>A daily auction that sets one wholesale electricity price for each hour of the following day. Run by <strong>OTE</strong> in Czechia and price-coupled across the EU via <strong>SDAC</strong>. It is the benchmark every PPA and every retail tariff is measured against.</p>
+      </div>
+    </section>
+
+    <section id="players">
+      <h2>Who the players are</h2>
+      <p>Five roles run the Czech (and, by analogy, every EU) power system. Learn these names — you will drop them in meetings to sound fluent fast.</p>
+      <ul>
+        <li><strong>Generators</strong> — whoever makes the power: nuclear, coal, gas, solar, wind. Your future PPA seller is a generator.</li>
+        <li><strong>Suppliers (retailers)</strong> — buy wholesale, sell to homes and businesses, carry the billing relationship.</li>
+        <li><strong>TSO — Transmission System Operator</strong> — runs the high-voltage backbone and keeps supply and demand balanced second by second. In Czechia this is <strong>CEPS</strong>.</li>
+        <li><strong>Regulator</strong> — sets the rules and the regulated network tariffs. In Czechia this is <strong>ERÚ</strong> (Energetický regulační úřad, the Energy Regulatory Office).</li>
+        <li><strong>Market operator</strong> — runs the spot exchange and the registries. In Czechia this is <strong>OTE</strong>.</li>
+      </ul>
+      <p>Why a businessperson should care: the <strong>generator</strong> sets the commodity cost, the <strong>TSO and regulator</strong> set the network charges, and together they explain why your client's bill is high and volatile. A PPA lets you fix the biggest, swingiest piece — the commodity cost — which is exactly the part the customer cannot control today.</p>
+    </section>
+
+    <section id="worked">
+      <h2>Worked example — anatomy of a Czech industrial bill</h2>
+      <p>Take a mid-voltage Czech manufacturer buying 5,000 MWh a year. Here is roughly how their all-in tariff breaks down. Illustrative numbers, in <strong>€/MWh</strong>:</p>
+      <div class="worked" data-rise>
+        <div class="lbl">All-in industrial tariff, broken out</div>
+        <table class="calc-table">
+          <tr><th>Component</th><th style="text-align:right">€/MWh</th></tr>
+          <tr><td>Wholesale energy (set near the day-ahead spot)</td><td class="num">85</td></tr>
+          <tr><td>Network &amp; system charges (TSO + distribution, regulated)</td><td class="num">38</td></tr>
+          <tr><td>Levies, taxes &amp; supplier margin</td><td class="num">17</td></tr>
+          <tr class="total"><td>All-in delivered tariff</td><td class="num">140</td></tr>
+        </table>
+        <div class="formula">Annual energy cost = 5,000 MWh × €140 / MWh = €700,000</div>
+        <p class="muted" style="margin:12px 0 0">The single largest and most volatile slice is the <strong>wholesale energy</strong> at €85 — and it is the only piece a PPA can lock. The network charges (€38) are regulated and largely fixed; you cannot sell those away, so never promise to.</p>
+      </div>
+    </section>
+
+    <section id="script">
+      <h2>In the room</h2>
+      <p>How to frame the market for a CFO who has never separated wholesale from retail:</p>
+      <div class="script">
+        <div class="lbl">Sales script</div>
+        <p>Your electricity bill is really two bills in one. About a quarter of it — the wires and the regulated charges — is fixed by the operator and we can't touch it. But the biggest chunk is the raw energy, and that price is set every single day in an auction you have no control over. That's the piece that doubled in 2022, and that's the exact piece we can fix for you on a long contract. We're not selling you electricity — we're selling you certainty on the part of the bill that swings the most.</p>
+      </div>
+    </section>
+
+    <section id="objections">
+      <h2>Objections you will hear</h2>
+      <div class="objections">
+        <div class="obj" data-rise data-delay="1">
+          <div class="q">My utility already gives me one price. Why do I care about a wholesale market?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Because that one price is just last year's wholesale market wrapped in a margin. When the spot market spikes, your next contract renewal spikes with it — you simply feel it on a delay. Understanding the wholesale layer is how you stop being a price-taker on the biggest cost you don't control.</p>
+        </div>
+        <div class="obj" data-rise data-delay="2">
+          <div class="q">Isn't this just a German or Brussels problem? We're in Czechia.</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Czech prices are coupled to the rest of Europe through single day-ahead coupling — OTE's auction settles against the same coupled system as Germany and Austria. A gas event two borders away lands on your Brno bill. That coupling is precisely why a local fixed-price contract is valuable.</p>
+        </div>
+        <div class="obj" data-rise data-delay="3">
+          <div class="q">Power just comes out of the socket — why complicate it?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">It does for households paying tens of euros. For you, energy is a six- or seven-figure line item, and it's the most volatile one on your P&amp;L. The companies that treat it as a market to be managed — not a bill to be paid — are the ones that protect their margins.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="check">
+      <div class="quiz">
+        <div class="lbl">Knowledge check</div>
+
+        <div class="q-item">
+          <div class="stem">What sets the benchmark wholesale electricity price for the next day in Czechia?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>The regulator ERÚ fixes it each morning.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q1"><span>The day-ahead auction run by OTE, price-coupled across the EU via SDAC.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>Each supplier sets its own wholesale price independently.</span></label>
+          </div>
+          <p class="q-feedback">The day-ahead spot auction (OTE in CZ, coupled EU-wide) sets one hourly clearing price — the benchmark every tariff and PPA references.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">In the worked example, which slice of the €140/MWh tariff can a PPA actually fix?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>The regulated network &amp; system charges.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>The whole €140, including taxes.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q2"><span>The wholesale energy component (~€85), the largest and most volatile slice.</span></label>
+          </div>
+          <p class="q-feedback">A PPA fixes the commodity (energy) cost. Network charges are regulated and stay — never promise to remove them.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">Which player runs the high-voltage grid and balances supply with demand in Czechia?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>OTE, the market operator.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q3"><span>CEPS, the Transmission System Operator (TSO).</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>ERÚ, the regulator.</span></label>
+          </div>
+          <p class="q-feedback">CEPS is the TSO — it runs the transmission backbone and keeps the system balanced second by second. OTE runs the market; ERÚ sets the rules.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a class="prev" href="../index.html#curriculum"><small>Back to</small>All tracks</a>
+      <a class="next" href="why-02-volatility.html"><small>Next lesson</small>Volatility &amp; gas-set marginal pricing →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/newman.js"></script>
+<script src="../assets/js/academy.js"></script>
+</body>
+</html>

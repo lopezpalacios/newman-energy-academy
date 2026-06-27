@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Battery Storage (BESS) — Newman Energy Sales Academy</title>
+<meta name="description" content="The second product: battery energy storage. What a battery does — arbitrage, peak shaving, ancillary services, capacity — power vs energy, duration, round-trip efficiency, and revenue stacking, with a live BESS revenue calculator.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/newman.css">
+<link rel="stylesheet" href="../assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="../index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="../index.html#why">Why a business</a>
+      <a href="../index.html#curriculum">Curriculum</a>
+      <a href="../index.html#tools">Tools</a>
+      <a class="btn" href="../index.html#curriculum">All lessons</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- LESSON HEADER -->
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Track 02 · The products · Lesson 2 of 4</div>
+    <h1>Battery storage (BESS)</h1>
+    <p class="sub">Solar makes cheap power when the sun shines. A battery lets you <em>move that power through time</em> — and sell the same hardware into three or four markets at once. This lesson explains what a battery actually earns, the two numbers that define one, and how revenue gets stacked.</p>
+    <div class="facts">
+      <span><b>Level</b> Foundational</span>
+      <span><b>Time</b> 22 min</span>
+      <span><b>Tool</b> Live BESS revenue calculator</span>
+      <span><b>Example</b> 5&nbsp;MW / 10&nbsp;MWh, Czechia</span>
+    </div>
+  </div>
+</header>
+
+<!-- LESSON BODY -->
+<div class="lesson">
+
+  <!-- ASIDE / TOC -->
+  <aside class="lesson-aside">
+    <a class="back" href="../index.html#curriculum">← All tracks</a>
+    <nav aria-label="On this page">
+      <ul class="toc">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#does">What a battery does</a></li>
+        <li><a href="#power">Power vs energy</a></li>
+        <li><a href="#efficiency">Round-trip efficiency</a></li>
+        <li><a href="#stack">Revenue stacking</a></li>
+        <li><a href="#worked">Worked example</a></li>
+        <li><a href="#calc">Live calculator</a></li>
+        <li><a href="#script">In the room</a></li>
+        <li><a href="#objections">Objections</a></li>
+        <li><a href="#check">Knowledge check</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="lesson-main">
+
+    <section id="objective">
+      <div class="callout objective" data-rise>
+        <div class="lbl">Learning objective</div>
+        <p>By the end you can explain the four jobs a <strong>BESS</strong> does, tell the difference between its <strong>power</strong> and its <strong>energy</strong>, and show why "<strong>revenue stacking</strong>" is what makes a battery pay — using the live calculator to add the streams up.</p>
+      </div>
+    </section>
+
+    <section id="does">
+      <h2>What a battery actually does</h2>
+      <p>A <strong>BESS</strong> — Battery Energy Storage System — is a box of lithium-ion cells with an inverter, that charges when power is cheap or plentiful and discharges when it is expensive or scarce. It earns money in four distinct ways, and a good project does several at once.</p>
+      <p><strong>Arbitrage</strong> is the simplest: buy energy cheap (midday, when solar floods the market) and sell it dear (the evening peak). The profit per unit is the <strong>spread</strong> between the two prices.</p>
+      <p><strong>Peak shaving</strong> is the customer-side version: a factory discharges its battery during its own highest-demand half-hours to cut the <strong>capacity charge</strong> — the part of an industrial bill set by your single biggest spike, not your total usage.</p>
+      <p><strong>Ancillary services</strong> are jobs the battery does for the grid operator to keep the system stable — most importantly <strong>FCR</strong> (Frequency Containment Reserve), where the battery automatically injects or absorbs power in seconds to hold the grid at 50&nbsp;Hz. Batteries are paid handsomely for this because they respond faster than any power plant.</p>
+      <p><strong>Capacity</strong> is a standing payment — €/MW/yr — for simply being available to deliver power when the system needs it, whether or not it is ever called.</p>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Key term · FCR (Frequency Containment Reserve)</div>
+        <p>A fast-acting <strong>ancillary service</strong>: the battery senses the grid frequency drifting from 50&nbsp;Hz and corrects it within seconds by charging or discharging. Because batteries react far faster than gas or coal plants, grid operators pay a premium — making FCR one of the richest revenue lines in a battery's stack.</p>
+      </div>
+    </section>
+
+    <section id="power">
+      <h2>Power vs energy: MW and MWh</h2>
+      <p>This is the one distinction newcomers get wrong, so nail it. A battery has two ratings, and they are not interchangeable.</p>
+      <p><strong>Power</strong> is measured in <strong>MW</strong> (megawatts) — how fast the battery can push energy in or out. It is the <em>size of the tap</em>.</p>
+      <p><strong>Energy</strong> is measured in <strong>MWh</strong> (megawatt-hours) — how much it can store in total. It is the <em>size of the tank</em>.</p>
+      <p>Divide energy by power and you get <strong>duration</strong> — how many hours the battery can run flat-out before it is empty. A <strong>5&nbsp;MW / 10&nbsp;MWh</strong> system is a "2-hour battery": it can deliver 5&nbsp;MW for 2 hours. A "1-hour" battery (5&nbsp;MW / 5&nbsp;MWh) is cheaper but exhausts faster; a "4-hour" battery stores more but costs more to build.</p>
+      <div class="callout keyterm" data-rise data-delay="1">
+        <div class="lbl">Key term · Duration</div>
+        <p><strong>Duration = energy (MWh) ÷ power (MW)</strong>. It tells you how long the battery can sustain full output. Short-duration (1–2&nbsp;h) batteries suit fast services like FCR; longer-duration (2–4&nbsp;h) batteries suit arbitrage, where you want to shift a lot of energy across the day. The duration you choose decides which revenue streams you can chase.</p>
+      </div>
+    </section>
+
+    <section id="efficiency">
+      <h2>Round-trip efficiency</h2>
+      <p>No battery returns every unit it stores — some is lost as heat in charging, holding and discharging. <strong>Round-trip efficiency</strong> is the share that survives the journey. For modern lithium-ion BESS it is about <strong>86%</strong>: put 100 units in, get roughly 86 back out.</p>
+      <p>This matters for arbitrage. If you buy at €40/MWh and sell at €100/MWh, the headline spread is €60 — but you only resell 86% of what you bought, so the <em>effective</em> spread is smaller. Always quote spreads after efficiency, or a fund analyst will catch you.</p>
+    </section>
+
+    <section id="stack">
+      <h2>Revenue stacking — the whole point</h2>
+      <p>A single revenue stream rarely justifies a battery. The economics work because the same hardware earns from several at once. <strong>Revenue stacking</strong> is the practice of layering arbitrage + capacity + ancillary income on one asset, sequenced so they don't clash.</p>
+      <p>You might commit the battery to FCR overnight, do arbitrage around the evening peak, and collect a capacity payment year-round just for being available. Add the streams up and a project that loses money on any one of them can be solidly profitable on the stack. That is what your calculator below demonstrates.</p>
+    </section>
+
+    <section id="worked">
+      <h2>Worked example — a 5&nbsp;MW / 10&nbsp;MWh battery</h2>
+      <p>A grid-connected 2-hour battery in Czechia. Round, realistic numbers:</p>
+      <div class="worked" data-rise>
+        <div class="lbl">The stack (per year)</div>
+        <table class="calc-table">
+          <tr><td>Arbitrage — 5 MW × 2 h × 365 cycles × €60/MWh spread</td><td class="num">€219,000</td></tr>
+          <tr><td>Capacity — 5 MW × €30,000/MW/yr</td><td class="num">€150,000</td></tr>
+          <tr><td>Ancillary (FCR) — 5 MW × €15,000/MW/yr</td><td class="num">€75,000</td></tr>
+          <tr class="total"><td>Total revenue per year</td><td class="num">€444,000</td></tr>
+        </table>
+        <p class="muted" style="margin:12px 0 0">Build cost at €350/kWh on 10,000 kWh of energy is <strong>€3.5M</strong>. Against <strong>€444k/yr</strong> of stacked revenue, that is a simple payback of roughly <strong>8 years</strong> — before financing — on an asset rated for 15+ years. No single stream gets you there; the stack does.</p>
+      </div>
+      <p>Change the power, the duration, the spread or any payment and the stack moves. Try it.</p>
+    </section>
+
+    <section id="calc">
+      <h2>Live BESS revenue calculator</h2>
+      <p>This is the model that turns "batteries are interesting" into a number. Adjust the power and duration, then layer the three revenue streams and read the payback.</p>
+
+      <div class="calc" data-calc="bess" data-rise>
+        <div class="calc-head"><h3>Battery revenue stack</h3>
+          <p>Stacked annual revenue of a grid battery: arbitrage + capacity + ancillary.</p></div>
+        <div class="calc-body">
+          <div class="inputs">
+            <div class="row"><label for="bpow">Power <span class="val" data-val="power"></span></label>
+              <input id="bpow" type="range" data-field="power" data-val-target data-suffix=" MW" value="5" min="1" max="50" step="1"></div>
+            <div class="row"><label for="bdur">Duration <span class="val" data-val="dur"></span></label>
+              <input id="bdur" type="range" data-field="dur" data-val-target data-suffix=" h" value="2" min="1" max="4" step="0.5"></div>
+            <div class="row"><label for="bcyc">Cycles / yr <span class="val" data-val="cycles"></span></label>
+              <input id="bcyc" type="number" data-field="cycles" value="365" step="5" min="0"></div>
+            <div class="row"><label for="bspr">Arbitrage spread <span class="val" data-val="spread"></span></label>
+              <input id="bspr" type="number" data-field="spread" value="60" step="5" min="0"> <small class="note">€ / MWh</small></div>
+            <div class="row"><label for="bcap">Capacity payment <span class="val" data-val="cap"></span></label>
+              <input id="bcap" type="number" data-field="cap" value="30000" step="1000" min="0"> <small class="note">€ / MW / yr</small></div>
+            <div class="row"><label for="banc">Ancillary (FCR) <span class="val" data-val="anc"></span></label>
+              <input id="banc" type="number" data-field="anc" value="15000" step="1000" min="0"> <small class="note">€ / MW / yr</small></div>
+            <div class="row"><label for="bcx">Capex <span class="val" data-val="bcapex"></span></label>
+              <input id="bcx" type="number" data-field="bcapex" value="350" step="10" min="0"> <small class="note">€ / kWh</small></div>
+          </div>
+          <div class="outputs">
+            <div class="kpi hero"><div class="k">Total revenue / yr</div><div class="v" data-out="total">—</div></div>
+            <div class="kpi"><div class="k">Arbitrage</div><div class="v" data-out="arb">—</div></div>
+            <div class="kpi"><div class="k">Capacity</div><div class="v" data-out="capacity">—</div></div>
+            <div class="kpi"><div class="k">Ancillary</div><div class="v" data-out="ancillary">—</div></div>
+            <div class="kpi"><div class="k">Simple payback</div><div class="v" data-out="payback">—</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="script">
+      <h2>In the room</h2>
+      <p>How you frame a battery to a CFO who thinks storage is a science project:</p>
+      <div class="script" data-rise>
+        <div class="lbl">Sales script</div>
+        <p>Think of the battery not as one asset but as the same hardware selling into three markets. It buys cheap midday power and sells it into the evening peak; it gets paid a standing fee just for being available; and it earns a premium for steadying grid frequency in seconds — something no gas plant can match. Any one of those alone is marginal. Stack all three and you are looking at a payback under a decade on a fifteen-year machine.</p>
+      </div>
+    </section>
+
+    <section id="objections">
+      <h2>Objections you will hear</h2>
+      <div class="objections">
+        <div class="obj" data-rise>
+          <div class="q">Batteries are expensive and the price spreads might collapse.</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">That's exactly why we don't rely on arbitrage alone. The capacity and FCR payments are contracted or regulated income that doesn't depend on volatile spreads — drag the spread slider to zero in the model and the stack still earns. And cell prices keep falling, so the capex side is moving in our favour, not against it.</p>
+        </div>
+        <div class="obj" data-rise data-delay="1">
+          <div class="q">What about the round-trip losses — you're throwing energy away.</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">About 14% is lost, yes, and we model the spread net of that — so when we quote a €60 spread, the economics already assume we only resell 86% of what we store. The losses are real but small, and they're more than covered by the price gap between cheap midday and expensive peak power.</p>
+        </div>
+        <div class="obj" data-rise data-delay="2">
+          <div class="q">How long do the cells last — won't they wear out from all that cycling?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Cells degrade with use, so we size the duration and cycle count to the warranted life — typically 15 years or several thousand cycles — and the battery management system protects the cells from deep over-cycling. The payback we showed lands well inside that warranted window, so the asset earns back its cost before degradation matters.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="check">
+      <div class="quiz">
+        <div class="lbl">Knowledge check</div>
+
+        <div class="q-item">
+          <div class="stem">A battery is rated 5&nbsp;MW / 10&nbsp;MWh. What is its duration?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>50 hours — multiply power by energy.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q1"><span>2 hours — energy ÷ power, so it delivers 5 MW for 2 hours.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>5 hours — the power rating in hours.</span></label>
+          </div>
+          <p class="q-feedback">Duration = MWh ÷ MW = 10 ÷ 5 = 2 hours. Power is the tap; energy is the tank.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">Why does "revenue stacking" matter for battery economics?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>It lets the battery store more energy than its MWh rating.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q2"><span>The same hardware earns from several markets at once, so the combined income justifies the build when no single stream would.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>It removes the round-trip efficiency losses.</span></label>
+          </div>
+          <p class="q-feedback">Arbitrage + capacity + ancillary on one asset — the stack is what pays, not any single line.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">Round-trip efficiency of about 86% means…</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>The battery only works 86% of the year.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>The battery charges 86% faster than it discharges.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q3"><span>For every 100 units stored, about 86 come back out — the rest is lost as heat, so arbitrage spreads must be quoted net of it.</span></label>
+          </div>
+          <p class="q-feedback">14% is lost in the round trip, so the effective arbitrage spread is smaller than the headline price gap.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a class="prev" href="prod-01-solar.html"><small>Previous lesson</small>← Commercial solar PV</a>
+      <a class="next" href="prod-03-ppa-structures.html"><small>Next lesson</small>PPA structures: physical, sleeved, virtual →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/newman.js"></script>
+<script src="../assets/js/academy.js"></script>
+</body>
+</html>

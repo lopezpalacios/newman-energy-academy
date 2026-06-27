@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Volatility &amp; gas-set marginal pricing — Newman Energy Sales Academy</title>
+<meta name="description" content="Why gas sets the European power price even when most generation is cheap renewables — merit-order marginal pricing, the 2022 shock, and why price volatility is the exact customer pain a fixed PPA is built to solve.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/newman.css">
+<link rel="stylesheet" href="../assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="../index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="../index.html#why">Why a business</a>
+      <a href="../index.html#curriculum">Curriculum</a>
+      <a href="../index.html#tools">Tools</a>
+      <a class="btn" href="../index.html#curriculum">All lessons</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- LESSON HEADER -->
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Track 01 · Why this is a business · Lesson 2 of 4</div>
+    <h1>Volatility &amp; gas-set marginal pricing</h1>
+    <p class="sub">Here is the fact that unlocks the whole sales case: even when most of Europe's power is cheap renewables, <em>the price is set by the last, most expensive plant switched on</em> — usually a gas plant. Understand that one rule and you understand why your customer is in pain.</p>
+    <div class="facts">
+      <span><b>Level</b> Foundation</span>
+      <span><b>Time</b> 22 min</span>
+      <span><b>Tool</b> None</span>
+      <span><b>Example</b> 2022 gas shock</span>
+    </div>
+  </div>
+</header>
+
+<!-- LESSON BODY -->
+<div class="lesson">
+
+  <!-- ASIDE / TOC -->
+  <aside class="lesson-aside">
+    <a class="back" href="../index.html#curriculum">← All tracks</a>
+    <nav aria-label="On this page">
+      <ul class="toc">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#meritorder">Merit-order pricing</a></li>
+        <li><a href="#shock">The 2022 shock</a></li>
+        <li><a href="#pain">Volatility is the pain</a></li>
+        <li><a href="#worked">Worked example</a></li>
+        <li><a href="#script">In the room</a></li>
+        <li><a href="#objections">Objections</a></li>
+        <li><a href="#check">Knowledge check</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="lesson-main">
+
+    <section id="objective">
+      <div class="callout objective">
+        <div class="lbl">Learning objective</div>
+        <p>By the end you can explain <strong>why gas sets the power price even when renewables dominate the grid</strong>, and show — with numbers — how a fixed PPA price turns a wildly volatile cost into a flat line the customer can plan around.</p>
+      </div>
+    </section>
+
+    <section id="meritorder">
+      <h2>Merit-order: the last plant sets the price</h2>
+      <p>Every hour, the market needs to meet demand at the lowest possible cost. So it stacks generators from cheapest to most expensive and switches them on in that order. This stack is the <strong>merit order</strong>.</p>
+      <p>Cheapest first: renewables (sun and wind cost almost nothing to run once built) and nuclear. Then, as demand rises, more expensive plants join — coal, then gas. The market keeps switching plants on until supply finally meets demand. The price everyone gets paid is the running cost of that <strong>last unit dispatched</strong> — the <strong>marginal plant</strong>. This is <strong>marginal pricing</strong>: one clearing price for the whole hour, set by the most expensive plant needed.</p>
+      <p>Because demand in most hours is high enough to need gas, <strong>gas usually is the marginal plant</strong>. So the price of gas sets the price of electricity — even if 70% of the power in that hour came from wind and solar that cost nothing. The cheap renewables get paid the expensive gas price too; that is just how a single clearing price works.</p>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Key term · Marginal (merit-order) pricing</div>
+        <p>All generators in an hour are paid the running cost of the <strong>last (most expensive) plant</strong> needed to meet demand. Since that plant is usually gas, <strong>gas sets the power price</strong> — which is why a gas-price spike becomes an electricity-price spike across the whole market.</p>
+      </div>
+    </section>
+
+    <section id="shock">
+      <h2>The 2022 shock — and why prices stayed structurally higher</h2>
+      <p>When European gas supply was disrupted in 2022, the marginal-pricing rule did exactly what it is built to do: it transmitted the gas spike straight into power. Wholesale prices that had sat around <strong>€40–50/MWh</strong> before 2021 spiked to <strong>€300–400+/MWh</strong> at the worst peaks.</p>
+      <p>Prices have since reverted to roughly a <strong>€60–110/MWh</strong> range — but notice that range sits structurally <strong>above</strong> the old €40–50 norm, and it moves around far more than it used to. The point is not the spike itself; the spike has faded. The point is that the customer now lives with a cost that is both <strong>higher and far less predictable</strong> than it was a few years ago.</p>
+      <div class="callout keyterm" data-rise data-delay="2">
+        <div class="lbl">Key term · Structural volatility</div>
+        <p>Wholesale power no longer sits at a stable low number. Post-2022 it swings within a wider, higher band (illustratively €60–110/MWh, with spikes possible) because gas — itself volatile — keeps setting the marginal price. Verify live figures on OTE/ENTSO-E before quoting any specific number.</p>
+      </div>
+    </section>
+
+    <section id="pain">
+      <h2>Volatility is the customer's pain — and the PPA is the cure</h2>
+      <p>A factory owner does not actually fear a high price as much as they fear a <strong>price they cannot plan</strong>. A CFO can price products around €120/MWh if it stays at €120. What destroys them is signing a customer order at one energy cost and then watching the cost double before they deliver.</p>
+      <p>That uncertainty is the pain. And it is exactly what a <strong>PPA — Power Purchase Agreement</strong> removes: it fixes the energy price for 5–15 years. The customer trades the chance of a lucky cheap year for the certainty of a known number every year. For a business that lives or dies on margins, certainty is usually worth more than the gamble.</p>
+    </section>
+
+    <section id="worked">
+      <h2>Worked example — volatile spot vs a fixed PPA</h2>
+      <p>Take the same 5,000 MWh/year Czech manufacturer from Lesson 1. Compare four years of buying energy on the volatile spot market against a flat <strong>€80/MWh</strong> PPA. Illustrative spot averages:</p>
+      <div class="worked" data-rise>
+        <div class="lbl">Annual energy commodity cost — spot vs fixed PPA</div>
+        <table class="calc-table">
+          <tr><th>Year</th><th style="text-align:right">Spot avg €/MWh</th><th style="text-align:right">Spot cost</th><th style="text-align:right">PPA @ €80</th></tr>
+          <tr><td>Year 1</td><td class="num">75</td><td class="num">€375,000</td><td class="num">€400,000</td></tr>
+          <tr><td>Year 2 (gas shock)</td><td class="num">220</td><td class="num">€1,100,000</td><td class="num">€400,000</td></tr>
+          <tr><td>Year 3</td><td class="num">95</td><td class="num">€475,000</td><td class="num">€400,000</td></tr>
+          <tr><td>Year 4</td><td class="num">70</td><td class="num">€350,000</td><td class="num">€400,000</td></tr>
+          <tr class="total"><td>4-year total</td><td class="num">—</td><td class="num">€2,300,000</td><td class="num">€1,600,000</td></tr>
+        </table>
+        <div class="formula">4-yr saving with PPA = €2,300,000 − €1,600,000 = €700,000 — and zero surprise years</div>
+        <p class="muted" style="margin:12px 0 0">Note the honest part: in Years 1 and 4 the PPA actually cost a little <strong>more</strong> than spot. The PPA does not promise the lowest price every year — it promises a <strong>known</strong> price every year. Over a volatile cycle that predictability both saved real money and removed the €1.1M nightmare year entirely.</p>
+      </div>
+    </section>
+
+    <section id="script">
+      <h2>In the room</h2>
+      <p>How to make marginal pricing land with a CFO in one breath:</p>
+      <div class="script">
+        <div class="lbl">Sales script</div>
+        <p>Here's the thing nobody tells you: even when most of the grid is cheap solar and wind, you pay the price of the last gas plant that had to switch on. So your electricity bill is really a gas bill in disguise — and gas is the most volatile commodity there is. In 2022 that doubled or tripled overnight. We can't make gas behave. What we can do is take your energy cost off the gas rollercoaster entirely and put it on a flat line for the next ten years.</p>
+      </div>
+    </section>
+
+    <section id="objections">
+      <h2>Objections you will hear</h2>
+      <div class="objections">
+        <div class="obj" data-rise data-delay="1">
+          <div class="q">If renewables are so cheap, why hasn't my bill gone down?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Because of how the market prices power. Cheap renewables don't set the price — the last, most expensive plant does, and that's usually gas. So until you have your own fixed contract, you keep paying the gas price no matter how much cheap solar is on the grid. A PPA is how you finally capture the cheap-renewable cost directly.</p>
+        </div>
+        <div class="obj" data-rise data-delay="2">
+          <div class="q">The 2022 spike is over. Why would I lock in now?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">The spike faded, but prices settled higher and bouncier than before — and the next gas event is a question of when, not if. You don't buy insurance after the fire. Locking a fixed price now isn't betting prices rise; it's removing the bet entirely so you can plan your margins with confidence.</p>
+        </div>
+        <div class="obj" data-rise data-delay="3">
+          <div class="q">What if spot prices fall below my PPA price? I'll have overpaid.</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">In some years you might pay slightly more — our example showed exactly that. But you're not buying the lowest possible price; you're buying certainty and protection from the disaster years. Companies don't fail because energy was 5% over spot one year. They fail because it tripled in the year they'd already fixed their sales prices.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="check">
+      <div class="quiz">
+        <div class="lbl">Knowledge check</div>
+
+        <div class="q-item">
+          <div class="stem">Under merit-order pricing, who sets the electricity price in a given hour?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>The cheapest plant running (usually solar or wind).</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q1"><span>The last, most expensive plant needed to meet demand — usually gas.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>The average cost of all plants running that hour.</span></label>
+          </div>
+          <p class="q-feedback">All generators are paid the running cost of the marginal (last) plant. Since that's usually gas, gas sets the power price.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">What is the real pain a fixed PPA solves for a factory CFO?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>It guarantees the lowest possible price every single year.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q2"><span>Unpredictability — it replaces a volatile, unplannable cost with a known fixed price for years.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>It removes the regulated network charges from the bill.</span></label>
+          </div>
+          <p class="q-feedback">A PPA sells certainty, not the lowest price. In some years spot may be cheaper — but the customer can finally plan.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">In the worked example, why did the PPA still win over four years despite costing more in Years 1 and 4?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="true"><input type="radio" name="q3"><span>The flat €80 price avoided the €1.1M gas-shock year, saving €700k over the cycle.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>The PPA was cheaper than spot in every single year.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>The government refunded the difference.</span></label>
+          </div>
+          <p class="q-feedback">The PPA cost a little more in calm years but removed the disaster year — net €700k saved plus full predictability.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a class="prev" href="why-01-power-market.html"><small>Previous</small>← The European power market in 90 minutes</a>
+      <a class="next" href="why-03-mandates.html"><small>Next lesson</small>RED III, CBAM &amp; mandatory demand →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/newman.js"></script>
+<script src="../assets/js/academy.js"></script>
+</body>
+</html>

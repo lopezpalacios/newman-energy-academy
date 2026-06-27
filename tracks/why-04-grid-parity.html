@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grid parity &amp; the three customer pains — Newman Energy Sales Academy</title>
+<meta name="description" content="The macro case in one page — how solar LCOE fell below the Czech industrial tariff (grid parity) and how the three customer pains of price volatility, carbon cost and energy security combine into the reason this whole business exists.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/newman.css">
+<link rel="stylesheet" href="../assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="../index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="../index.html#why">Why a business</a>
+      <a href="../index.html#curriculum">Curriculum</a>
+      <a href="../index.html#tools">Tools</a>
+      <a class="btn" href="../index.html#curriculum">All lessons</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- LESSON HEADER -->
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Track 01 · Why this is a business · Lesson 4 of 4</div>
+    <h1>Grid parity &amp; the three customer pains</h1>
+    <p class="sub">Now we tie the macro case together. Solar got cheap enough to beat the grid on price alone — that is <em>grid parity</em>. Layer on carbon cost and energy security and you have the three pains every customer feels. Solve all three and you have a business.</p>
+    <div class="facts">
+      <span><b>Level</b> Foundation</span>
+      <span><b>Time</b> 22 min</span>
+      <span><b>Tool</b> None</span>
+      <span><b>Example</b> CZ solar LCOE vs tariff</span>
+    </div>
+  </div>
+</header>
+
+<!-- LESSON BODY -->
+<div class="lesson">
+
+  <!-- ASIDE / TOC -->
+  <aside class="lesson-aside">
+    <a class="back" href="../index.html#curriculum">← All tracks</a>
+    <nav aria-label="On this page">
+      <ul class="toc">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#parity">Grid parity</a></li>
+        <li><a href="#lcoe">LCOE, the unit cost</a></li>
+        <li><a href="#pains">The three pains</a></li>
+        <li><a href="#worked">Worked example</a></li>
+        <li><a href="#script">In the room</a></li>
+        <li><a href="#objections">Objections</a></li>
+        <li><a href="#check">Knowledge check</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="lesson-main">
+
+    <section id="objective">
+      <div class="callout objective">
+        <div class="lbl">Learning objective</div>
+        <p>By the end you can state the full macro case in two minutes: <strong>solar now undercuts the grid on price</strong> (grid parity), and it simultaneously fixes the <strong>three pains</strong> — price volatility, carbon cost, and energy security — that every C&amp;I customer is living with.</p>
+      </div>
+    </section>
+
+    <section id="parity">
+      <h2>Grid parity — the moment the maths flipped</h2>
+      <p><strong>Grid parity</strong> is the point at which generating your own renewable power costs <strong>the same or less</strong> than buying it from the grid. For years solar needed subsidies to compete. Today, in much of Europe — Czechia included — well-sited solar produces power for <strong>less than the industrial tariff</strong>, with no subsidy needed.</p>
+      <p>This is the hinge of the whole business. Before parity, you were selling a more expensive green product and asking the customer to pay up for their conscience. After parity, you are selling a <strong>cheaper</strong> product that also happens to be clean. The pitch stops being "pay more to do good" and becomes "pay less and do good" — a fundamentally easier sale.</p>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Key term · Grid parity</div>
+        <p>When the cost of generating renewable power (its LCOE) is at or below the price of buying power from the grid (the industrial tariff). Once crossed, renewables compete on cost alone — no subsidy required.</p>
+      </div>
+    </section>
+
+    <section id="lcoe">
+      <h2>LCOE — the unit cost that makes parity measurable</h2>
+      <p>To compare "build your own" against "buy from the grid" you need one fair number for each. For generation that number is the <strong>LCOE — Levelised Cost of Energy</strong>: the total lifetime cost of a plant (build, finance, operate) divided by all the energy it produces over its life, expressed in <strong>€/MWh</strong>. It is the true all-in cost of a megawatt-hour from that asset.</p>
+      <p>For Czech solar, LCOE lands around <strong>€50–70/MWh</strong> — driven by capex near <strong>€500–750/kWp</strong> and a specific yield of roughly <strong>950–1,100 kWh/kWp/year</strong> (lower than sunny Iberia's 1,500+, which is why CZ numbers sit a little higher). Set that €50–70 beside a Czech industrial all-in tariff of <strong>€100–180/MWh</strong> and parity isn't close — solar wins outright. You will build LCOE cell by cell in Track 03; here, just hold the headline.</p>
+      <div class="callout keyterm" data-rise data-delay="2">
+        <div class="lbl">Key term · LCOE (Levelised Cost of Energy)</div>
+        <p>Lifetime cost of a generating asset ÷ lifetime energy produced, in <strong>€/MWh</strong>. The single number that lets you compare a solar plant against a grid tariff on equal footing. Czech solar ≈ €50–70/MWh.</p>
+      </div>
+    </section>
+
+    <section id="pains">
+      <h2>The three customer pains — the whole macro case</h2>
+      <p>Everything in this track collapses into three pains every C&amp;I customer feels at once. Name them in order and you have your entire opening argument:</p>
+      <ul>
+        <li><strong>1 · Price volatility</strong> — the energy cost rides the gas-set spot market and can double overnight (Lessons 1–2). A fixed PPA flattens it.</li>
+        <li><strong>2 · Carbon cost</strong> — ETS allowances, CBAM and CSRD reporting turn emissions into a rising, board-level cost (Lesson 3). Renewable power + GOs removes it.</li>
+        <li><strong>3 · Energy security</strong> — dependence on imported gas and a single grid supply is a strategic risk. On-site and contracted renewables give the business control over its own supply.</li>
+      </ul>
+      <p>The reason this is a business — and not charity — is that grid parity means you can solve all three pains while <strong>lowering</strong> the customer's cost. Cheaper, more predictable, cleaner, more secure. That is the macro case, and every product in this academy is one way of delivering it.</p>
+      <div class="callout keyterm" data-rise data-delay="3">
+        <div class="lbl">Key term · The three pains</div>
+        <p><strong>Price volatility, carbon cost, energy security.</strong> The three problems every commercial &amp; industrial energy buyer carries. A well-structured renewable PPA addresses all three at once — and, past grid parity, does so at a lower price than the status quo.</p>
+      </div>
+    </section>
+
+    <section id="worked">
+      <h2>Worked example — Czech solar LCOE vs industrial tariff</h2>
+      <p>Put the two numbers side by side for a well-sited Czech C&amp;I solar plant against the same manufacturer's grid tariff. Illustrative, in <strong>€/MWh</strong>:</p>
+      <div class="worked" data-rise>
+        <div class="lbl">Self-generated solar vs grid power — the parity gap</div>
+        <table class="calc-table">
+          <tr><th>Measure</th><th style="text-align:right">€/MWh</th></tr>
+          <tr><td>Solar LCOE — capex ≈ €650/kWp, yield ≈ 1,050 kWh/kWp/yr</td><td class="num">60</td></tr>
+          <tr><td>Czech industrial all-in grid tariff (mid of range)</td><td class="num">140</td></tr>
+          <tr class="total"><td>Parity gap per MWh in the customer's favour</td><td class="num">80</td></tr>
+        </table>
+        <div class="formula">On 5,000 MWh/yr: 5,000 × €80 = €400,000 indicative annual gap captured by going solar</div>
+        <p class="muted" style="margin:12px 0 0">A solar megawatt-hour costs roughly <strong>€60</strong> to make; the grid charges roughly <strong>€140</strong> all-in. That <strong>~€80/MWh</strong> gap is grid parity made concrete — and it is before you count the avoided carbon cost from Lesson 3 or the security value of owning your supply. Figures illustrative; real LCOE depends on the specific site, capex and financing.</p>
+      </div>
+    </section>
+
+    <section id="script">
+      <h2>In the room</h2>
+      <p>The whole-track close, delivered to a business owner in one move:</p>
+      <div class="script">
+        <div class="lbl">Sales script</div>
+        <p>Let me make this simple. You have three problems with energy: the price won't sit still, the carbon is becoming a real cost, and you don't control your own supply. Five years ago, fixing those meant paying a premium. Today it doesn't — building solar costs about sixty euros a megawatt-hour and you're paying the grid around a hundred and forty. So we can make your energy cheaper, flatter, cleaner and more secure, all at once. The only question left is which structure fits your roof, your balance sheet and your appetite — and that's what the rest of this is about.</p>
+      </div>
+    </section>
+
+    <section id="objections">
+      <h2>Objections you will hear</h2>
+      <div class="objections">
+        <div class="obj" data-rise data-delay="1">
+          <div class="q">If solar is genuinely cheaper than the grid, why isn't everyone already doing it?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Because the cheaper number is the lifetime cost, and most businesses think in this year's cash, not a fifteen-year average — plus building it takes capital, permitting and roof space they don't want to manage. That gap between "obviously cheaper" and "actually done" is exactly the friction we remove. The economics flipped faster than habits did.</p>
+        </div>
+        <div class="obj" data-rise data-delay="2">
+          <div class="q">Czech sunshine is weak. Does solar even make sense here?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Czechia yields around 1,000 kilowatt-hours per kilowatt a year — lower than Spain, true. But the LCOE still lands near sixty euros against a grid tariff well over a hundred. You don't need Iberian sun to beat a Central European industrial tariff; you just need the maths to clear, and here it clears comfortably.</p>
+        </div>
+        <div class="obj" data-rise data-delay="3">
+          <div class="q">Which of the three pains should I actually care about most?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Whichever one keeps you up at night — and the point is you don't have to choose. The same renewable PPA addresses all three: it flattens the price, cuts the reportable carbon, and hands you control over your own supply. That's why this is a structural shift, not a single-issue product. We tailor which pain leads the pitch to your situation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="check">
+      <div class="quiz">
+        <div class="lbl">Knowledge check</div>
+
+        <div class="q-item">
+          <div class="stem">What does "grid parity" mean?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="true"><input type="radio" name="q1"><span>Generating renewable power costs the same or less than buying from the grid — no subsidy needed.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>The grid and the solar plant are connected at the same voltage.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>Every household pays the same electricity price.</span></label>
+          </div>
+          <p class="q-feedback">Grid parity = renewable LCOE at or below the grid tariff. Past it, the pitch flips from "pay more to do good" to "pay less and do good."</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">What does LCOE measure?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>The day-ahead spot price for the next hour.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q2"><span>An asset's total lifetime cost divided by its lifetime energy output, in €/MWh.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>The carbon emitted per megawatt-hour of generation.</span></label>
+          </div>
+          <p class="q-feedback">LCOE is the all-in lifetime €/MWh cost of a plant — the fair number to set against a grid tariff. Czech solar ≈ €50–70/MWh.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">What are the three customer pains a renewable PPA addresses at once?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>High capex, long permitting, and weak sunshine.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q3"><span>Price volatility, carbon cost, and energy security.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>Network charges, taxes, and supplier margin.</span></label>
+          </div>
+          <p class="q-feedback">Price volatility, carbon cost, energy security — the three pains. Past grid parity, a PPA solves all three while lowering cost.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a class="prev" href="why-03-mandates.html"><small>Previous</small>← RED III, CBAM &amp; mandatory demand</a>
+      <a class="next" href="prod-01-solar.html"><small>Next lesson</small>Commercial solar PV →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/newman.js"></script>
+<script src="../assets/js/academy.js"></script>
+</body>
+</html>
