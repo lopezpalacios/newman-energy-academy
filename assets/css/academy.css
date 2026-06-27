@@ -138,6 +138,28 @@ table.calc-table tr.total td{border-top:2px solid var(--accent);border-bottom:0;
   [data-rise]{opacity:1;transform:none;transition:none}
 }
 
+/* ---------- hero illustration (original brand line-art, animated) ---------- */
+.hero-scene{position:absolute;right:clamp(-30px,1vw,30px);top:50%;transform:translateY(-50%);width:clamp(300px,38vw,500px);z-index:1;pointer-events:none}
+.hero-scene svg{width:100%;height:auto;overflow:visible}
+.hs-line{fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.hs-fillp{fill:var(--accent-tint)}
+.hs-soft{fill:none;stroke:var(--accent);stroke-width:1.4;opacity:.5;stroke-linecap:round}
+.hs-rays{transform-origin:372px 92px;animation:hs-spin 60s linear infinite}
+.hs-charge{stroke:var(--magenta);stroke-width:3;stroke-linecap:round;stroke-dasharray:5 190;animation:hs-flow 3.2s linear infinite}
+.hs-bar{fill:var(--accent)}
+.hs-b1{animation:hs-pulse 3s ease-in-out infinite}
+.hs-b2{animation:hs-pulse 3s ease-in-out .5s infinite}
+.hs-b3{animation:hs-pulse 3s ease-in-out 1s infinite}
+.hs-sun{fill:var(--accent)}
+@keyframes hs-spin{to{transform:rotate(360deg)}}
+@keyframes hs-flow{to{stroke-dashoffset:-195}}
+@keyframes hs-pulse{0%,100%{opacity:.28}50%{opacity:1}}
+@media (max-width:900px){.hero-scene{display:none}}
+@media (prefers-reduced-motion:reduce){.hs-rays,.hs-charge,.hs-b1,.hs-b2,.hs-b3{animation:none}.hs-charge{stroke-dasharray:none;opacity:.6}.hs-bar{opacity:.7}}
+
+/* track-card icon glyphs */
+.track-card .ico svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
 /* ---------- abbreviations wiki ---------- */
 .wiki-controls{position:sticky;top:84px;z-index:30;background:var(--bg);padding:var(--s-16) 0;margin-bottom:var(--s-24);border-bottom:1px solid var(--line)}
 .wiki-search{position:relative;max-width:520px;margin-bottom:var(--s-16)}
