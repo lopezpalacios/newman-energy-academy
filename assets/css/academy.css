@@ -138,6 +138,31 @@ table.calc-table tr.total td{border-top:2px solid var(--accent);border-bottom:0;
   [data-rise]{opacity:1;transform:none;transition:none}
 }
 
+/* ---------- abbreviations wiki ---------- */
+.wiki-controls{position:sticky;top:84px;z-index:30;background:var(--bg);padding:var(--s-16) 0;margin-bottom:var(--s-24);border-bottom:1px solid var(--line)}
+.wiki-search{position:relative;max-width:520px;margin-bottom:var(--s-16)}
+.wiki-search input{width:100%;padding:14px 16px 14px 44px;border:1px solid var(--line);border-radius:var(--r-pill);font-family:var(--body);font-size:var(--text-body);color:var(--text);background:#fff;transition:border-color .15s,box-shadow .15s}
+.wiki-search input:focus{outline:0;border-color:var(--accent);box-shadow:var(--ring)}
+.wiki-search::before{content:"";position:absolute;left:17px;top:50%;width:14px;height:14px;margin-top:-9px;border:2px solid var(--accent);border-radius:50%}
+.wiki-search::after{content:"";position:absolute;left:28px;top:50%;width:7px;height:2px;margin-top:4px;background:var(--accent);transform:rotate(45deg)}
+.chips{display:flex;gap:var(--s-8);flex-wrap:wrap}
+.chip-f{font-family:var(--display);font-size:13px;letter-spacing:.02em;padding:8px 16px;border:1px solid var(--line);border-radius:var(--r-pill);background:#fff;color:var(--muted);cursor:pointer;transition:all .15s}
+.chip-f:hover{border-color:var(--accent);color:var(--accent)}
+.chip-f.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.wiki-count{font-size:13px;color:var(--muted);margin:var(--s-16) 0;font-family:var(--display);letter-spacing:.04em}
+.abbr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:var(--s-16)}
+.abbr{border:1px solid var(--line);border-radius:var(--r-card);background:var(--surface);padding:var(--s-24);transition:border-color .2s,transform .2s,box-shadow .25s;opacity:0;transform:translateY(16px)}
+.abbr.in{opacity:1;transform:none}
+.abbr.hide{display:none}
+.abbr:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:var(--shadow)}
+.abbr .ab{font-family:var(--display);font-weight:var(--w-light);font-size:30px;line-height:1;color:var(--accent);letter-spacing:.01em}
+.abbr .full{display:block;font-family:var(--display);font-weight:var(--w-med);font-size:14px;color:var(--navy);margin:8px 0 10px}
+.abbr p{font-size:var(--text-body-sm);color:var(--muted);margin:0;max-width:none}
+.abbr .cat{display:inline-block;margin-top:14px;font-family:var(--display);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line);border-radius:var(--r-pill);padding:3px 10px}
+mark{background:var(--accent-tint);color:var(--accent);padding:0 2px;border-radius:3px}
+.wiki-empty{display:none;padding:var(--s-48) 0;text-align:center;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.abbr{opacity:1;transform:none}}
+
 /* ---------- responsive lesson ---------- */
 @media (max-width:920px){
   .lesson{grid-template-columns:1fr;gap:var(--s-36)}

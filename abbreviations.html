@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Abbreviations wiki — Newman Energy Sales Academy</title>
+<meta name="description" content="Every abbreviation in commercial energy in one place — PPA, LCOE, BESS, NPV, DCF, IRR, DSCR, RED III, CBAM, the Modernisation Fund and more. Searchable, with plain-English explanations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/newman.css">
+<link rel="stylesheet" href="assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="index.html#curriculum">Curriculum</a>
+      <a href="abbreviations.html" aria-current="page">Wiki</a>
+      <a href="models.html">Models</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn" href="contact.html">Book a call</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Reference · Wiki</div>
+    <h1>Abbreviations, decoded</h1>
+    <p class="sub">Every acronym in commercial energy in one place. Search it, or filter by topic. Each one in a single plain-English line.</p>
+  </div>
+</header>
+
+<main class="section" style="padding-top:var(--s-36)">
+  <div class="wrap">
+
+    <div class="wiki-controls">
+      <div class="wiki-search">
+        <input id="wikiSearch" type="search" placeholder="Search — try “NPV”, “battery”, “grid”…" aria-label="Search abbreviations" autocomplete="off">
+      </div>
+      <div class="chips" id="wikiChips" role="tablist" aria-label="Filter by topic">
+        <button class="chip-f active" data-cat="all">All</button>
+        <button class="chip-f" data-cat="market">Market</button>
+        <button class="chip-f" data-cat="products">Products</button>
+        <button class="chip-f" data-cat="finance">Finance</button>
+        <button class="chip-f" data-cat="regulation">Regulation</button>
+        <button class="chip-f" data-cat="czechia">Czechia</button>
+        <button class="chip-f" data-cat="funding">EU funding</button>
+        <button class="chip-f" data-cat="project">Project</button>
+      </div>
+      <div class="wiki-count" id="wikiCount"></div>
+    </div>
+
+    <div class="abbr-grid" id="abbrGrid">
+
+      <!-- MARKET -->
+      <article class="abbr" data-cat="market"><span class="ab">PPA</span><span class="full">Power Purchase Agreement</span><p>A contract to buy electricity at a fixed or formula price for 5–15 years, replacing volatile grid pricing.</p><span class="cat">Market</span></article>
+      <article class="abbr" data-cat="market"><span class="ab">MWh</span><span class="full">Megawatt-hour</span><p>The unit electricity is sold in — one MWh = 1,000 kWh. Wholesale prices are quoted in €/MWh.</p><span class="cat">Market</span></article>
+      <article class="abbr" data-cat="market"><span class="ab">kWh</span><span class="full">Kilowatt-hour</span><p>The retail unit of energy — what a household or small load is billed on.</p><span class="cat">Market</span></article>
+      <article class="abbr" data-cat="market"><span class="ab">MW</span><span class="full">Megawatt</span><p>A unit of power (capacity) — how big a plant is, not how much it produces.</p><span class="cat">Market</span></article>
+      <article class="abbr" data-cat="market"><span class="ab">kWp</span><span class="full">Kilowatt-peak</span><p>A solar array's rated peak output. Capex is often quoted per kWp.</p><span class="cat">Market</span></article>
+      <article class="abbr" data-cat="market"><span class="ab">OTE</span><span class="full">Operátor trhu s elektřinou</span><p>The Czech electricity & gas market operator — runs the spot market and the Guarantees-of-Origin registry.</p><span class="cat">Market</span></article>
+      <article class="abbr" data-cat="market"><span class="ab">TSO</span><span class="full">Transmission System Operator</span><p>Runs the high-voltage grid. In Czechia that is ČEPS.</p><span class="cat">Market</span></article>
+      <article class="abbr" data-cat="market"><span class="ab">DSO</span><span class="full">Distribution System Operator</span><p>Runs the local lower-voltage network most C&I sites connect to.</p><span class="cat">Market</span></article>
+      <article class="abbr" data-cat="market"><span class="ab">SDAC</span><span class="full">Single Day-Ahead Coupling</span><p>The mechanism that links EU national day-ahead power markets into one coupled market.</p><span class="cat">Market</span></article>
+      <article class="abbr" data-cat="market"><span class="ab">GO</span><span class="full">Guarantee of Origin</span><p>A tradable certificate proving one MWh came from renewables — how green claims are backed.</p><span class="cat">Market</span></article>
+
+      <!-- PRODUCTS -->
+      <article class="abbr" data-cat="products"><span class="ab">PV</span><span class="full">Photovoltaic</span><p>Solar panels that convert sunlight directly into electricity.</p><span class="cat">Products</span></article>
+      <article class="abbr" data-cat="products"><span class="ab">BESS</span><span class="full">Battery Energy Storage System</span><p>A grid battery — stores power and sells it later. Rated in MW (power) and MWh (energy).</p><span class="cat">Products</span></article>
+      <article class="abbr" data-cat="products"><span class="ab">EaaS</span><span class="full">Energy-as-a-Service</span><p>The developer owns the asset; the customer pays per kWh or a service fee. The no-capex offer.</p><span class="cat">Products</span></article>
+      <article class="abbr" data-cat="products"><span class="ab">FCR</span><span class="full">Frequency Containment Reserve</span><p>A fast grid-balancing service batteries get paid to provide — part of the revenue stack.</p><span class="cat">Products</span></article>
+      <article class="abbr" data-cat="products"><span class="ab">O&amp;M</span><span class="full">Operations &amp; Maintenance</span><p>The ongoing cost of running an asset — cleaning, monitoring, repairs, insurance.</p><span class="cat">Products</span></article>
+      <article class="abbr" data-cat="products"><span class="ab">RTE</span><span class="full">Round-Trip Efficiency</span><p>The share of energy a battery returns after storing it — Li-ion ≈ 86%.</p><span class="cat">Products</span></article>
+      <article class="abbr" data-cat="products"><span class="ab">CfD</span><span class="full">Contract for Difference</span><p>A financial PPA — the customer settles the gap vs a strike price, with no physical delivery.</p><span class="cat">Products</span></article>
+
+      <!-- FINANCE -->
+      <article class="abbr" data-cat="finance"><span class="ab">LCOE</span><span class="full">Levelised Cost of Energy</span><p>The all-in cost per MWh of power from an asset over its life — the number you beat the grid with.</p><span class="cat">Finance</span></article>
+      <article class="abbr" data-cat="finance"><span class="ab">NPV</span><span class="full">Net Present Value</span><p>Future cash flows discounted to today and summed — the rational price for an asset.</p><span class="cat">Finance</span></article>
+      <article class="abbr" data-cat="finance"><span class="ab">DCF</span><span class="full">Discounted Cash Flow</span><p>Valuing an asset by discounting its future cash to present value.</p><span class="cat">Finance</span></article>
+      <article class="abbr" data-cat="finance"><span class="ab">IRR</span><span class="full">Internal Rate of Return</span><p>The annualised return a project earns — compared against a hurdle rate to decide whether to build.</p><span class="cat">Finance</span></article>
+      <article class="abbr" data-cat="finance"><span class="ab">DSCR</span><span class="full">Debt Service Coverage Ratio</span><p>Cash flow ÷ debt payments. Lenders want roughly 1.2–1.4× or more.</p><span class="cat">Finance</span></article>
+      <article class="abbr" data-cat="finance"><span class="ab">CAPEX</span><span class="full">Capital Expenditure</span><p>The upfront build cost of an asset, often quoted per kWp or per kWh.</p><span class="cat">Finance</span></article>
+      <article class="abbr" data-cat="finance"><span class="ab">OPEX</span><span class="full">Operating Expenditure</span><p>The annual running cost — maintenance, lease, insurance, monitoring.</p><span class="cat">Finance</span></article>
+      <article class="abbr" data-cat="finance"><span class="ab">MOIC</span><span class="full">Multiple on Invested Capital</span><p>Money returned ÷ money invested — e.g. selling for 1.36× what you spent.</p><span class="cat">Finance</span></article>
+      <article class="abbr" data-cat="finance"><span class="ab">WACC</span><span class="full">Weighted Average Cost of Capital</span><p>The blended cost of a buyer's debt and equity — drives the discount rate they value assets at.</p><span class="cat">Finance</span></article>
+
+      <!-- REGULATION -->
+      <article class="abbr" data-cat="regulation"><span class="ab">RED III</span><span class="full">Renewable Energy Directive (2023)</span><p>EU law raising the 2030 renewables target to ~42.5% and speeding up permitting.</p><span class="cat">Regulation</span></article>
+      <article class="abbr" data-cat="regulation"><span class="ab">CBAM</span><span class="full">Carbon Border Adjustment Mechanism</span><p>A carbon cost on imports into the EU, pushing industry toward clean power.</p><span class="cat">Regulation</span></article>
+      <article class="abbr" data-cat="regulation"><span class="ab">ETS</span><span class="full">Emissions Trading System</span><p>Europe's carbon market — puts a price on industrial CO₂ emissions.</p><span class="cat">Regulation</span></article>
+      <article class="abbr" data-cat="regulation"><span class="ab">CSRD</span><span class="full">Corporate Sustainability Reporting Directive</span><p>EU rules requiring companies to report emissions — making Scope 2 a board-level liability.</p><span class="cat">Regulation</span></article>
+      <article class="abbr" data-cat="regulation"><span class="ab">EIA</span><span class="full">Environmental Impact Assessment</span><p>A permitting study required for larger projects before they can be built.</p><span class="cat">Regulation</span></article>
+      <article class="abbr" data-cat="regulation"><span class="ab">GBER</span><span class="full">General Block Exemption Regulation</span><p>EU rules that cap how much state-aid (grant) a project may receive.</p><span class="cat">Regulation</span></article>
+
+      <!-- CZECHIA -->
+      <article class="abbr" data-cat="czechia"><span class="ab">ERÚ</span><span class="full">Energetický regulační úřad</span><p>The Czech energy regulator — sets the regulated network tariff components.</p><span class="cat">Czechia</span></article>
+      <article class="abbr" data-cat="czechia"><span class="ab">ČEPS</span><span class="full">Czech transmission operator</span><p>Czechia's high-voltage TSO — runs the backbone grid you interconnect to.</p><span class="cat">Czechia</span></article>
+      <article class="abbr" data-cat="czechia"><span class="ab">MPO</span><span class="full">Ministerstvo průmyslu a obchodu</span><p>Czech Ministry of Industry &amp; Trade — energy policy and the OP TAK programme.</p><span class="cat">Czechia</span></article>
+      <article class="abbr" data-cat="czechia"><span class="ab">SFŽP</span><span class="full">Státní fond životního prostředí ČR</span><p>State Environmental Fund — operates the Modernisation Fund and RES+ in Czechia.</p><span class="cat">Czechia</span></article>
+      <article class="abbr" data-cat="czechia"><span class="ab">API</span><span class="full">Agentura pro podnikání a inovace</span><p>The agency administering OP TAK business calls in Czechia.</p><span class="cat">Czechia</span></article>
+      <article class="abbr" data-cat="czechia"><span class="ab">NRB</span><span class="full">Národní rozvojová banka</span><p>The Czech national development bank — co-finances and guarantees projects.</p><span class="cat">Czechia</span></article>
+
+      <!-- FUNDING -->
+      <article class="abbr" data-cat="funding"><span class="ab">RRF</span><span class="full">Recovery and Resilience Facility</span><p>EU recovery money spent via each country's National Recovery Plan (CZ: Národní plán obnovy).</p><span class="cat">EU funding</span></article>
+      <article class="abbr" data-cat="funding"><span class="ab">EIB</span><span class="full">European Investment Bank</span><p>The EU's bank — project loans, green finance and advisory, often the senior lender.</p><span class="cat">EU funding</span></article>
+      <article class="abbr" data-cat="funding"><span class="ab">RES+</span><span class="full">Renewable Energy Sources programme</span><p>A Czech Modernisation Fund programme (run by SFŽP) funding new solar and other renewables.</p><span class="cat">EU funding</span></article>
+      <article class="abbr" data-cat="funding"><span class="ab">OP TAK</span><span class="full">Operační program Technologie a aplikace pro konkurenceschopnost</span><p>Czech ERDF programme (2021–27) with energy-saving and renewables calls for business.</p><span class="cat">EU funding</span></article>
+      <article class="abbr" data-cat="funding"><span class="ab">CEF</span><span class="full">Connecting Europe Facility</span><p>EU funding for cross-border infrastructure, including energy (CEF-Energy).</p><span class="cat">EU funding</span></article>
+      <article class="abbr" data-cat="funding"><span class="ab">LIFE</span><span class="full">LIFE Programme</span><p>EU grants for environment and clean-energy transition — smaller, capacity-building.</p><span class="cat">EU funding</span></article>
+
+      <!-- PROJECT -->
+      <article class="abbr" data-cat="project"><span class="ab">COD</span><span class="full">Commercial Operation Date</span><p>When a plant is finished, energised and selling power — risk drops sharply here.</p><span class="cat">Project</span></article>
+      <article class="abbr" data-cat="project"><span class="ab">RTB</span><span class="full">Ready to Build</span><p>The stage where permits, grid and offtake are secured and construction can start.</p><span class="cat">Project</span></article>
+      <article class="abbr" data-cat="project"><span class="ab">FC</span><span class="full">Financial Close</span><p>When all financing is signed and funds can be drawn to build.</p><span class="cat">Project</span></article>
+      <article class="abbr" data-cat="project"><span class="ab">EPC</span><span class="full">Engineering, Procurement &amp; Construction</span><p>The contractor that designs and builds the plant under a fixed-price contract.</p><span class="cat">Project</span></article>
+      <article class="abbr" data-cat="project"><span class="ab">SPA</span><span class="full">Sale and Purchase Agreement</span><p>The contract that transfers ownership of an asset to a buyer at exit.</p><span class="cat">Project</span></article>
+      <article class="abbr" data-cat="project"><span class="ab">IM</span><span class="full">Information Memorandum</span><p>The document marketing an asset to potential buyers in a sale process.</p><span class="cat">Project</span></article>
+      <article class="abbr" data-cat="project"><span class="ab">NBO</span><span class="full">Non-Binding Offer</span><p>An early indicative bid from a buyer before full due diligence.</p><span class="cat">Project</span></article>
+
+    </div>
+
+    <div class="wiki-empty" id="wikiEmpty">
+      <p>No match. Try a different word or clear the filter.</p>
+    </div>
+
+    <div class="pager" style="margin-top:var(--s-60)">
+      <a class="prev" href="glossary.html"><small>Longer form</small>Full glossary</a>
+      <a class="next" href="index.html#curriculum"><small>Apply it</small>Start the course →</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/newman.js"></script>
+<script src="assets/js/academy.js"></script>
+<script>
+// Abbreviations wiki — search + category filter + staggered reveal.
+(function(){
+  var grid=document.getElementById('abbrGrid');
+  if(!grid) return;
+  var cards=[].slice.call(grid.querySelectorAll('.abbr'));
+  var search=document.getElementById('wikiSearch');
+  var chips=[].slice.call(document.querySelectorAll('#wikiChips .chip-f'));
+  var countEl=document.getElementById('wikiCount');
+  var emptyEl=document.getElementById('wikiEmpty');
+  var REDUCE=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var activeCat='all';
+
+  // cache lowercase searchable text per card
+  cards.forEach(function(c){ c._text=(c.textContent||'').toLowerCase(); });
+
+  function reveal(visible){
+    if(REDUCE){ visible.forEach(function(c){c.classList.add('in');}); return; }
+    visible.forEach(function(c,i){
+      c.classList.remove('in');
+      setTimeout(function(){ c.classList.add('in'); }, Math.min(i*22,420));
+    });
+  }
+
+  function apply(){
+    var q=(search.value||'').trim().toLowerCase();
+    var visible=[];
+    cards.forEach(function(c){
+      var okCat=activeCat==='all'||c.getAttribute('data-cat')===activeCat;
+      var okText=!q||c._text.indexOf(q)>-1;
+      if(okCat&&okText){ c.classList.remove('hide'); visible.push(c); }
+      else { c.classList.add('hide'); c.classList.remove('in'); }
+    });
+    countEl.textContent=visible.length+(visible.length===1?' term':' terms')+(q?' matching “'+search.value.trim()+'”':'')+(activeCat!=='all'?' in '+activeCat:'');
+    emptyEl.style.display=visible.length?'none':'block';
+    reveal(visible);
+  }
+
+  var t;
+  search.addEventListener('input',function(){ clearTimeout(t); t=setTimeout(apply,80); });
+  chips.forEach(function(ch){
+    ch.addEventListener('click',function(){
+      chips.forEach(function(x){x.classList.remove('active');});
+      ch.classList.add('active');
+      activeCat=ch.getAttribute('data-cat');
+      apply();
+    });
+  });
+  apply();
+})();
+</script>
+</body>
+</html>
