@@ -127,6 +127,52 @@ A research pass enriches/verifies this file — treat anything unverified as "to
   precondition, financed via FEnIKS). As an EU member, grants sit inside the **CEEAG/GBER**
   state-aid caps. Check current.
 
+## SPAIN (ES) — Europe's solar superpower & corporate-PPA volume leader
+- **Regulator**: **CNMC (Comisión Nacional de los Mercados y la Competencia)** — also runs the
+  Guarantee-of-Origin system (Garantías de Origen). **TSO**: **Red Eléctrica de España (REE)**,
+  part of the **Redeia** group.
+- **Market**: day-ahead + intraday spot run by **OMIE** (the Iberian market operator) within
+  **MIBEL** (Mercado Ibérico de Electricidad) — a **single market shared with Portugal**, set up by
+  Spain–Portugal treaty. Futures trade on **OMIP** (Lisbon, OMIClear clearing). Quarter-hourly
+  settlement phased in 2025–26 (CNMC resolution 6 Mar 2025). Check current.
+- **Resource = the edge**: among the **highest solar yields in Europe** — ~**1,500–1,900
+  kWh/kWp/yr** (fixed tilt ~1,450; trackers can top ~2,000), far above CZ/DACH (~950–1,100).
+  → utility-scale **solar LCOE ~€30–50/MWh**, among the **lowest in the EU**. Cheapest clean
+  electrons in Western Europe. Check current.
+- **PPA market — the EU VOLUME LEADER**: Spain signed the most corporate PPA capacity in Europe —
+  ~**3.9 GW contracted in 2025** (ahead of Italy ~1.8 GW, Poland ~1.5 GW); >2 GW/yr 2023–25.
+  **Flip side — cannibalisation / capture-price risk**: heavy midday solar penetration crushes the
+  price exactly when solar generates. 2025 solar **capture rates fell to ~52–61%**; volume-weighted
+  **capture price dropped ~12% YoY to under €40/MWh**; **negative-price hours roughly doubled vs
+  2024** (record events in Apr–May 2025). High yield is great; midday gluts compress the price the
+  asset actually captures. The deal must price this in (shape risk, storage, baseload-style PPAs).
+  Check current.
+- **Support — auctions (subastas)**: **RD 960/2020** created the **REER** (Régimen Económico de
+  Energías Renovables) — a **closed-envelope, pay-as-bid auction** awarding a **sliding market
+  premium (CfD-style)** for **10–15 years**; first round Jan 2021. Check current cadence.
+- **Self-consumption (autoconsumo) boom**: the **"impuesto al sol" (sun tax) was scrapped in 2018**
+  (RDL 15/2018); **RD 244/2019** set the framework — two tiers (with/without surplus) +
+  **compensación simplificada** (a net-billing-style monthly credit). Result: from near-zero in 2018
+  to **>500,000 installations / >7 GW** by end-2024. Check current.
+- **April 2025 Iberian blackout & aftermath** (handle carefully — check current): on **28 Apr 2025**
+  a peninsula-wide blackout hit Spain + Portugal (~10 h). **ENTSO-E's final report** blamed a
+  combination — voltage/reactive-power-control gaps, oscillations, rapid output reductions and
+  **cascading generator disconnections** — NOT "too much renewables" per se. Policy response pivoted
+  hard to **grid strength, storage and flexibility**: **RDL 7/2025** (24 Jun 2025) on storage /
+  voltage control / demand response was **repealed by parliament in July 2025**; **Operational
+  Procedure 7.4** was updated so renewables **provide voltage control** (full implementation
+  17 Mar 2026); the **Electricity Planning 2025–30** proposal earmarks ~**€13.1bn** of transmission
+  investment. Grid-scale batteries are still small (~hundreds of MW in 2026) but a major push. Check
+  current.
+- **Funding — NOT a Modernisation Fund country** (that's the 10 lower-income states like CZ/PL).
+  Spain is a **huge RRF beneficiary** (~€163bn over 2021–26, grants + loans), spent via the **PRTR**
+  (recovery plan, concludes ~Aug 2026) and the **PERTE ERHA** (Proyecto Estratégico — Energías
+  Renovables, Hidrógeno Renovable y Almacenamiento). **IDAE** (Instituto para la Diversificación y
+  Ahorro de la Energía) administers most renewables/storage calls. EU **CEEAG + GBER** state-aid
+  caps apply. Check current calls.
+- **Carbon**: EU member → **EU ETS** (power/industry) + **CBAM** (border carbon, definitive regime
+  from 2026). No separate national carbon price on the German nEHS model.
+
 ## How a salesperson uses the regional lens
 - **Same product, different rails**: a PPA in Germany rides EEG/auction economics and the deepest
   PPA market; in Austria it leans on EAG + hydro; in Czechia on the Modernisation Fund; in
@@ -137,13 +183,13 @@ A research pass enriches/verifies this file — treat anything unverified as "to
   the country's regulator and support scheme.
 
 ## Quick comparison (illustrative)
-| | Czechia | Germany | Austria | Switzerland | Poland |
-|---|---|---|---|---|---|
-| Regulator | ERÚ | BNetzA | E-Control | ElCom | URE |
-| TSO | ČEPS | 50Hertz/Amprion/TenneT/TransnetBW | APG | Swissgrid | PSE |
-| Main RES scheme | Modernisation Fund / RES+ | EEG (Marktprämie, auctions) | EAG (premium + grants) | Einmalvergütung (PV grant) | OZE auctions (15-yr CfD) + Modernisation Fund |
-| In EU internal market? | Yes | Yes | Yes | **Not yet** — bilateral today; EU-CH electricity agreement signed Mar 2026, in force ~2030 if ratified. ETS linked | Yes |
-| Day-ahead venue | OTE (EU-coupled) | EPEX SPOT | EXAA/EPEX | EPEX/bilateral; not yet EU-coupled | TGE (EU-coupled) |
+| | Czechia | Germany | Austria | Switzerland | Poland | Spain |
+|---|---|---|---|---|---|---|
+| Regulator | ERÚ | BNetzA | E-Control | ElCom | URE | CNMC |
+| TSO | ČEPS | 50Hertz/Amprion/TenneT/TransnetBW | APG | Swissgrid | PSE | REE (Redeia) |
+| Main RES scheme | Modernisation Fund / RES+ | EEG (Marktprämie, auctions) | EAG (premium + grants) | Einmalvergütung (PV grant) | OZE auctions (15-yr CfD) + Modernisation Fund | REER auctions (RD 960/2020, sliding premium) + autoconsumo |
+| In EU internal market? | Yes | Yes | Yes | **Not yet** — bilateral today; EU-CH electricity agreement signed Mar 2026, in force ~2030 if ratified. ETS linked | Yes | Yes (MIBEL, shared with Portugal) |
+| Day-ahead venue | OTE (EU-coupled) | EPEX SPOT | EXAA/EPEX | EPEX/bilateral; not yet EU-coupled | TGE (EU-coupled) | OMIE (MIBEL; futures OMIP) |
 
 ## Lesson insert map
 Which of the 28 lessons most need a DACH/EU regional callout, and the one-line callout for each

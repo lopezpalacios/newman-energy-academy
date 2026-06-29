@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deep dive: Spain — Newman Energy Sales Academy</title>
+<meta name="description" content="How to sell a commercial &amp; industrial renewable deal in Spain — CNMC, the Red Eléctrica (REE) grid, the OMIE/MIBEL market shared with Portugal, Europe's highest solar yields and lowest LCOE, the EU's largest corporate-PPA market, the midday capture-price problem, the April 2025 blackout aftermath, and RRF/PERTE/IDAE funding.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/newman.css">
+<link rel="stylesheet" href="../assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="../index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="../index.html#why">Why a business</a>
+      <a href="../index.html#curriculum">Curriculum</a>
+      <a href="../index.html#tools">Tools</a>
+      <a class="btn" href="../index.html#curriculum">All lessons</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- LESSON HEADER -->
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Deep dive · Spain</div>
+    <h1>Selling a C&amp;I deal in Spain</h1>
+    <p class="sub">Spain has the cheapest solar electrons in Western Europe and signs more corporate PPAs than any other country in the EU. It is the sunniest large market on the continent — and that very abundance creates the one problem you must handle in the room: so much solar floods the grid at midday that prices collapse, sometimes below zero. Here is how to pitch the best solar resource in Europe while managing the price the asset actually captures.</p>
+    <div class="facts">
+      <span><b>Level</b> Intermediate</span>
+      <span><b>Time</b> 22 min</span>
+      <span><b>Region</b> Iberia · in the EU</span>
+      <span><b>Scheme</b> REER auctions + autoconsumo</span>
+    </div>
+  </div>
+</header>
+
+<!-- LESSON BODY -->
+<div class="lesson">
+
+  <!-- ASIDE / TOC -->
+  <aside class="lesson-aside">
+    <a class="back" href="../index.html#curriculum">← All tracks</a>
+    <nav aria-label="On this page">
+      <ul class="toc">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#market">Spain at a glance</a></li>
+        <li><a href="#scheme">Auctions &amp; autoconsumo</a></li>
+        <li><a href="#ppa">PPA &amp; the capture-price catch</a></li>
+        <li><a href="#grid">Grid &amp; the 2025 blackout</a></li>
+        <li><a href="#carbon">Carbon: ETS &amp; CBAM</a></li>
+        <li><a href="#funding">Funding stack</a></li>
+        <li><a href="#calc">Savings calculator</a></li>
+        <li><a href="#script">In the room</a></li>
+        <li><a href="#objections">Objections</a></li>
+        <li><a href="#check">Knowledge check</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="lesson-main">
+
+    <section id="objective" data-rise>
+      <div class="callout objective">
+        <div class="lbl">Learning objective</div>
+        <p>By the end you can <strong>walk a Spanish C&amp;I prospect through a renewable PPA</strong> — naming the right regulator (CNMC), grid operator (REE) and trading venue (OMIE/MIBEL), <strong>explaining why Europe's best solar resource gives the lowest LCOE</strong> — and you can <strong>manage the capture-price expectation</strong> that comes with heavy midday solar, then point to the RRF/PERTE funds that de-risk the build.</p>
+      </div>
+    </section>
+
+    <section id="market" data-rise>
+      <h2>Spain at a glance</h2>
+      <p>Spain is the sunniest large economy in Europe, and it has built solar faster than almost anyone — solar PV is now the country's <strong>largest single source of installed capacity</strong>. The number that drives every deal here is the <strong>solar yield</strong>: roughly <strong>1,500–1,900 kWh per kWp per year</strong> (tracker plants can top 2,000), against ~950–1,100 in Czechia or Germany. More sun per panel means more energy per euro of capex, which means <strong>utility-scale solar LCOE around €30–50/MWh</strong> — among the <strong>lowest in the EU</strong>. <span class="muted">(Live figures — check current.)</span></p>
+      <p>The institutions are straightforward. The regulator is the <strong>CNMC (Comisión Nacional de los Mercados y la Competencia</strong>, the national markets &amp; competition commission), which also runs the Guarantee-of-Origin registry. The transmission system operator — the company that owns and runs the high-voltage grid — is <strong>Red Eléctrica de España (REE)</strong>, part of the Redeia group. Wholesale power trades on <strong>OMIE</strong>, the Iberian market operator, within <strong>MIBEL (Mercado Ibérico de Electricidad)</strong> — a <strong>single day-ahead and intraday market shared with Portugal</strong> under a Spain–Portugal treaty. Forward contracts trade on <strong>OMIP</strong> (in Lisbon).</p>
+      <table class="calc-table">
+        <tr><th>Pillar</th><th style="text-align:right">Spain</th></tr>
+        <tr><td>Regulator</td><td class="num">CNMC — Comisión Nacional de los Mercados y la Competencia</td></tr>
+        <tr><td>TSO (grid)</td><td class="num">REE — Red Eléctrica de España (Redeia)</td></tr>
+        <tr><td>Trading venue</td><td class="num">OMIE (spot, MIBEL) · OMIP (futures)</td></tr>
+        <tr><td>Guarantee-of-Origin registry</td><td class="num">CNMC (Garantías de Origen)</td></tr>
+      </table>
+      <p class="muted" style="margin:12px 0 0">Compare this to your Czech spine: ERÚ → CNMC, ČEPS → REE, OTE → OMIE. Same product, different rails — and the rails here run jointly with Portugal.</p>
+    </section>
+
+    <section id="scheme" data-rise>
+      <h2>Renewable auctions &amp; the autoconsumo boom</h2>
+      <p>Spain's headline support scheme is the <strong>renewable auction (subasta)</strong> system. Under <strong>Royal Decree 960/2020</strong> it created the <strong>REER (Régimen Económico de Energías Renovables</strong>, the Economic Regime for Renewable Energy). Projects bid in a <strong>closed-envelope, pay-as-bid auction</strong>; winners receive a <strong>sliding market premium</strong> — a contract-for-difference-style top-up referenced to the market — for <strong>10 to 15 years</strong>, depending on technology.</p>
+      <div class="callout keyterm">
+        <div class="lbl">Key term · Sliding market premium (CfD-style)</div>
+        <p>Not a fixed feed-in tariff. The generator sells into the OMIE market as normal; the scheme then adjusts revenue toward the awarded price. When the market runs below the strike, the generator is topped up; when it runs above, the surplus is clawed back. It stabilises long-run revenue while keeping the asset exposed to the market — the same logic as the EU's 2024 market-design reform, which now pushes two-way CfDs across the bloc.</p>
+      </div>
+      <p>The bigger grassroots story is <strong>self-consumption (autoconsumo)</strong>. Spain notoriously taxed rooftop solar with the <em>"impuesto al sol"</em> (the "sun tax") — until it was <strong>scrapped in 2018</strong>. The following year, <strong>Royal Decree 244/2019</strong> set a clean framework: two tiers (with or without surplus injection) plus <em>compensación simplificada</em>, a net-billing-style monthly credit for the surplus a small system exports. The result was explosive: from near-zero in 2018 to <strong>over 500,000 installations and more than 7 GW</strong> of self-consumption capacity by the end of 2024. <span class="muted">(Check current.)</span></p>
+    </section>
+
+    <section id="ppa" data-rise>
+      <h2>The PPA market — and the capture-price catch</h2>
+      <p>This is where Spain leads Europe outright. It is the <strong>EU's largest corporate-PPA market by volume</strong> — roughly <strong>3.9 GW of corporate PPAs contracted in 2025</strong>, ahead of Italy (~1.8 GW) and Poland (~1.5 GW), and it has signed more than 2 GW a year since 2023. The cheap, abundant solar resource makes long-term clean supply genuinely attractive to industry, so the demand is real and deep. <span class="muted">(Live figures — check current.)</span></p>
+      <p>But there is a catch you must never hide from a sophisticated buyer, and it is the exact <em>opposite</em> of the Polish story. Spain has so much solar that the grid is flooded at midday — precisely when every solar plant is generating at once. That midday glut drives the wholesale price down, sometimes to zero or <strong>below zero</strong>. So the price a solar plant actually <em>captures</em> is well under the average market price.</p>
+      <div class="callout keyterm">
+        <div class="lbl">Key term · Cannibalisation &amp; the capture price</div>
+        <p><strong>Capture price</strong> is the average price a generator actually earns for its output, weighted by when it produces — not the simple market average. <strong>Cannibalisation</strong> is what drags it down: because all solar generates in the same midday hours, solar floods the market and depresses the price in exactly those hours. In Spain, 2025 solar <strong>capture rates fell to roughly 52–61%</strong> of the average price, the volume-weighted capture price dropped about <strong>12% year on year to under €40/MWh</strong>, and <strong>negative-price hours roughly doubled</strong> versus 2024. High yield is wonderful; midday gluts compress what the asset is paid. <span class="muted">(Check current.)</span></p>
+      </div>
+      <p>For a salesperson this is not a reason to walk away — it is a reason to <strong>structure the deal honestly</strong>. The cheapest electrons in Europe still beat a Spanish industrial tariff comfortably, so a PPA delivers a real saving plus Guarantees of Origin for Scope 2 reporting. But you sell a price the customer can trust, manage expectations on shape, and let storage and baseload-style or shaped PPAs absorb the midday risk rather than pretending it away.</p>
+    </section>
+
+    <section id="grid" data-rise>
+      <h2>The grid &amp; the April 2025 blackout</h2>
+      <p>Connecting to the grid runs through <strong>REE</strong>, and grid capacity is the practical gate on any physical project — as everywhere, qualify the connection point first. But in Spain there is a second, unavoidable conversation: on <strong>28 April 2025</strong> the entire Iberian Peninsula — Spain and Portugal — suffered a <strong>peninsula-wide blackout</strong> lasting around ten hours. A prospect will raise it, so know the facts.</p>
+      <div class="callout">
+        <div class="lbl">Across the region</div>
+        <p>ENTSO-E's final report attributed the blackout to a <strong>combination of factors</strong> — gaps in voltage and reactive-power control, oscillations, rapid output reductions and a <strong>cascade of generator disconnections</strong> — rather than simply "too much renewable energy." The honest framing: it was a <strong>grid-control and stability</strong> event, and the policy response has been to strengthen exactly that. <strong>Check current</strong> — the official analysis is still settling.</p>
+      </div>
+      <p>The aftermath pivoted Spanish energy policy hard toward <strong>grid strength, storage and flexibility</strong>. An emergency decree (<strong>RDL 7/2025</strong>) on storage, voltage control and demand response was passed in June 2025 but then <strong>repealed by parliament in July 2025</strong> — so the legislative path is live. More durably, <strong>Operational Procedure 7.4</strong> was updated so that renewables themselves <strong>provide voltage control</strong> (full implementation in March 2026), and the <strong>Electricity Planning 2025–30</strong> proposal earmarks on the order of <strong>€13bn</strong> of transmission investment. Grid-scale batteries are still small today but are a national priority. <span class="muted">(Check current.)</span></p>
+    </section>
+
+    <section id="carbon" data-rise>
+      <h2>Carbon: EU ETS &amp; CBAM</h2>
+      <p>Spain is an EU member, so the full carbon frame applies. Industrial CO₂ carries a price under the <strong>EU ETS (Emissions Trading System)</strong>, and from 2026 the <strong>CBAM (Carbon Border Adjustment Mechanism)</strong> puts a carbon cost on imports of carbon-intensive goods — so EU industry needs clean power to stay competitive against that border charge.</p>
+      <p>Unlike Germany, Spain has <strong>no separate national carbon price</strong> on the nEHS model — it relies on the EU ETS. The pitch logic still holds: a renewable PPA cuts the customer's <strong>Scope 2 emissions</strong> (the emissions from their purchased electricity, a board-level reporting liability under CSRD) and delivers <strong>Guarantees of Origin</strong> to evidence it. With CBAM raising the cost of a carbon-heavy supply chain, demonstrably clean power becomes a competitiveness asset, not just a compliance line.</p>
+    </section>
+
+    <section id="funding" data-rise>
+      <h2>The funding stack</h2>
+      <p>Here is the most common mistake people make about Spain: assuming it taps the Modernisation Fund. It does not. The <strong>Modernisation Fund is reserved for the EU's ten lower-income member states</strong> (Czechia, Poland and peers). Spain funds its transition from a different — and very large — pot:</p>
+      <ul>
+        <li><strong>Recovery and Resilience Facility (RRF)</strong> — Spain is one of the <strong>largest beneficiaries in the EU</strong>, with roughly <strong>€160bn+ over 2021–26</strong> in grants and loans, delivered through its national recovery plan (<strong>PRTR — Plan de Recuperación, Transformación y Resiliencia</strong>), which concludes around August 2026.</li>
+        <li><strong>PERTE de Energías Renovables</strong> — the <strong>PERTE ERHA</strong> (Proyecto Estratégico para la Recuperación y Transformación Económica — <em>Energías Renovables, Hidrógeno Renovable y Almacenamiento</em>), the strategic project channelling RRF money into renewables, renewable hydrogen and storage.</li>
+        <li><strong>IDAE</strong> — the <strong>Instituto para la Diversificación y Ahorro de la Energía</strong> administers most of the renewables, storage and value-chain calls (e.g. lines for storage, repowering and manufacturing). It is the agency a Spanish project actually applies to.</li>
+        <li><strong>State-aid ceiling</strong> — because Spain is in the EU, every grant must fit inside the <strong>CEEAG</strong> (Climate, Energy &amp; Environmental Aid Guidelines, 2022) and <strong>GBER</strong> (General Block Exemption Regulation) caps. Aid is sized to a viability gap; you cannot stack pots to 100%.</li>
+      </ul>
+      <div class="callout">
+        <div class="lbl">At EU level</div>
+        <p>Because Spain <em>is</em> in the EU, the full EU frame applies: RED III's binding renewables target, EU ETS carbon pricing, CBAM, and the 2024 Electricity Market Design reform that actively promotes PPAs and two-way CfDs. Lead with that shared frame, then localise to REER auctions + CNMC + the RRF/PERTE/IDAE stack — <strong>not</strong> the Modernisation Fund. <span class="muted">(Programme details and call windows — check current.)</span></p>
+      </div>
+    </section>
+
+    <section id="calc" data-rise>
+      <h2>Savings calculator</h2>
+      <p>Open this across the table from a Spanish plant manager. The defaults reflect a mid-size industrial site — ~8,000 MWh/yr consumption, a grid all-in tariff around €120/MWh, and a PPA near €70/MWh (reflecting Spain's exceptionally low solar LCOE) covering about 70% of load — and recompute live as you drag the sliders. <span class="muted">Illustrative euro figures for teaching — check current, and remember the PPA price must already account for capture-price / shape risk.</span></p>
+
+      <div class="calc" data-calc="savings">
+        <div class="calc-head"><h3>Customer savings — grid vs PPA</h3>
+          <p>What the client saves by buying covered load under a PPA instead of the grid.</p></div>
+        <div class="calc-body">
+          <div class="inputs">
+            <div class="row"><label for="scons">Annual consumption <span class="val" data-val="cons"></span></label>
+              <input id="scons" type="number" data-field="cons" value="8000" step="100" min="0"> <small class="note">MWh / yr</small></div>
+            <div class="row"><label for="star">Grid tariff <span class="val" data-val="tariff"></span></label>
+              <input id="star" type="number" data-field="tariff" value="120" step="5" min="0"> <small class="note">€ / MWh</small></div>
+            <div class="row"><label for="sppa">PPA price <span class="val" data-val="ppa"></span></label>
+              <input id="sppa" type="number" data-field="ppa" value="70" step="5" min="0"> <small class="note">€ / MWh</small></div>
+            <div class="row"><label for="sshare">Share covered by PPA <span class="val" data-val="share"></span></label>
+              <input id="sshare" type="range" data-field="share" data-val-target data-suffix="%" value="70" min="10" max="100" step="5"></div>
+          </div>
+          <div class="outputs">
+            <div class="kpi hero"><div class="k">Saving / year</div><div class="v" data-out="save">—</div></div>
+            <div class="kpi"><div class="k">% off covered bill</div><div class="v" data-out="savepct">—</div></div>
+            <div class="kpi"><div class="k">10-year saving</div><div class="v" data-out="tenyr">—</div></div>
+            <div class="kpi"><div class="k">New PPA bill</div><div class="v" data-out="ppabill">—</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="script" data-rise>
+      <h2>In the room</h2>
+      <p>How you open with a Spanish industrial prospect — leading with the resource, then handling the capture-price reality before they raise it:</p>
+      <div class="script">
+        <div class="lbl">Sales script</div>
+        <p>You're sitting on the best solar resource in Western Europe — your panels generate roughly twice the energy of a German plant, which is why solar here is the cheapest power on the continent to build. A ten-to-fifteen-year PPA lets you lock a big slice of your load in euros per megawatt-hour, well below your grid tariff, with Guarantees of Origin for your CSRD reporting and a hedge against CBAM as your supply chain gets carbon-priced. Now, the honest part: there's so much solar in Spain that midday prices sometimes go to zero — that's why I price your PPA on the shaped profile, not the dream number, and bring storage or a baseload structure to manage it. So the headline saving is real and it's durable, not a midday mirage. Same product the German plants buy, on Spanish rails, with the strongest resource in Europe — sold straight.</p>
+      </div>
+    </section>
+
+    <section id="objections" data-rise>
+      <h2>Objections you will hear</h2>
+      <div class="objections">
+        <div class="obj">
+          <div class="q">Prices go to zero — even negative — at midday. Why would I sign a solar PPA?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">You've spotted the real issue, and it's why a PPA <em>helps</em> rather than hurts. A negative midday spot is a problem for a merchant generator chasing the spot price; your PPA fixes a <em>blended</em> price per megawatt-hour for years, so you're insulated from that volatility entirely. We price the contract on the shaped capture profile — not the average market number — so the figure you sign is one we can actually stand behind. And we use storage or a baseload-style structure to shift value out of the saturated midday hours. The cannibalisation is exactly what your fixed PPA price protects you from.</p>
+        </div>
+        <div class="obj">
+          <div class="q">The grid is saturated and connections take forever — how do I know this gets built?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Connection is the gate everywhere, and Spain is no exception — so we qualify the REE connection point <em>first</em> and only build on secured capacity. A virtual or financial PPA can also hedge your price with no new physical connection at all. And the policy wind is at our back: the Electricity Planning 2025–30 puts roughly €13bn into transmission, and storage is now a national priority precisely to absorb the midday solar. We size the structure to what the grid can actually deliver, not to a wish.</p>
+        </div>
+        <div class="obj">
+          <div class="q">After the April 2025 blackout, is solar even reliable? It took the country down.</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">It's a fair question, and the facts matter. ENTSO-E's final report pinned the blackout on grid voltage and reactive-power control failures and a cascade of disconnections — a <em>system-stability</em> event, not "too much solar" as such. The response has been to make renewables part of the solution: under the updated Operational Procedure 7.4 they now provide voltage control, and the country is investing heavily in grid strength and storage. Your PPA doesn't expose you to grid operation anyway — it's a price contract. If anything, on-site generation plus storage makes <em>your</em> site more resilient, not less. <span class="muted">(Check current — the analysis is still settling.)</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="check" data-rise>
+      <div class="quiz">
+        <div class="lbl">Knowledge check</div>
+
+        <div class="q-item">
+          <div class="stem">Which venue runs Spain's day-ahead wholesale electricity market, and what is special about it?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>CNMC — it operates the spot market directly as the regulator.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q1"><span>OMIE — and it runs a single Iberian market (MIBEL) shared with Portugal; futures trade on OMIP.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>REE — the grid operator also matches the day-ahead trades.</span></label>
+          </div>
+          <p class="q-feedback">OMIE runs the spot market within MIBEL, shared with Portugal; OMIP handles futures. CNMC regulates and REE runs the grid — don't mix the roles in front of a client.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">Spain has Europe's best solar resource. What is the key commercial <em>downside</em> a buyer should understand?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>Solar yields are so high that panels degrade far faster than elsewhere.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q2"><span>Cannibalisation — heavy midday solar floods the market and depresses the price solar actually captures, sometimes below zero.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>Spain is outside the EU single market, so its prices can't be hedged.</span></label>
+          </div>
+          <p class="q-feedback">All that midday solar pushes prices down exactly when solar generates, so the capture price falls well below the average — the reason you price a PPA on the shaped profile, not the headline number.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">Which EU fund does Spain rely on for its energy transition?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>The Modernisation Fund — Spain is one of its largest beneficiaries.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>None — Spain funds everything from its national budget without EU support.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q3"><span>The RRF (recovery facility), via the PRTR and PERTE ERHA, administered through IDAE — Spain is <em>not</em> a Modernisation Fund country.</span></label>
+          </div>
+          <p class="q-feedback">The Modernisation Fund is for the ten lower-income states (Czechia, Poland…). Spain is a major RRF recipient, deploying it via the PRTR and PERTE ERHA, with IDAE administering the calls. All grants sit under the CEEAG/GBER state-aid caps.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="callout" style="margin-top:var(--s-36)">
+      <div class="lbl">Related lessons</div>
+      <p>Go deeper on the concepts this market applies:</p>
+      <ul>
+        <li><a href="why-01-power-market.html">The European power market in 90 minutes</a></li>
+        <li><a href="prod-03-ppa-structures.html">PPA structures: physical, sleeved, virtual</a></li>
+        <li><a href="fin-02-savings.html">Customer savings: tariff vs PPA</a></li>
+        <li><a href="fund-01-landscape.html">The EU funding landscape</a></li>
+        <li><a href="exit-npv-dcf.html">NPV, DCF &amp; the exit valuation</a></li>
+      </ul>
+    </div>
+
+    <div class="pager">
+      <a class="prev" href="deepdive-poland.html"><small>Previous</small>Deep dive: Poland</a>
+      <a class="next" href="../index.html#curriculum"><small>Next lesson</small>All tracks →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/newman.js"></script>
+<script src="../assets/js/academy.js"></script>
+</body>
+</html>
