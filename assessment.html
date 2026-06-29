@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Certification exam — Newman Energy Sales Academy</title>
+<meta name="description" content="Test yourself across the whole Newman Energy Sales Academy — market mechanics, financial models, PPAs, the exit, EU funding and the country markets. 15 questions, instant score.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/newman.css">
+<link rel="stylesheet" href="assets/css/academy.css">
+<style>
+  /* exam-specific (page-scoped; does not affect lesson quizzes) */
+  .exam-item{border-top:1px solid var(--line);padding:var(--s-24) 0}
+  .exam-item:first-of-type{border-top:0}
+  .exam-item .stem{font-family:var(--display);font-weight:var(--w-med);color:var(--navy);font-size:18px;margin-bottom:var(--s-16)}
+  .exam-item .stem .qn{color:var(--accent);margin-right:8px}
+  .exam-opts{display:grid;gap:var(--s-8)}
+  .exam-opt{display:flex;gap:var(--s-12);align-items:flex-start;padding:12px 16px;border:1px solid var(--line);border-radius:var(--r-input);cursor:pointer;background:#fff;transition:border-color .15s,background .15s;font-size:var(--text-body-sm)}
+  .exam-opt:hover{border-color:var(--accent)}
+  .exam-opt input{margin-top:3px;accent-color:var(--accent)}
+  .exam-item.graded .exam-opt.correct{border-color:#1f7a57;background:#f0f8f4}
+  .exam-item.graded .exam-opt.wrong{border-color:#b3382c;background:#fbf1f0}
+  .exam-item .fb{display:none;margin-top:var(--s-12);font-size:var(--text-body-sm);color:var(--muted)}
+  .exam-item.graded .fb{display:block}
+  .exam-actions{display:flex;gap:var(--s-16);align-items:center;flex-wrap:wrap;margin-top:var(--s-36)}
+  .exam-result{display:none;margin-top:var(--s-24);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:var(--r-card);padding:var(--s-36);background:var(--surface)}
+  .exam-result.show{display:block}
+  .exam-result .score{font-family:var(--display);font-weight:var(--w-light);font-size:clamp(36px,6vw,56px);line-height:1;color:var(--accent)}
+  .exam-result .verdict{font-family:var(--display);font-weight:var(--w-med);color:var(--navy);font-size:var(--text-subheading);margin:var(--s-12) 0}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="index.html#curriculum">Curriculum</a>
+      <a href="region-map.html">Map</a>
+      <a href="abbreviations.html">Wiki</a>
+      <a href="assessment.html" aria-current="page">Exam</a>
+      <a class="btn" href="index.html#curriculum">Start learning</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Certification</div>
+    <h1>Are you sales-ready?</h1>
+    <p class="sub">Fifteen questions across the whole academy — market mechanics, the financial models, PPAs, the exit, EU funding and the country markets. Answer all, then score it. <strong>11/15 or better = sales-ready.</strong></p>
+  </div>
+</header>
+
+<main class="section">
+  <div class="wrap" style="max-width:820px">
+    <form id="exam">
+
+      <div class="exam-item"><div class="stem"><span class="qn">1.</span>What usually sets the wholesale electricity price in a European market?</div>
+        <div class="exam-opts">
+          <label class="exam-opt" data-c="1"><input type="radio" name="q1"><span>The last (most expensive) plant needed to meet demand — usually gas — under merit-order pricing.</span></label>
+          <label class="exam-opt"><input type="radio" name="q1"><span>The average cost of all plants running.</span></label>
+          <label class="exam-opt"><input type="radio" name="q1"><span>The cheapest renewable plant on the grid.</span></label>
+        </div><p class="fb">Marginal pricing: the last unit dispatched sets the price, so gas often sets it even with lots of cheap renewables.</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">2.</span>The core thing a PPA gives a customer is:</div>
+        <div class="exam-opts">
+          <label class="exam-opt" data-c="1"><input type="radio" name="q2"><span>A fixed, known price for power over a long term — removing volatility.</span></label>
+          <label class="exam-opt"><input type="radio" name="q2"><span>Free electricity.</span></label>
+          <label class="exam-opt"><input type="radio" name="q2"><span>Ownership of the power plant.</span></label>
+        </div><p class="fb">A PPA replaces volatile spot exposure with a contracted price a CFO can plan around.</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">3.</span>LCOE is:</div>
+        <div class="exam-opts">
+          <label class="exam-opt" data-c="1"><input type="radio" name="q3"><span>The all-in cost per MWh of power from an asset over its life.</span></label>
+          <label class="exam-opt"><input type="radio" name="q3"><span>The retail electricity tariff.</span></label>
+          <label class="exam-opt"><input type="radio" name="q3"><span>The carbon price.</span></label>
+        </div><p class="fb">Levelised Cost of Energy — capex + lifetime opex over lifetime generation. The number you beat the grid with.</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">4.</span>Apply a lower discount rate to the same future cash flows. The value:</div>
+        <div class="exam-opts">
+          <label class="exam-opt" data-c="1"><input type="radio" name="q4"><span>Rises — each future euro is discounted less.</span></label>
+          <label class="exam-opt"><input type="radio" name="q4"><span>Falls.</span></label>
+          <label class="exam-opt"><input type="radio" name="q4"><span>Stays the same.</span></label>
+        </div><p class="fb">Lower required yield → higher NPV. That re-pricing is yield compression — the engine of the exit.</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">5.</span>In a develop-to-sell model, the big gain mostly comes from:</div>
+        <div class="exam-opts">
+          <label class="exam-opt" data-c="1"><input type="radio" name="q5"><span>Selling the de-risked operating asset to a fund that accepts a lower required yield than you did.</span></label>
+          <label class="exam-opt"><input type="radio" name="q5"><span>Selling more electricity than forecast.</span></label>
+          <label class="exam-opt"><input type="radio" name="q5"><span>Government subsidies on the power price.</span></label>
+        </div><p class="fb">You take development risk at a high hurdle; a fund buys the safe cash at a low yield → the spread is the exit.</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">6.</span>Which country is NOT in the EU internal electricity market today?</div>
+        <div class="exam-opts">
+          <label class="exam-opt"><input type="radio" name="q6"><span>Germany</span></label>
+          <label class="exam-opt"><input type="radio" name="q6"><span>Poland</span></label>
+          <label class="exam-opt" data-c="1"><input type="radio" name="q6"><span>Switzerland</span></label>
+        </div><p class="fb">Switzerland trades bilaterally; the EU-CH Bilaterals III electricity agreement is signed (Mar 2026) but not in force.</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">7.</span>Germany's main renewables support law is:</div>
+        <div class="exam-opts">
+          <label class="exam-opt" data-c="1"><input type="radio" name="q7"><span>The EEG (Erneuerbare-Energien-Gesetz).</span></label>
+          <label class="exam-opt"><input type="radio" name="q7"><span>The EAG.</span></label>
+          <label class="exam-opt"><input type="radio" name="q7"><span>The Stromgesetz.</span></label>
+        </div><p class="fb">EEG = Germany (market premium + auctions). EAG = Austria. Stromgesetz = Switzerland.</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">8.</span>The EU's largest corporate-PPA market by volume is:</div>
+        <div class="exam-opts">
+          <label class="exam-opt"><input type="radio" name="q8"><span>Germany</span></label>
+          <label class="exam-opt" data-c="1"><input type="radio" name="q8"><span>Spain</span></label>
+          <label class="exam-opt"><input type="radio" name="q8"><span>Czechia</span></label>
+        </div><p class="fb">Spain leads on volume (Italy ~#2), thanks to the EU's cheapest solar — though capture-price cannibalisation is the catch.</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">9.</span>Which market has the EU's highest carbon intensity and is the biggest Modernisation Fund beneficiary?</div>
+        <div class="exam-opts">
+          <label class="exam-opt" data-c="1"><input type="radio" name="q9"><span>Poland</span></label>
+          <label class="exam-opt"><input type="radio" name="q9"><span>Austria</span></label>
+          <label class="exam-opt"><input type="radio" name="q9"><span>Switzerland</span></label>
+        </div><p class="fb">Poland's coal grid means high carbon-driven prices — a strong PPA case — and it draws the largest Modernisation Fund share.</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">10.</span>The Modernisation Fund is available to:</div>
+        <div class="exam-opts">
+          <label class="exam-opt" data-c="1"><input type="radio" name="q10"><span>Lower-income EU member states (now 13) — e.g. Czechia and Poland qualify; Germany, Spain and Italy don't.</span></label>
+          <label class="exam-opt"><input type="radio" name="q10"><span>All EU member states equally.</span></label>
+          <label class="exam-opt"><input type="radio" name="q10"><span>Any company in Europe, including Switzerland.</span></label>
+        </div><p class="fb">It's an ETS-financed fund for 13 lower-income members; wealthier states use RRF/PERTE/PNRR instead.</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">11.</span>Under the EU market-design reform, two-way CfDs become mandatory for new direct price-support schemes from:</div>
+        <div class="exam-opts">
+          <label class="exam-opt"><input type="radio" name="q11"><span>2024</span></label>
+          <label class="exam-opt" data-c="1"><input type="radio" name="q11"><span>17 July 2027</span></label>
+          <label class="exam-opt"><input type="radio" name="q11"><span>2035</span></label>
+        </div><p class="fb">The reform (in force 16 Jul 2024) makes two-way CfDs mandatory for new price support concluded on/after 17 Jul 2027.</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">12.</span>To receive an EU grant or Modernisation Fund money, the beneficiary must be:</div>
+        <div class="exam-opts">
+          <label class="exam-opt" data-c="1"><input type="radio" name="q12"><span>A legal entity established in the eligible member state — typically a local project SPV.</span></label>
+          <label class="exam-opt"><input type="radio" name="q12"><span>Any company worldwide that owns the asset.</span></label>
+          <label class="exam-opt"><input type="radio" name="q12"><span>The foreign parent company directly.</span></label>
+        </div><p class="fb">A non-EU parent can own the platform but can't be the grant beneficiary; the local SPV is. (Educational, not advice.)</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">13.</span>BESS "revenue stacking" means:</div>
+        <div class="exam-opts">
+          <label class="exam-opt" data-c="1"><input type="radio" name="q13"><span>Earning several revenues at once — arbitrage + capacity + ancillary services.</span></label>
+          <label class="exam-opt"><input type="radio" name="q13"><span>Stacking batteries physically to save space.</span></label>
+          <label class="exam-opt"><input type="radio" name="q13"><span>Charging only at night.</span></label>
+        </div><p class="fb">A grid battery layers energy arbitrage, capacity payments and ancillary (e.g. FCR) into one revenue.</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">14.</span>In Italy, the development risk the deep-dive flags most is:</div>
+        <div class="exam-opts">
+          <label class="exam-opt" data-c="1"><input type="radio" name="q14"><span>Regional permitting / suitable-areas (aree idonee) rules.</span></label>
+          <label class="exam-opt"><input type="radio" name="q14"><span>Lack of sunshine.</span></label>
+          <label class="exam-opt"><input type="radio" name="q14"><span>No support scheme exists.</span></label>
+        </div><p class="fb">High prices make the case strong, but regional authorisation/aree-idonee is the #1 bottleneck.</p></div>
+
+      <div class="exam-item"><div class="stem"><span class="qn">15.</span>DSCR (Debt Service Coverage Ratio) matters most to:</div>
+        <div class="exam-opts">
+          <label class="exam-opt" data-c="1"><input type="radio" name="q15"><span>Lenders — it's cash flow ÷ debt service, and they want roughly 1.2–1.4× or more.</span></label>
+          <label class="exam-opt"><input type="radio" name="q15"><span>The end customer's electricity bill.</span></label>
+          <label class="exam-opt"><input type="radio" name="q15"><span>The carbon market.</span></label>
+        </div><p class="fb">DSCR tells a lender the project comfortably covers its debt payments — central to debt sizing.</p></div>
+
+      <div class="exam-actions">
+        <button class="btn" type="button" id="scoreBtn">Score my exam</button>
+        <button class="btn-outline" type="button" id="resetBtn" style="display:none">Try again</button>
+        <span class="muted" id="progress">0 / 15 answered</span>
+      </div>
+
+      <div class="exam-result" id="result" aria-live="polite">
+        <div class="score" id="scoreText">—</div>
+        <div class="verdict" id="verdictText"></div>
+        <p id="verdictBlurb" class="muted"></p>
+      </div>
+    </form>
+
+    <div class="pager" style="margin-top:var(--s-48)">
+      <a class="prev" href="index.html#curriculum"><small>Back to</small>All tracks</a>
+      <a class="next" href="region-map.html"><small>Reference</small>Market map →</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/newman.js"></script>
+<script src="assets/js/academy.js"></script>
+<script>
+(function(){
+  var form=document.getElementById('exam');
+  var items=[].slice.call(form.querySelectorAll('.exam-item'));
+  var btn=document.getElementById('scoreBtn'), reset=document.getElementById('resetBtn');
+  var result=document.getElementById('result'), scoreText=document.getElementById('scoreText');
+  var verdictText=document.getElementById('verdictText'), blurb=document.getElementById('verdictBlurb');
+  var progress=document.getElementById('progress');
+  var TOTAL=items.length;
+
+  function answered(){ return items.filter(function(it){ return it.querySelector('input:checked'); }).length; }
+  function updateProgress(){ progress.textContent=answered()+' / '+TOTAL+' answered'; }
+  form.addEventListener('change',updateProgress);
+
+  btn.addEventListener('click',function(){
+    var score=0;
+    items.forEach(function(it){
+      it.classList.add('graded');
+      var opts=[].slice.call(it.querySelectorAll('.exam-opt'));
+      opts.forEach(function(opt){
+        var correct=opt.getAttribute('data-c')==='1';
+        var checked=opt.querySelector('input').checked;
+        if(correct) opt.classList.add('correct');
+        if(checked && !correct) opt.classList.add('wrong');
+        if(checked && correct) score++;
+      });
+    });
+    var pct=Math.round(score/TOTAL*100);
+    scoreText.textContent=score+' / '+TOTAL+'  ('+pct+'%)';
+    var pass=score>=11;
+    verdictText.textContent = pass ? 'Sales-ready ✓' : 'Not quite yet';
+    verdictText.style.color = pass ? '#1f7a57' : 'var(--navy)';
+    blurb.textContent = pass
+      ? 'You can walk into a meeting and hold the room on what, why and how. Skim any you missed (highlighted above), then go sell.'
+      : 'Review the highlighted answers and revisit the tracks they came from — market mechanics, the financial models, the exit, EU funding and the country deep-dives — then retake.';
+    result.classList.add('show');
+    reset.style.display='inline-flex';
+    btn.style.display='none';
+    result.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+
+  reset.addEventListener('click',function(){
+    items.forEach(function(it){
+      it.classList.remove('graded');
+      it.querySelectorAll('.exam-opt').forEach(function(o){o.classList.remove('correct','wrong');});
+      it.querySelectorAll('input').forEach(function(i){i.checked=false;});
+    });
+    result.classList.remove('show');
+    reset.style.display='none'; btn.style.display='inline-flex';
+    updateProgress();
+    form.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+})();
+</script>
+</body>
+</html>
