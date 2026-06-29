@@ -52,7 +52,7 @@ A research pass enriches/verifies this file — treat anything unverified as "to
   build-out; grid-fee treatment still evolving.
 - **Carbon**: EU ETS for power/industry **plus** a national CO₂ price on heating/transport fuels
   (**BEHG / nEHS**). 2026 nEHS auctions run in a **€55–65/t corridor** (≈€68 in post-auction
-  sale) — check current. nEHS continues through 2027 (fixed-price), then is absorbed by **EU ETS2
+  sale) — check current. nEHS continues through 2027 (auction corridor), then is absorbed by **EU ETS2
   (now 2028)**. Energy-intensive industry gets relief mechanisms.
 - **Other**: **Mieterstrom** (landlord-to-tenant solar), **KWKG** (CHP support).
 
@@ -61,9 +61,10 @@ A research pass enriches/verifies this file — treat anything unverified as "to
 - **Renewables law**: **EAG** (Erneuerbaren-Ausbau-Gesetz, 2021) — **market premium** + investment
   grants; goal of **100% renewable electricity (national balance) by 2030** (needs ~+27 TWh:
   PV/wind-led) and **climate neutrality by 2040**.
-- **New ElWG** (Elektrizitätswirtschaftsgesetz — overhaul of electricity-market law): advancing
-  through parliament 2025–26 to cut costs, add flexibility, empower consumers and **expand energy
-  communities / energy sharing** — needs a 2/3 majority, so timing is live; **check current**.
+- **New ElWG** (Elektrizitätswirtschaftsgesetz — overhaul of electricity-market law): **passed in
+  December 2025** with the required 2/3 majority and now **phasing in through 2026–27** to cut
+  costs, add flexibility, empower consumers and **expand energy communities / energy sharing**.
+  In-force dates of individual provisions are still settling; **check current**.
 - **Hydro-heavy** base; strong run-of-river. **Energy communities** (Erneuerbare-Energie-
   Gemeinschaften) are booming — **4,000+** in operation or formation by mid-2025; enabled under EU
   RED II/III, locally shared generation.
@@ -104,8 +105,8 @@ A research pass enriches/verifies this file — treat anything unverified as "to
   offered ~75.9 TWh worth ~PLN 31bn; **solar again topped wind** on volume. **Check current.**
 - **Prosumers — net-billing**: **net-metering was replaced by net-billing on 1 April 2022**.
   Exports are now valued at the **day-ahead market price** (value-offset, not volume). Pre-2022
-  prosumers are grandfathered on net-metering until **April 2027**. Political pressure to soften
-  the regime is live — **check current**.
+  prosumers are grandfathered on net-metering for **15 years from entry** (into the mid-2030s).
+  Political pressure to soften the regime is live — **check current**.
 - **Corporate PPAs (cPPA)**: Poland is a **CEE leader** and one of Europe's faster-growing PPA
   markets — it hit **record PPA volumes in Q4 2025** even as overall EU contracting cooled (e.g.
   the Energa–EDP deal, ~600 GWh/yr from 2026). High grid + carbon cost is the demand driver.
@@ -113,7 +114,8 @@ A research pass enriches/verifies this file — treat anything unverified as "to
   ~**4× current system capacity**, and connection **refusals** are common. The **Grid Act (UC84,
   2026)** overhauls connection rules (conditions valid ~1 year, curbs "zombie projects", frees
   capacity). The onshore-wind **"10H" rule was liberalised** (amendment in force **April 2023**;
-  min ~700 m from homes), with further loosening toward ~500 m advancing **2025–26**. Check current.
+  min ~700 m from homes). A further loosening toward ~500 m **passed parliament in 2025 but was
+  vetoed in August 2025**, so ~700 m remains the binding minimum. Check current.
 - **BESS**: storage is booming, pulled by **capacity-market** participation — four capacity
   auctions (2022–25) contracted on the order of ~11 GW of battery capacity, plus **NFOŚiGW grants
   (~PLN 4.15bn / ~€1bn)** to ~172 projects. Operating utility BESS ~0.4 GW end-2025 → ~1.3 GW
@@ -161,10 +163,10 @@ A research pass enriches/verifies this file — treat anything unverified as "to
   hard to **grid strength, storage and flexibility**: **RDL 7/2025** (24 Jun 2025) on storage /
   voltage control / demand response was **repealed by parliament in July 2025**; **Operational
   Procedure 7.4** was updated so renewables **provide voltage control** (full implementation
-  17 Mar 2026); the **Electricity Planning 2025–30** proposal earmarks ~**€13.1bn** of transmission
+  17 Mar 2026); the **Electricity Planning 2025–30** proposal earmarks ~**€13.6bn** of transmission
   investment. Grid-scale batteries are still small (~hundreds of MW in 2026) but a major push. Check
   current.
-- **Funding — NOT a Modernisation Fund country** (that's the 10 lower-income states like CZ/PL).
+- **Funding — NOT a Modernisation Fund country** (that's the 13 lower-income states like CZ/PL).
   Spain is a **huge RRF beneficiary** (~€163bn over 2021–26, grants + loans), spent via the **PRTR**
   (recovery plan, concludes ~Aug 2026) and the **PERTE ERHA** (Proyecto Estratégico — Energías
   Renovables, Hidrógeno Renovable y Almacenamiento). **IDAE** (Instituto para la Diversificación y

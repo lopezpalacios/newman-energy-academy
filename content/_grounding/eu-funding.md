@@ -4,7 +4,7 @@ Real programmes only. Treat all amounts/deadlines as "check the current call" �
 Never invent contacts. Point learners at official portals and named agencies below.
 
 ## The EU-level money (who funds clean energy projects)
-- **Modernisation Fund** — EU fund (financed by ETS allowances) for 10 lower-income member states
+- **Modernisation Fund** — EU fund (financed by ETS allowances) for 13 lower-income member states
   incl. **Czechia**. Big channel for RES, grids, storage, efficiency. In CZ it is **operated by
   SFŽP ČR** via national programmes (e.g. RES+ for new renewables). *The single most relevant pot
   for Czech solar/BESS.*
