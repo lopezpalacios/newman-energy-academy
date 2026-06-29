@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deep dive: Mexico — Newman Energy Sales Academy</title>
+<meta name="description" content="How to sell a commercial &amp; industrial renewable deal in Mexico — the CNE (successor to CRE), the CENACE system &amp; market operator, the MEM wholesale market with nodal Local Marginal Prices (PML), the state utility CFE, and above all the 2024–25 constitutional + Ley del Sector Eléctrico reform that re-established CFE as a state enterprise with a 54% generation floor. Routes to clean power, nearshoring demand, the nascent ETS, CBAM exposure, and tax-depreciation incentives (not EU grants).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/newman.css">
+<link rel="stylesheet" href="../assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="../index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="../index.html#curriculum">Curriculum</a>
+      <a href="../region-map.html">Map</a>
+      <a href="../abbreviations.html">Wiki</a>
+      <a href="../models.html">Models</a>
+      <a href="../assessment.html">Exam</a>
+      <a class="btn" href="../index.html#curriculum">All lessons</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- LESSON HEADER -->
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Deep dive · Mexico</div>
+    <h1>Selling a C&amp;I deal in Mexico</h1>
+    <p class="sub">Mexico is not Europe — different regulator, different market, its own laws, and a sweeping 2024–25 reform that put the state utility CFE back at the centre of power. The resource is superb: northern Mexico has some of the best sun in the world, and nearshoring is pulling factories across the border faster than the grid can follow. The whole sale turns on one thing you must get right before anything else — how a private renewable deal now fits underneath a state-first electricity system.</p>
+    <div class="facts">
+      <span><b>Level</b> Intermediate</span>
+      <span><b>Time</b> 24 min</span>
+      <span><b>Region</b> North America · non-EU</span>
+      <span><b>Scheme</b> LSE 2025 · CFE 54% floor</span>
+    </div>
+  </div>
+</header>
+
+<!-- LESSON BODY -->
+<div class="lesson">
+
+  <!-- ASIDE / TOC -->
+  <aside class="lesson-aside">
+    <a class="back" href="../index.html#curriculum">← All tracks</a>
+    <nav aria-label="On this page">
+      <ul class="toc">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#market">Mexico at a glance</a></li>
+        <li><a href="#reform">The 2024–25 reform</a></li>
+        <li><a href="#routes">Routes to clean power</a></li>
+        <li><a href="#ppa">PPAs &amp; nearshoring</a></li>
+        <li><a href="#grid">Grid, CENACE &amp; PML</a></li>
+        <li><a href="#carbon">Carbon: ETS &amp; CBAM</a></li>
+        <li><a href="#funding">Incentives (not EU grants)</a></li>
+        <li><a href="#calc">Savings calculator</a></li>
+        <li><a href="#script">In the room</a></li>
+        <li><a href="#objections">Objections</a></li>
+        <li><a href="#check">Knowledge check</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="lesson-main">
+
+    <section id="objective" data-rise>
+      <div class="callout objective">
+        <div class="lbl">Learning objective</div>
+        <p>By the end you can <strong>walk a Mexican industrial prospect through a renewable deal under the post-2025 rules</strong> — naming the right institutions (CNE, CENACE, the MEM, CFE), <strong>explaining what the 2024–25 constitutional and Ley del Sector Eléctrico reform changed for private generation and PPAs</strong>, and you can <strong>choose the right route to clean power</strong> (qualified supply, a PPA, distributed generation or CELs) for a nearshoring factory — while being honest about regulatory uncertainty and PML basis risk.</p>
+      </div>
+    </section>
+
+    <section id="market" data-rise>
+      <h2>Mexico at a glance</h2>
+      <p>Forget the EU rulebook here — Mexico has its own regulator, its own wholesale market and a state utility with a constitutional mandate. Four institutions run the show. The regulator is the <strong>CNE (Comisión Nacional de Energía)</strong>, created by the 2025 reform; it <strong>absorbed the former CRE (Comisión Reguladora de Energía)</strong> and now sits as a body attached to the energy ministry, SENER. The <strong>CENACE (Centro Nacional de Control de Energía)</strong> is the independent system <em>and</em> market operator — it runs the national grid and the wholesale market. That market is the <strong>MEM (Mercado Eléctrico Mayorista)</strong>, launched in 2016, where energy, capacity, clean-energy certificates and ancillary services trade. And the state utility is <strong>CFE (Comisión Federal de Electricidad)</strong>, which holds a monopoly on basic supply and, after the reform, the dominant role across the sector. <span class="muted">(Post-reform structure — check current.)</span></p>
+      <p>The price signal you need to know is the <strong>PML (Precio Marginal Local</strong>, the Local Marginal Price). CENACE computes a separate wholesale price at <strong>each node of the grid, hour by hour</strong> — a <strong>nodal</strong> market, like the US, not a single zonal price like most of Europe. Regulated retail and industrial <strong>tariffs are set and published monthly via CFE and the DOF (Diario Oficial de la Federación)</strong>. All prices are in <strong>pesos (MXN)</strong>; big PPAs and project finance are often quoted in <strong>USD</strong>. <span class="muted">(Live figures — check current.)</span></p>
+      <table class="calc-table">
+        <tr><th>Pillar</th><th style="text-align:right">Mexico</th></tr>
+        <tr><td>Regulator</td><td class="num">CNE — Comisión Nacional de Energía (absorbed the former CRE)</td></tr>
+        <tr><td>System &amp; market operator</td><td class="num">CENACE — runs the grid (SEN) + the MEM; sets nodal PML</td></tr>
+        <tr><td>Wholesale market</td><td class="num">MEM — Mercado Eléctrico Mayorista (energy, capacity, CELs)</td></tr>
+        <tr><td>State utility</td><td class="num">CFE — basic-supply monopoly; an <em>empresa pública del Estado</em></td></tr>
+      </table>
+      <p class="muted" style="margin:12px 0 0">Rough map to your European spine: regulator ERÚ → CNE; market operator OTE → CENACE (which <em>also</em> runs the grid, unlike Europe's split). The big difference is structural — Mexico is a state-first system, and prices are nodal (PML), not a single national spot.</p>
+    </section>
+
+    <section id="reform" data-rise>
+      <h2>The defining feature — the 2024–25 reform</h2>
+      <p>You cannot sell in Mexico without understanding what changed, because it reshaped where a private deal is even allowed to sit. In <strong>October 2024</strong> a <strong>constitutional reform</strong> (amending articles 25, 27 and 28) re-established CFE as a <strong>state public enterprise</strong> and re-entrenched state primacy over electricity. Then on <strong>18 March 2025</strong> the secondary <strong>Ley del Sector Eléctrico (LSE)</strong> took effect, <strong>replacing the old LIE (Ley de la Industria Eléctrica)</strong> from the 2013–14 liberalisation. Transmission, distribution and grid planning are confirmed as <strong>exclusive State functions</strong>.</p>
+      <div class="callout keyterm">
+        <div class="lbl">Key term · The CFE 54% generation floor</div>
+        <p>The reform's defining number. The <strong>State, through CFE, must supply at least 54% of the average annual energy injected into the national grid</strong>; private generators compete for the remaining share. So private renewable generation is <strong>not banned</strong> — it is <strong>subordinated</strong> to CFE and channelled into specific schemes. CFE was reclassified from a "productive state enterprise" (a market competitor) back to an <em>empresa pública del Estado</em> (a state instrument). For a PPA this means the frame is state-first: you build <em>within</em> the permitted private space, not in an open competitive market. <span class="muted">(Politically live — check current.)</span></p>
+      </div>
+      <p>For a salesperson the honest read is this: the door to private clean power is <strong>open but narrower and more conditional</strong> than under the old market. Permitting paused while the new <strong>Reglamento (RLSE)</strong> and updated MEM rules were finalised through 2025–26, the regulator was reorganised (CRE folded into CNE), and the political tone is firmly state-led. That makes <strong>regulatory certainty the first objection you will face</strong> — handle it head-on rather than waiting for it. <span class="muted">(The secondary rules were still settling into 2026 — check current.)</span></p>
+    </section>
+
+    <section id="routes" data-rise>
+      <h2>Routes to clean power under the new rules</h2>
+      <p>There are still four practical ways a Mexican C&amp;I customer can buy or build clean power. Match the route to the customer's size and appetite:</p>
+      <ul>
+        <li><strong>Qualified supply (suministro calificado).</strong> A large user above a <strong>SENER-set minimum-demand threshold</strong> registers as a <em>usuario calificado</em> and buys in the MEM through a qualified supplier. Preserved under the LSE on broadly similar terms — the main competitive route for a big factory. <span class="muted">(Threshold can change — check current.)</span></li>
+        <li><strong>PPAs.</strong> CFE can sign PPAs with any generator, including via competitive tenders. Private options now include <strong>long-term production contracts for exclusive sale to CFE</strong> and <strong>mixed-investment projects where CFE holds ≥54%</strong>. Corporate PPAs with private generators remain possible but sit under the new state-first frame.</li>
+        <li><strong>Distributed generation.</strong> A plant <strong>under 0.7 MW</strong> (raised from 0.5 MW under the old regime) needs <strong>no generation permit</strong>. On-site rooftop solar for a single site is the simplest, lowest-friction clean route — and it sidesteps most of the market and reform complexity.</li>
+        <li><strong>CELs (Certificados de Energía Limpia).</strong> Tradable clean-energy certificates — one CEL is roughly one MWh of clean generation. Suppliers carry annual CEL obligations. The reform <strong>expanded eligibility to existing renewable plants</strong>, not just new ones, which may soften CEL prices. <span class="muted">(Check current.)</span></li>
+      </ul>
+      <div class="callout">
+        <div class="lbl">Watch the legacy structures</div>
+        <p>The old <strong>autoabasto (self-supply)</strong> model that built much of Mexico's private renewable fleet under the LIE has been politically targeted. The LSE replaces it with <strong>self-consumption (autoconsumo)</strong> projects (≥0.7 MW, for the owner's own needs). Legacy autoabasto contracts are grandfathered but contested — treat any deal that leans on a legacy structure as <strong>check current</strong> and get local counsel.</p>
+      </div>
+    </section>
+
+    <section id="ppa" data-rise>
+      <h2>The PPA landscape — and the nearshoring pull</h2>
+      <p>Here is the commercial tailwind that makes the deal worth doing despite the reform friction: <strong>nearshoring</strong>. Manufacturers are relocating supply chains into Mexico — the Bajío, Monterrey and the northern border — to sit close to the United States, and they are arriving faster than the grid can serve them. These are exactly the energy-hungry, export-oriented, ESG-reporting industrial buyers who want <strong>long-term, fixed-price, clean supply</strong>. The demand is real, and in places the binding constraint is simply <em>getting enough power at all</em>.</p>
+      <p>The resource matches the demand. Northern Mexico — Sonora, Chihuahua, Baja California, Coahuila — has some of the best solar in the world, with specific yields around <strong>1,800–2,100 kWh per kWp per year</strong>, far above Central Europe's ~950–1,100 and on a par with or above Iberia. The Tehuantepec isthmus has world-class wind. More energy per panel means a lower cost per MWh, so a well-structured PPA can beat a CFE industrial tariff and lock the price for years. <span class="muted">(Illustrative — check current.)</span></p>
+      <p>For the salesperson the play is to <strong>lead with the customer's pain</strong> — power availability, price volatility and Scope 2 reporting for their (often US or European) parent — and then fit the right route underneath it: qualified supply or a corporate PPA for a large load, on-site distributed generation where the grid is the bottleneck, CELs to evidence the green claim. Sell the saving honestly, in pesos or dollars, and be straight about the reform and the grid.</p>
+    </section>
+
+    <section id="grid" data-rise>
+      <h2>The grid: CENACE, interconnection &amp; PML basis risk</h2>
+      <p>Connecting to the grid runs through <strong>CENACE</strong>, and as everywhere, the connection point is the practical gate on any physical project — qualify it first. In Mexico there are two extra wrinkles you must flag to a buyer. First, <strong>interconnection has been slow and constrained</strong>: queues, limited capacity in the hottest renewable zones, and a transmission build-out that has lagged demand, all sharpened by the reform's pause on new permits. Second, because Mexico is a <strong>nodal market</strong>, the price depends on <em>where</em> you connect.</p>
+      <div class="callout keyterm">
+        <div class="lbl">Key term · PML basis risk</div>
+        <p>The <strong>PML (Local Marginal Price)</strong> is set <strong>at each node</strong>. When the transmission grid is congested, the price at a generator's node can sit <strong>well below</strong> the price at the load it is meant to serve — that gap is <strong>basis risk</strong>. A solar plant in sunny, congested Sonora may capture a low local PML even while demand in the industrial centre pays much more. It is the Mexican cousin of the capture-price problem: structure the PPA around the <em>delivered</em> price and the connection node, not a national average, or the saving evaporates in the congestion. <span class="muted">(Check current.)</span></p>
+      </div>
+      <p>This is not a reason to walk away — it is a reason to <strong>engineer the deal around the grid</strong>. Qualify the CENACE interconnection point early, price the PPA on the node that actually delivers to the customer, and use on-site generation where transmission is the bottleneck. Honesty about the grid is what separates a credible originator from a tourist.</p>
+    </section>
+
+    <section id="carbon" data-rise>
+      <h2>Carbon: a nascent ETS &amp; CBAM exposure</h2>
+      <p>Mexico is <strong>not</strong> in the EU ETS, but it has its own carbon pricing — earlier-stage and lighter. The <strong>national Emissions Trading System (Sistema de Comercio de Emisiones, SCEE)</strong>, run by <strong>SEMARNAT</strong>, ran a pilot from 2020 and has been moving toward its <strong>operational (compliance) phase around 2025–26</strong>, covering large industrial and power-sector emitters. There is also a <strong>federal carbon tax</strong> on fossil fuels and several <strong>state-level carbon taxes</strong>. <span class="muted">(Nascent and evolving — check current.)</span></p>
+      <p>The sharper carbon lever for many Mexican exporters comes from <em>outside</em> Mexico: <strong>CBAM (the EU's Carbon Border Adjustment Mechanism)</strong>, which from 2026 puts a carbon cost on carbon-intensive imports into the EU. A Mexican manufacturer exporting steel, aluminium, cement or similar to Europe faces that border charge — so <strong>demonstrably clean power becomes a competitiveness asset</strong>, evidenced through CELs. The pitch logic mirrors Europe's, but here it is driven by the customer's <em>buyers</em> abroad, not by a domestic ETS bill.</p>
+    </section>
+
+    <section id="funding" data-rise>
+      <h2>Incentives — a different system from the EU (no grants)</h2>
+      <p>This is where people coming from Europe get it wrong. Mexico has <strong>no Modernisation Fund, no RRF, no PERTE, no CEEAG/GBER state-aid frame</strong> — none of the EU grant vocabulary applies. Do not transplant it. Mexico supports renewables mainly through the <strong>tax code and nearshoring policy</strong>, not cash grants:</p>
+      <ul>
+        <li><strong>Accelerated tax depreciation.</strong> Mexico's income-tax law (<strong>LISR, Article 34</strong>) lets a company take a very high — effectively <strong>immediate, up to ~100%</strong> — deduction for investment in <strong>machinery and equipment that generates power from renewable sources</strong> (and efficient cogeneration), provided the asset operates for a minimum period. It is a powerful <em>tax-timing</em> benefit that improves project economics — but it is a deduction, <strong>not a cash subsidy</strong>. <span class="muted">(Check current.)</span></li>
+        <li><strong>Nearshoring incentives.</strong> Federal decrees (2023–24) and the current <strong>Plan México</strong> offer <strong>accelerated depreciation and extra training deductions</strong> for relocating manufacturers in priority sectors — adjacent to, not specific to, renewables, but often part of the same investment case. <span class="muted">(Check current.)</span></li>
+      </ul>
+      <div class="callout">
+        <div class="lbl">Say it plainly to the client</div>
+        <p>"This is not a European grant market. There's no fund writing a cheque for part of your capex. What Mexico gives you is a <strong>tax shield</strong> — you can write off the renewable kit fast against income — plus the nearshoring incentives if you're relocating. The economics come from the cheap sun and the tax timing, not a subsidy." That honesty lands better than implying a grant that does not exist.</p>
+      </div>
+    </section>
+
+    <section id="calc" data-rise>
+      <h2>Savings calculator</h2>
+      <p>Open this across the table from a Mexican plant manager. The defaults reflect a sizeable nearshoring site — ~10,000 MWh/yr consumption, a grid all-in cost around 95 (€/MWh-equivalent), and a PPA near 65 reflecting Mexico's excellent solar resource, covering about 70% of load — and recompute live as you drag the sliders. <span class="muted">Important: the calculator is denominated in €/MWh for cross-market consistency. <strong>Real Mexican prices are in MXN (and often USD), and PML basis risk must already be priced into the PPA number.</strong> Treat these figures as illustrative stand-ins for the peso/dollar reality — check current.</span></p>
+
+      <div class="calc" data-calc="savings">
+        <div class="calc-head"><h3>Customer savings — grid vs PPA</h3>
+          <p>What the client saves by buying covered load under a PPA instead of the grid.</p></div>
+        <div class="calc-body">
+          <div class="inputs">
+            <div class="row"><label for="scons">Annual consumption <span class="val" data-val="cons"></span></label>
+              <input id="scons" type="number" data-field="cons" value="10000" step="100" min="0"> <small class="note">MWh / yr</small></div>
+            <div class="row"><label for="star">Grid tariff <span class="val" data-val="tariff"></span></label>
+              <input id="star" type="number" data-field="tariff" value="95" step="5" min="0"> <small class="note">€ / MWh (≈ MXN/USD)</small></div>
+            <div class="row"><label for="sppa">PPA price <span class="val" data-val="ppa"></span></label>
+              <input id="sppa" type="number" data-field="ppa" value="65" step="5" min="0"> <small class="note">€ / MWh (≈ MXN/USD)</small></div>
+            <div class="row"><label for="sshare">Share covered by PPA <span class="val" data-val="share"></span></label>
+              <input id="sshare" type="range" data-field="share" data-val-target data-suffix="%" value="70" min="10" max="100" step="5"></div>
+          </div>
+          <div class="outputs">
+            <div class="kpi hero"><div class="k">Saving / year</div><div class="v" data-out="save">—</div></div>
+            <div class="kpi"><div class="k">% off covered bill</div><div class="v" data-out="savepct">—</div></div>
+            <div class="kpi"><div class="k">10-year saving</div><div class="v" data-out="tenyr">—</div></div>
+            <div class="kpi"><div class="k">New PPA bill</div><div class="v" data-out="ppabill">—</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="script" data-rise>
+      <h2>In the room</h2>
+      <p>How you open with a Mexican industrial or nearshoring prospect — leading with their pain and the resource, then being straight about the reform and the grid:</p>
+      <div class="script">
+        <div class="lbl">Sales script</div>
+        <p>You've moved production here to be close to the US, and your biggest headache isn't labour — it's getting enough clean, affordable power, with your parent company now asking about Scope 2. Good news first: northern Mexico has some of the best sun on the planet, so the cost per megawatt-hour we can build is genuinely low — below your CFE industrial tariff — and a multi-year PPA locks that in, with clean-energy certificates to evidence it for your reporting and your CBAM-exposed exports to Europe. Now the honest part: the 2025 reform put CFE back at the centre, so we build inside the permitted private space — qualified supply or on-site generation — not an open market, and we price the deal on the actual delivery node, because Mexico's prices are nodal and the grid is congested. So the saving is real and we structure it around the rules and the grid as they actually are — in pesos, not a European fantasy.</p>
+      </div>
+    </section>
+
+    <section id="objections" data-rise>
+      <h2>Objections you will hear</h2>
+      <div class="objections">
+        <div class="obj">
+          <div class="q">After the 2025 reform the government wants CFE to control everything — is private renewable power even viable now?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">It's the right question and I won't dodge it. The reform subordinated private generation to CFE's 54% floor — but it did <em>not</em> ban it. Qualified supply, distributed generation under 0.7 MW, CELs and corporate PPAs all survive in the law; the door is narrower, not closed. We build strictly inside the permitted private space, we keep local counsel on the new regulation as it settles, and where the market route is uncertain we lean on on-site distributed generation, which needs no permit at all. The reform changes <em>how</em> we structure, not <em>whether</em> you can buy clean power. <span class="muted">(We track the rules as they finalise — check current.)</span></p>
+        </div>
+        <div class="obj">
+          <div class="q">CFE controls supply and permits move slowly — how do I know this actually gets built and connected?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Interconnection is the real gate, so we qualify the CENACE connection point <em>before</em> we promise you anything, and we only build on secured capacity. Where transmission is the bottleneck — and after the reform's permit pause, it often is — on-site distributed generation under 0.7 MW sidesteps the queue and the permit entirely. We size the structure to what the grid and the rules can actually deliver today, not to a wish, and we phase it so you get power as capacity frees up.</p>
+        </div>
+        <div class="obj">
+          <div class="q">A solar plant in Sonora is cheap on paper, but won't the local price be depressed when I actually need power elsewhere?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">You've spotted PML basis risk — the heart of a nodal market. The price is set node by node, so a generator in a sunny, congested zone can capture a low local PML while your load pays more. That's exactly why we price your PPA on the <em>delivered</em> node and the shaped profile, not a national average, and why on-site generation behind your meter is often the cleanest hedge of all — there's no transmission between the panel and your factory. We engineer around the congestion instead of pretending it away. <span class="muted">(Check current.)</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="check" data-rise>
+      <div class="quiz">
+        <div class="lbl">Knowledge check</div>
+
+        <div class="q-item">
+          <div class="stem">What did the 2024–25 reform establish as the defining rule for generation, and what replaced the old LIE?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>It banned all private generation; the LIE was replaced by the EU Electricity Market Design rules.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q1"><span>A CFE floor of at least 54% of energy injected to the grid, with private generation subordinated; the new Ley del Sector Eléctrico (LSE) replaced the LIE.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>A 100% renewable mandate by 2030; the LIE was renamed but unchanged.</span></label>
+          </div>
+          <p class="q-feedback">The constitutional reform (Oct 2024) plus the LSE (in force March 2025, replacing the LIE) require CFE to supply ≥54% of annual energy injected to the grid. Private generation is subordinated, not banned — that distinction is the whole sale.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">Who is the energy regulator in Mexico after the 2025 reform, and who operates the grid and the wholesale market?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>The CRE regulates and also runs the grid and the MEM directly.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>CFE both regulates the sector and operates the market.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q2"><span>The CNE (which absorbed the former CRE) regulates; CENACE operates the grid and the MEM and sets nodal PML.</span></label>
+          </div>
+          <p class="q-feedback">The 2025 reform folded the CRE into the new CNE. CENACE remains the independent system and market operator, setting the hourly nodal Local Marginal Price (PML). CFE is the state utility, not the regulator.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">How does Mexico support renewable investment — and how is that different from the EU?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>Through the Modernisation Fund and the RRF, the same instruments as the EU.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q3"><span>Mainly via accelerated tax depreciation (LISR Art. 34) and nearshoring incentives — a tax shield, not EU-style cash grants.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>It offers no support of any kind for renewables.</span></label>
+          </div>
+          <p class="q-feedback">There is no Modernisation Fund, RRF or PERTE in Mexico — those are EU instruments. Mexico relies on accelerated/immediate tax depreciation for renewable equipment plus nearshoring incentives. Sell it as a tax shield, not a grant. <span class="muted">(Check current.)</span></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="callout" style="margin-top:var(--s-36)">
+      <div class="lbl">Related lessons</div>
+      <p>Go deeper on the concepts this market applies:</p>
+      <ul>
+        <li><a href="why-01-power-market.html">The European power market in 90 minutes</a></li>
+        <li><a href="prod-03-ppa-structures.html">PPA structures: physical, sleeved, virtual</a></li>
+        <li><a href="fin-02-savings.html">Customer savings: tariff vs PPA</a></li>
+        <li><a href="fund-01-landscape.html">The EU funding landscape</a></li>
+        <li><a href="exit-npv-dcf.html">NPV, DCF &amp; the exit valuation</a></li>
+      </ul>
+    </div>
+
+    <div class="pager">
+      <a class="prev" href="deepdive-france.html"><small>Previous</small>Deep dive: France</a>
+      <a class="next" href="deepdive-canada.html"><small>Next lesson</small>Deep dive: Canada →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/newman.js"></script>
+<script src="../assets/js/academy.js"></script>
+</body>
+</html>
