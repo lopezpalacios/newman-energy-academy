@@ -233,6 +233,59 @@ A research pass enriches/verifies this file — treat anything unverified as "to
 - **Carbon**: EU member → **EU ETS** (power/industry) + **CBAM** (definitive regime from 2026).
   No separate national carbon price on the German nEHS model.
 
+## FRANCE (FR) — nuclear-dominated, low-carbon baseload; cheap stable power is the twist
+- **Regulator**: **CRE (Commission de régulation de l'énergie)**. **TSO**: **RTE (Réseau de
+  Transport d'Électricité)** — EDF-independent since 2005. **Day-ahead**: **EPEX SPOT** (France
+  bidding zone, EU-coupled in SDAC); futures on **EEX**. **Guarantees of Origin**: registry run by
+  **EEX** (which absorbed **Powernext**). Check current.
+- **Defining feature — nuclear baseload**: France generates the **most nuclear power in the EU**
+  via **EDF**'s ~56-reactor fleet. 2025 nuclear output **~373 TWh** (third straight rise after the
+  2022 corrosion-driven low; availability back near pre-crisis). Nuclear is **~65–70%** of
+  generation and, with hydro/renewables, **low-carbon power was ~95% of mainland generation in
+  2025**. Result: France often has **lower, more stable wholesale prices than its gas-set
+  neighbours**, and is a structural **net exporter**. The C&I pitch therefore leans on **price
+  certainty + decarbonisation**, not the raw savings gap that sells in Italy/Poland. Check current.
+- **Post-ARENH nuclear scheme — BIG CHANGE**: **ARENH** (Accès Régulé à l'Électricité Nucléaire
+  Historique — the regulated wholesale access that let suppliers buy ~100 TWh/yr of EDF nuclear at
+  **€42/MWh**) **ENDED 31 Dec 2025**. From **1 Jan 2026** it is replaced by a state–EDF framework:
+  the **Versement Nucléaire Universel (VNU** — "universal nuclear payment") plus **Contrats
+  d'Allocation de Production Nucléaire (CAPN)**, targeting an **average ~€70/MWh** reference for
+  nuclear, with a **CfD-style rent-capture clawback** — revenue above ~**€78–80/MWh** is ~50%
+  redistributed to consumers, above **€110/MWh** ~90%. So the corporate "cheap nuclear" rate is
+  gone; PPAs become a more attractive long-term hedge. Check current — the mechanism is brand-new
+  and details are still settling.
+- **Renewable support — CRE auctions + complément de rémunération**: the **CRE runs competitive
+  auctions (appels d'offres**, e.g. the "PPE2/CRE" solar tenders) and pays a **complément de
+  rémunération** — a **sliding feed-in premium / two-way top-up**: the producer sells on the market
+  and the State pays the gap to a reference tariff (and claws back when the market runs above it).
+  Tenders **relaunched under PPE3** (the third **Programmation pluriannuelle de l'énergie**, the
+  multiannual energy plan) — nuclear-led, with renewables recalibrated; recent rounds opened access
+  to **self-consumption**. Check current.
+- **Corporate PPA market — growing but lags**: France is **behind Spain/Germany/Italy** on cPPA
+  volume — historically only **~2.2 GW contracted 2019–23** vs ~12 GW awarded in public auctions —
+  precisely **because cheap nuclear baseload undercut the PPA case**. The **end of ARENH** is the
+  catalyst now pushing corporates toward PPAs, but **2025 saw record negative-price hours** (solar
+  cannibalisation on a low-marginal-cost grid) that complicate renewable PPA valuation. The
+  distinctive tension: **a clean, cheap grid is the competitor**, not the problem. Check current.
+- **Grid & permitting — loi APER + zones d'accélération**: grid connection runs through **RTE**
+  (and Enedis at distribution). The **loi APER (loi n° 2023-175 of 10 March 2023**, "accélération
+  de la production d'énergies renouvelables") lets each **commune** designate **zones
+  d'accélération (ZAEnR)** — pre-identified areas where renewables are fast-tracked — and declares
+  renewables of "**raison impérative d'intérêt public majeur**". Rollout has been **slow** (the
+  end-2023 deadline was largely missed; zones submitted on a rolling basis; second national review
+  **15 July 2025**). Check current.
+- **Funding — France 2030 / ADEME; NOT a Modernisation Fund country**: France is a **higher-income
+  member state, so it is NOT eligible for the Modernisation Fund** (that's the 13 lower-income
+  states like CZ/PL). It funds the transition through **France 2030** (the **~€54bn** national
+  investment plan; ~€30–35bn committed across 3,000+ projects by early 2026), with **ADEME**
+  (Agence de la transition écologique) administering most energy/decarbonisation calls (incl. the
+  **Fonds Chaleur** renewable-heat fund). Earlier **France Relance** recovery money also flowed via
+  ADEME. As an EU member, grants sit inside the **CEEAG (2022) + GBER** state-aid caps. Check current.
+- **Carbon**: EU member → **EU ETS** (power/industry) + **CBAM** (definitive regime from 2026). No
+  separate national carbon price on the German nEHS model. Note the irony: France's grid is
+  **already ~95% low-carbon**, so the Scope-2 cut from a French PPA is small — the carbon pitch
+  here is **CBAM-proofing the supply chain and CSRD evidence**, not slashing grid emissions.
+
 ## How a salesperson uses the regional lens
 - **Same product, different rails**: a PPA in Germany rides EEG/auction economics and the deepest
   PPA market; in Austria it leans on EAG + hydro; in Czechia on the Modernisation Fund; in
@@ -243,13 +296,13 @@ A research pass enriches/verifies this file — treat anything unverified as "to
   the country's regulator and support scheme.
 
 ## Quick comparison (illustrative)
-| | Czechia | Germany | Austria | Switzerland | Poland | Spain | Italy |
-|---|---|---|---|---|---|---|---|
-| Regulator | ERÚ | BNetzA | E-Control | ElCom | URE | CNMC | ARERA |
-| TSO | ČEPS | 50Hertz/Amprion/TenneT/TransnetBW | APG | Swissgrid | PSE | REE (Redeia) | Terna |
-| Main RES scheme | Modernisation Fund / RES+ | EEG (Marktprämie, auctions) | EAG (premium + grants) | Einmalvergütung (PV grant) | OZE auctions (15-yr CfD) + Modernisation Fund | REER auctions (RD 960/2020, sliding premium) + autoconsumo | FER X auctions (20-yr two-way CfD, GSE) + CER energy communities |
-| In EU internal market? | Yes | Yes | Yes | **Not yet** — bilateral today; EU-CH electricity agreement signed Mar 2026, in force ~2030 if ratified. ETS linked | Yes | Yes (MIBEL, shared with Portugal) | Yes (zonal; PUN→zonal pricing from Jan 2025) |
-| Day-ahead venue | OTE (EU-coupled) | EPEX SPOT | EXAA/EPEX | EPEX/bilateral; not yet EU-coupled | TGE (EU-coupled) | OMIE (MIBEL; futures OMIP) | GME (MGP, within IPEX; EU-coupled) |
+| | Czechia | Germany | Austria | Switzerland | Poland | Spain | Italy | France |
+|---|---|---|---|---|---|---|---|---|
+| Regulator | ERÚ | BNetzA | E-Control | ElCom | URE | CNMC | ARERA | CRE |
+| TSO | ČEPS | 50Hertz/Amprion/TenneT/TransnetBW | APG | Swissgrid | PSE | REE (Redeia) | Terna | RTE |
+| Main RES scheme | Modernisation Fund / RES+ | EEG (Marktprämie, auctions) | EAG (premium + grants) | Einmalvergütung (PV grant) | OZE auctions (15-yr CfD) + Modernisation Fund | REER auctions (RD 960/2020, sliding premium) + autoconsumo | FER X auctions (20-yr two-way CfD, GSE) + CER energy communities | CRE auctions (appels d'offres) + complément de rémunération (sliding premium); post-ARENH nuclear via VNU/CAPN |
+| In EU internal market? | Yes | Yes | Yes | **Not yet** — bilateral today; EU-CH electricity agreement signed Mar 2026, in force ~2030 if ratified. ETS linked | Yes | Yes (MIBEL, shared with Portugal) | Yes (zonal; PUN→zonal pricing from Jan 2025) | Yes |
+| Day-ahead venue | OTE (EU-coupled) | EPEX SPOT | EXAA/EPEX | EPEX/bilateral; not yet EU-coupled | TGE (EU-coupled) | OMIE (MIBEL; futures OMIP) | GME (MGP, within IPEX; EU-coupled) | EPEX SPOT (France zone; EU-coupled) |
 
 ## Lesson insert map
 Which of the 28 lessons most need a DACH/EU regional callout, and the one-line callout for each

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deep dive: France — Newman Energy Sales Academy</title>
+<meta name="description" content="How to sell a commercial &amp; industrial renewable deal in France — CRE, the RTE grid, EPEX SPOT, and the nuclear-dominated low-carbon baseload that makes French power cheap and stable; CRE auctions and the complément de rémunération, the post-ARENH nuclear deal (VNU/CAPN at ~€70/MWh), the PPA-vs-cheap-nuclear tension, loi APER acceleration zones, EU ETS + CBAM on an already-clean grid, and the France 2030 / ADEME funding stack (not the Modernisation Fund).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/newman.css">
+<link rel="stylesheet" href="../assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="../index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="../index.html#why">Why a business</a>
+      <a href="../index.html#curriculum">Curriculum</a>
+      <a href="../index.html#tools">Tools</a>
+      <a class="btn" href="../index.html#curriculum">All lessons</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- LESSON HEADER -->
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Deep dive · France</div>
+    <h1>Selling a C&amp;I deal in France</h1>
+    <p class="sub">France is the one big European market where power is already <em>cheap and clean</em> — its grid runs on nuclear, so the gas price rarely sets the bill and emissions are near zero. That flips the usual sales logic: you cannot win on a fat savings gap the way you do in Italy. Instead you sell <strong>price certainty</strong> and <strong>corporate decarbonisation</strong> — and the timing is perfect, because the regulated cheap-nuclear access that corporates relied on (ARENH) just ended. Here is how to pitch it.</p>
+    <div class="facts">
+      <span><b>Level</b> Intermediate</span>
+      <span><b>Time</b> 22 min</span>
+      <span><b>Region</b> France · in the EU</span>
+      <span><b>Scheme</b> CRE auctions + complément de rémunération</span>
+    </div>
+  </div>
+</header>
+
+<!-- LESSON BODY -->
+<div class="lesson">
+
+  <!-- ASIDE / TOC -->
+  <aside class="lesson-aside">
+    <a class="back" href="../index.html#curriculum">← All tracks</a>
+    <nav aria-label="On this page">
+      <ul class="toc">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#market">France at a glance</a></li>
+        <li><a href="#scheme">CRE auctions &amp; the nuclear deal</a></li>
+        <li><a href="#ppa">PPA vs cheap nuclear</a></li>
+        <li><a href="#grid">Grid &amp; loi APER</a></li>
+        <li><a href="#carbon">Carbon: ETS &amp; CBAM</a></li>
+        <li><a href="#funding">Funding stack</a></li>
+        <li><a href="#calc">Savings calculator</a></li>
+        <li><a href="#script">In the room</a></li>
+        <li><a href="#objections">Objections</a></li>
+        <li><a href="#check">Knowledge check</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="lesson-main">
+
+    <section id="objective" data-rise>
+      <div class="callout objective">
+        <div class="lbl">Learning objective</div>
+        <p>By the end you can <strong>walk a French C&amp;I prospect through a renewable PPA</strong> — naming the right regulator (CRE), grid operator (RTE) and trading venue (EPEX SPOT), <strong>explaining why France's nuclear baseload makes power cheap and low-carbon rather than expensive</strong> — and you can <strong>reframe the pitch around price certainty and decarbonisation instead of a raw savings gap</strong>, using the end of ARENH and the new nuclear pricing deal as the reason corporates now need a PPA.</p>
+      </div>
+    </section>
+
+    <section id="market" data-rise>
+      <h2>France at a glance</h2>
+      <p>France is the odd one out in this course. In Italy or Poland the grid runs on gas or coal, so power is expensive and the savings case sells itself. France is the opposite: its grid is dominated by <strong>nuclear</strong>. <strong>EDF</strong>'s fleet of roughly 56 reactors generated about <strong>373 TWh in 2025</strong> — the third straight annual rise as availability recovered from the 2022 corrosion troubles — and nuclear is around <strong>65–70%</strong> of generation. Add hydro and renewables and <strong>low-carbon sources were about 95% of mainland generation in 2025</strong>. The consequence: French wholesale power is often <strong>cheaper and more stable than its gas-set neighbours'</strong>, and France is a structural net exporter. <span class="muted">(Live figures — check current.)</span></p>
+      <p>The institutions are clean to name. The regulator is <strong>CRE (Commission de régulation de l'énergie)</strong>. The transmission system operator — the company that owns and runs the high-voltage grid — is <strong>RTE (Réseau de Transport d'Électricité)</strong>, independent of EDF since 2005. Wholesale power trades day-ahead on <strong>EPEX SPOT</strong> in the France bidding zone, coupled into the EU single day-ahead market; futures trade on <strong>EEX</strong>, which also runs the French <strong>Guarantees of Origin</strong> registry (having absorbed Powernext).</p>
+      <table class="calc-table">
+        <tr><th>Pillar</th><th style="text-align:right">France</th></tr>
+        <tr><td>Regulator</td><td class="num">CRE — Commission de régulation de l'énergie</td></tr>
+        <tr><td>TSO (grid)</td><td class="num">RTE — Réseau de Transport d'Électricité</td></tr>
+        <tr><td>Trading venue</td><td class="num">EPEX SPOT (France zone, EU-coupled)</td></tr>
+        <tr><td>GO registry</td><td class="num">EEX (absorbed Powernext)</td></tr>
+      </table>
+      <div class="callout keyterm">
+        <div class="lbl">Key term · Nuclear baseload</div>
+        <p>A <strong>baseload</strong> source runs steadily around the clock at low marginal cost. France's nuclear fleet is the textbook case: once a reactor is running, the cost of the next megawatt-hour is small, so nuclear sits at the bottom of the merit order and rarely lets a gas plant set the price. That is why French power is structurally <strong>cheaper and lower-carbon</strong> than markets where gas is marginal most hours — and why the savings gap a PPA can offer is <em>narrower</em> here than anywhere else in this course. <span class="muted">(Check current.)</span></p>
+      </div>
+      <p class="muted" style="margin:12px 0 0">Compare this to your Czech spine: ERÚ → CRE, ČEPS → RTE, OTE → EPEX SPOT. Same product, different rails — but here the underlying grid is already clean and cheap, which changes the whole pitch.</p>
+    </section>
+
+    <section id="scheme" data-rise>
+      <h2>CRE auctions, the complément de rémunération &amp; the nuclear deal</h2>
+      <p>France supports new renewables the same way most of the bloc now does. The <strong>CRE runs competitive auctions (appels d'offres)</strong> — for example the recurring solar tenders for rooftops, canopies and ground-mount — and pays winners a <strong>complément de rémunération</strong>: a <strong>sliding feed-in premium</strong>. The producer sells its output on the market and the State pays the difference up to a reference tariff; when the market runs <em>above</em> that tariff, the surplus is clawed back. It is a two-way top-up in all but name, and it has been <strong>relaunched under PPE3</strong> (the third <em>Programmation pluriannuelle de l'énergie</em>, France's multiannual energy plan), which is nuclear-led with renewables recalibrated and recently opened to self-consumption projects. <span class="muted">(Check current.)</span></p>
+      <p>But the change that matters most to a corporate buyer is not the renewable scheme — it is what just happened to nuclear pricing.</p>
+      <div class="callout keyterm">
+        <div class="lbl">Key term · The post-ARENH nuclear deal (VNU / CAPN)</div>
+        <p>For years suppliers could buy a slice of EDF's nuclear output at a regulated <strong>€42/MWh</strong> under <strong>ARENH</strong> (Accès Régulé à l'Électricité Nucléaire Historique). <strong>ARENH ended on 31 December 2025.</strong> From <strong>1 January 2026</strong> it is replaced by a state–EDF framework — the <strong>Versement Nucléaire Universel (VNU</strong>, "universal nuclear payment") plus <strong>Contrats d'Allocation de Production Nucléaire (CAPN)</strong> — targeting an <strong>average reference near €70/MWh</strong>, with a <strong>CfD-style rent-capture clawback</strong>: revenue above roughly €78–80/MWh is about half redistributed to consumers, and above €110/MWh about 90%. The headline for your prospect: the old cheap, regulated nuclear rate is <em>gone</em>, so a PPA is now a more attractive way to lock a long-term price. <span class="muted">(Brand-new mechanism — details still settling, check current.)</span></p>
+      </div>
+    </section>
+
+    <section id="ppa" data-rise>
+      <h2>The PPA market — and the cheap-nuclear tension</h2>
+      <p>Here is the distinctive thing about France, and you must understand it to sell honestly. France's corporate-PPA market is <strong>real but lags Spain, Germany and Italy</strong>. Historically only about <strong>2.2 GW was contracted via corporate PPAs between 2019 and 2023</strong>, against some 12 GW awarded in public auctions over a similar window. The reason is not weak demand or bad resource — it is that <strong>cheap nuclear baseload was the competitor</strong>. When a corporate could lean on ARENH-priced nuclear and a generally low wholesale price, a fixed renewable PPA looked less urgent than it does in a high-gas market.</p>
+      <p>Two things now tilt the field toward PPAs. First, <strong>ARENH has ended</strong>, removing the cheapest regulated route to nuclear power. Second, French corporates increasingly need <strong>contractual proof of clean, fixed-price supply</strong> for CSRD and CBAM reasons, which a PPA with Guarantees of Origin delivers neatly.</p>
+      <div class="callout keyterm">
+        <div class="lbl">Key term · Cannibalisation &amp; negative prices</div>
+        <p>The flip side of a clean, low-marginal-cost grid is that when solar floods the midday market, prices can collapse — and France set <strong>record numbers of negative-price hours in 2025</strong>. This <strong>cannibalisation</strong> (solar depressing the price exactly when solar generates) compresses the price a renewable asset actually captures, so a French PPA must price shape and capture risk carefully — the headline strike is not the whole story. <span class="muted">(Check current.)</span></p>
+      </div>
+      <p>For a salesperson the takeaway is blunt: <strong>do not lead with raw savings in France</strong>. The grid is already cheap, so a "huge discount to your bill" pitch will not survive scrutiny. Lead with <strong>price certainty</strong> — a fixed euro-per-megawatt-hour for ten to fifteen years against a market that just lost its regulated nuclear anchor — and with <strong>decarbonisation evidence</strong> the customer can put in front of a board.</p>
+    </section>
+
+    <section id="grid" data-rise>
+      <h2>The grid &amp; loi APER acceleration zones</h2>
+      <p>Connecting to the grid runs through <strong>RTE</strong> at transmission level (and Enedis at distribution), and as everywhere the connection point and its queue are the practical gate on any physical project — qualify it before you promise a build. France's distinctive permitting tool is the acceleration-zones regime created to speed renewables up.</p>
+      <div class="callout keyterm">
+        <div class="lbl">Key term · Loi APER &amp; zones d'accélération (ZAEnR)</div>
+        <p>The <strong>loi APER (loi n° 2023-175 of 10 March 2023</strong>, on "accélération de la production d'énergies renouvelables") lets each <strong>commune designate zones d'accélération (ZAEnR)</strong> — pre-identified areas where renewable projects are fast-tracked — and declares renewables a "<strong>raison impérative d'intérêt public majeur</strong>" (overriding public interest), which strengthens projects against legal challenge. The catch: rollout has been <strong>slow</strong>. The end-2023 deadline for communes to map their zones was largely missed; zones have been submitted on a rolling basis, with a second national review on <strong>15 July 2025</strong>. So the framework exists, but a given commune may not yet have usable zones. <span class="muted">(Check current.)</span></p>
+      </div>
+      <p>The strategic read: APER is a genuine accelerant where local zones are in place, but it is not uniform across the country. Lead with sites that sit inside a designated zone and have a secured RTE connection point, not with a wish.</p>
+    </section>
+
+    <section id="carbon" data-rise>
+      <h2>Carbon: EU ETS &amp; CBAM</h2>
+      <p>France is an EU member, so the full carbon frame applies. Industrial CO₂ carries a price under the <strong>EU ETS (Emissions Trading System)</strong>, and from 2026 the <strong>CBAM (Carbon Border Adjustment Mechanism)</strong> puts a carbon cost on imports of carbon-intensive goods. France has <strong>no separate national carbon price</strong> on the German nEHS model.</p>
+      <p>But here is the twist you must handle honestly. Because France's grid is <strong>already about 95% low-carbon</strong>, a French PPA delivers only a <strong>small Scope 2 cut</strong> — the emissions from purchased electricity are already low. So the carbon argument in France is not "slash your grid emissions." It is <strong>CBAM-proofing the supply chain</strong> (demonstrably clean inputs as the border charge bites on carbon-heavy goods) and producing <strong>auditable Guarantees of Origin</strong> for CSRD reporting. The clean grid is an advantage France's exporters can document — and a PPA turns it into hard evidence rather than an assumption.</p>
+    </section>
+
+    <section id="funding" data-rise>
+      <h2>The funding stack</h2>
+      <p>Here is the most common mistake people make about France: assuming it taps the Modernisation Fund. It does not. The <strong>Modernisation Fund is reserved for the EU's 13 lower-income member states</strong> (Czechia, Poland and peers). France is a higher-income state and funds its transition from national instruments:</p>
+      <ul>
+        <li><strong>France 2030</strong> — the headline <strong>~€54bn national investment plan</strong>, of which roughly €30–35bn was committed across 3,000+ projects by early 2026. It backs clean-energy innovation and industrial decarbonisation, including renewables, hydrogen and storage.</li>
+        <li><strong>ADEME (Agence de la transition écologique)</strong> — the agency that administers most of the energy and decarbonisation calls, including the <strong>Fonds Chaleur</strong> (renewable-heat fund). It is the body a French renewable or efficiency project actually interacts with. Earlier <strong>France Relance</strong> recovery money also flowed through ADEME.</li>
+        <li><strong>State-aid ceiling</strong> — because France is in the EU, every grant must fit inside the <strong>CEEAG</strong> (Climate, Energy &amp; Environmental Aid Guidelines, 2022) and <strong>GBER</strong> (General Block Exemption Regulation) caps. Aid is sized to a viability gap; you cannot stack pots to 100%.</li>
+      </ul>
+      <div class="callout">
+        <div class="lbl">At EU level</div>
+        <p>Because France <em>is</em> in the EU, the full EU frame applies: RED III's binding renewables target, EU ETS carbon pricing, CBAM, and the 2024 Electricity Market Design reform that actively promotes PPAs and two-way CfDs. Lead with that shared frame, then localise to CRE auctions + the complément de rémunération + the France 2030/ADEME stack — <strong>not</strong> the Modernisation Fund. <span class="muted">(Programme details and call windows — check current.)</span></p>
+      </div>
+    </section>
+
+    <section id="calc" data-rise>
+      <h2>Savings calculator</h2>
+      <p>Open this across the table from a French plant manager — but read the room. France's grid is cheap, so the defaults here are deliberately modest: ~8,000 MWh/yr consumption, a grid all-in tariff around €110/MWh (below the Italian or Polish equivalent), and a PPA near €80/MWh covering about 65% of load. The saving is real but thinner than in a gas-set market — which is exactly why you sell <em>certainty</em>, not just the discount. <span class="muted">Illustrative euro figures for teaching — check current, and remember the PPA price must already account for shape, capture and the negative-price risk on a low-marginal-cost grid.</span></p>
+
+      <div class="calc" data-calc="savings">
+        <div class="calc-head"><h3>Customer savings — grid vs PPA</h3>
+          <p>What the client saves by buying covered load under a PPA instead of the grid.</p></div>
+        <div class="calc-body">
+          <div class="inputs">
+            <div class="row"><label for="scons">Annual consumption <span class="val" data-val="cons"></span></label>
+              <input id="scons" type="number" data-field="cons" value="8000" step="100" min="0"> <small class="note">MWh / yr</small></div>
+            <div class="row"><label for="star">Grid tariff <span class="val" data-val="tariff"></span></label>
+              <input id="star" type="number" data-field="tariff" value="110" step="5" min="0"> <small class="note">€ / MWh</small></div>
+            <div class="row"><label for="sppa">PPA price <span class="val" data-val="ppa"></span></label>
+              <input id="sppa" type="number" data-field="ppa" value="80" step="5" min="0"> <small class="note">€ / MWh</small></div>
+            <div class="row"><label for="sshare">Share covered by PPA <span class="val" data-val="share"></span></label>
+              <input id="sshare" type="range" data-field="share" data-val-target data-suffix="%" value="65" min="10" max="100" step="5"></div>
+          </div>
+          <div class="outputs">
+            <div class="kpi hero"><div class="k">Saving / year</div><div class="v" data-out="save">—</div></div>
+            <div class="kpi"><div class="k">% off covered bill</div><div class="v" data-out="savepct">—</div></div>
+            <div class="kpi"><div class="k">10-year saving</div><div class="v" data-out="tenyr">—</div></div>
+            <div class="kpi"><div class="k">New PPA bill</div><div class="v" data-out="ppabill">—</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="script" data-rise>
+      <h2>In the room</h2>
+      <p>How you open with a French industrial prospect — leading with certainty and the end of ARENH, not a savings headline that won't survive on a cheap grid:</p>
+      <div class="script">
+        <div class="lbl">Sales script</div>
+        <p>You're in an unusual position: your power is already cheap and almost entirely low-carbon, because France runs on nuclear. So I'm not going to wave a giant discount at you — that pitch is for Italy, not France. What's changed for you is ARENH: the regulated cheap-nuclear access your supplier leaned on ended at the start of 2026, replaced by a new state–EDF mechanism around seventy euros a megawatt-hour with a clawback above that. That removes your old price anchor. A ten-to-fifteen-year PPA lets you re-anchor — lock a fixed euro price below your grid tariff, with Guarantees of Origin you can put straight into your CSRD report and use to CBAM-proof your supply chain. It's modest savings plus real certainty, on a clean grid you can now <em>prove</em> is clean. Same product the German and Italian plants buy, on French rails — sold straight, with the thin margin acknowledged and certainty doing the work.</p>
+      </div>
+    </section>
+
+    <section id="objections" data-rise>
+      <h2>Objections you will hear</h2>
+      <div class="objections">
+        <div class="obj">
+          <div class="q">Our nuclear power is already cheap and clean — why would I sign a PPA at all?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">You're right, and that's exactly why I'm not selling you a discount — I'm selling certainty. Your cheap access just changed: ARENH ended at the start of 2026 and the new nuclear deal sits around seventy euros with a clawback, so your old anchor is gone and your supplier's price will move with the market. A PPA locks a fixed euro figure for ten to fifteen years, independent of that reset, with Guarantees of Origin attached. Clean is true today; <em>contracted, fixed and documented</em> is what you don't have yet — and what your board and CBAM exposure increasingly need.</p>
+        </div>
+        <div class="obj">
+          <div class="q">If I want a renewable project, what about the grid connection queue and getting it permitted?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">That's the real gate in France, and we treat it first, not last. Connection runs through RTE and the queue is genuine, so we qualify the connection point and its timeline before we promise anything. On permitting, the loi APER created acceleration zones — ZAEnR — that fast-track projects and give them overriding-public-interest status, but the rollout is uneven, so we target sites that actually sit in a designated zone. And where a physical build is slow, a virtual or financial PPA hedges your price with no new authorisation at all. We size the deal to what the grid and the consenting map can actually deliver.</p>
+        </div>
+        <div class="obj">
+          <div class="q">ARENH is ending and there's a new nuclear deal — isn't my price changing anyway? Why lock in now?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Because that change is the whole reason to act. ARENH gave regulated access to nuclear at forty-two euros; from 2026 the VNU and CAPN mechanism targets about seventy with a rent clawback above that — so the cheap, predictable rate corporates relied on is gone and your supply price now tracks a freshly reset market. A PPA is how you take a slice of your load <em>out</em> of that uncertainty at a fixed euro price. We don't pretend to know where the nuclear deal settles — we let the live mechanism do what it does, and we fix the part of your bill you most want certainty on. <span class="muted">(Check current — the mechanism is new.)</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="check" data-rise>
+      <div class="quiz">
+        <div class="lbl">Knowledge check</div>
+
+        <div class="q-item">
+          <div class="stem">What is distinctive about the French wholesale market, and who runs the grid and the day-ahead venue?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>France's grid is gas-set like Italy's, so prices are among the highest in the EU; CRE runs the spot market directly.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q1"><span>France is nuclear-dominated (~65–70%), so power is cheap and low-carbon; CRE regulates, RTE runs the grid, and EPEX SPOT runs the day-ahead market.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>France is coal-heavy with the EU's highest carbon intensity; PSE runs the grid.</span></label>
+          </div>
+          <p class="q-feedback">Nuclear baseload sits at the bottom of the merit order, so French power is structurally cheap and ~95% low-carbon. CRE regulates, RTE is the TSO, EPEX SPOT is the day-ahead venue — don't mix the roles in front of a client.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">Because France's grid is already cheap and clean, how should the PPA pitch differ from the Italian one?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>Lead with a huge savings gap against the grid tariff — it's bigger in France than anywhere.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q2"><span>Lead with price certainty and decarbonisation evidence, not raw savings — the cheap grid means the discount is thin, and the end of ARENH removed the old nuclear price anchor.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>Don't sell PPAs in France at all — the Modernisation Fund covers everything.</span></label>
+          </div>
+          <p class="q-feedback">A clean, cheap grid is the competitor in France, so a raw-savings pitch won't survive scrutiny. Sell certainty (a fixed price now that ARENH has ended) plus Guarantees of Origin for CSRD/CBAM. France is not a Modernisation Fund country.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">What replaced ARENH, and which fund does France use for its energy transition?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>ARENH was extended to 2035; France draws on the Modernisation Fund like Czechia and Poland.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q3"><span>ARENH ended end-2025, replaced from 2026 by the VNU/CAPN nuclear-pricing deal (~€70/MWh with a clawback); France funds the transition via France 2030 / ADEME — it is <em>not</em> a Modernisation Fund country.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>ARENH was replaced by a 20-year feed-in tariff; France relies on the EU Innovation Fund only.</span></label>
+          </div>
+          <p class="q-feedback">ARENH (regulated nuclear access at €42/MWh) ended 31 Dec 2025; from 2026 the VNU + CAPN framework targets ~€70/MWh with a CfD-style rent clawback. France is a higher-income state, so it uses France 2030 (ADEME-administered), not the Modernisation Fund, with all aid under CEEAG/GBER caps.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="callout" style="margin-top:var(--s-36)">
+      <div class="lbl">Related lessons</div>
+      <p>Go deeper on the concepts this market applies:</p>
+      <ul>
+        <li><a href="why-01-power-market.html">The European power market in 90 minutes</a></li>
+        <li><a href="prod-03-ppa-structures.html">PPA structures: physical, sleeved, virtual</a></li>
+        <li><a href="fin-02-savings.html">Customer savings: tariff vs PPA</a></li>
+        <li><a href="fund-01-landscape.html">The EU funding landscape</a></li>
+        <li><a href="exit-npv-dcf.html">NPV, DCF &amp; the exit valuation</a></li>
+      </ul>
+    </div>
+
+    <div class="pager">
+      <a class="prev" href="deepdive-italy.html"><small>Previous</small>Deep dive: Italy</a>
+      <a class="next" href="../index.html#curriculum"><small>Next lesson</small>All tracks →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/newman.js"></script>
+<script src="../assets/js/academy.js"></script>
+</body>
+</html>
