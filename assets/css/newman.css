@@ -33,7 +33,7 @@
   --logo-grad:linear-gradient(105deg,#191B4D,#3A1852,#981060,#B80E65);
 
   /* ---- type ---- */
-  --display:'Montserrat','Arial Narrow',Arial,sans-serif;
+  --display:'Space Grotesk','Arial Narrow',Arial,sans-serif;
   --body:'Inter',-apple-system,BlinkMacSystemFont,Arial,sans-serif;
   --text-label:12px;     --track-label:.14em;
   --text-body-sm:14px;
@@ -255,6 +255,40 @@ p{color:var(--muted);max-width:64ch;font-size:var(--text-body)}
 .logo-stage.on-tint{background:var(--bg-2)}
 .logo-stage svg{width:100%;max-width:360px;height:auto}
 .logo-stage.iso svg{max-width:120px}
+.app-tile{display:inline-grid;place-items:center;width:76px;height:76px;border-radius:20px;color:#fff}
+.app-tile.lg{width:112px;height:112px;border-radius:28px}
+.app-tile svg{width:58%;height:auto}
+/* delight (iter 10 · Sagmeister): the marks reward touch */
+.app-tile{transition:transform .22s cubic-bezier(.34,1.56,.64,1)}
+.app-tile:hover{transform:translateY(-5px) rotate(-3deg)}
+.logo-stage svg,.media,.nm-loader{transition:transform .25s ease}
+.logo-stage:hover svg{transform:scale(1.04)}
+.hero-mark{transition:opacity .4s ease,transform .4s ease}
+.hero:hover .hero-mark{opacity:.12;transform:scale(1.04) rotate(2deg)}
+@media (prefers-reduced-motion:reduce){
+  .app-tile,.logo-stage svg,.hero-mark{transition:none}
+  .app-tile:hover,.logo-stage:hover svg,.hero:hover .hero-mark{transform:none}
+}
+.dont-card{border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden;background:var(--surface)}
+.dont-card .vis{height:118px;display:grid;place-items:center;background:var(--bg-2);overflow:hidden}
+.dont-card .vis svg{width:62px;height:auto;color:var(--accent)}
+.dont-card .lbl{display:flex;align-items:center;gap:8px;padding:12px 16px;font-family:var(--display);font-weight:500;font-size:13px;color:var(--text)}
+.dont-card .x{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#b3382c;color:#fff;font-size:11px;flex:none}
+.app-poster{aspect-ratio:3/4;border-radius:var(--r-card);padding:24px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.app-poster.navy{background:var(--navy);color:#fff}
+.app-poster.accent{background:var(--accent);color:#fff}
+.app-poster.light{background:var(--bg-2);color:var(--navy);border:1px solid var(--line)}
+.app-poster .big{font-family:var(--display);font-weight:300;text-transform:uppercase;letter-spacing:.05em;font-size:clamp(30px,4.2vw,46px);line-height:.96}
+.app-poster .cap{font-family:var(--display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.82}
+.logo-motion{display:inline-flex}
+.logo-motion svg{width:150px;height:auto}
+.logo-motion .bar{transform-box:fill-box;transform-origin:bottom;animation:nm-build 4s ease-in-out infinite}
+.logo-motion .bar:nth-child(2){animation-delay:.09s}
+.logo-motion .bar:nth-child(3){animation-delay:.18s}
+.logo-motion .bar:nth-child(4){animation-delay:.27s}
+.logo-motion .bar:nth-child(5){animation-delay:.36s}
+@keyframes nm-build{0%{opacity:0;transform:translateY(18px)}14%,80%{opacity:1;transform:none}100%{opacity:0;transform:translateY(18px)}}
+@media (prefers-reduced-motion:reduce){.logo-motion .bar{animation:none;opacity:1;transform:none}}
 .clearspace{position:relative;border:1px dashed var(--line);border-radius:var(--r-card);padding:clamp(40px,7vw,72px);background:var(--bg-2);display:flex;justify-content:center}
 .clearspace svg{width:300px;max-width:100%}
 
@@ -267,6 +301,9 @@ p{color:var(--muted);max-width:64ch;font-size:var(--text-body)}
 .scale-row .bar{height:14px;background:var(--accent);border-radius:2px}
 .radius-demo{display:flex;gap:var(--s-16);flex-wrap:wrap}
 .radius-demo .r{width:96px;height:96px;background:var(--bg-2);border:1px solid var(--line);display:grid;place-items:end center;padding:8px;font-size:11px;color:var(--muted);font-family:var(--display)}
+.grid-cols{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.grid-cols span{height:120px;background:var(--accent-tint);border-top:2px solid var(--accent);border-radius:0 0 4px 4px}
+@media (max-width:860px){.grid-cols{grid-template-columns:repeat(6,1fr);gap:12px}.grid-cols span{height:80px}}
 
 .dodont{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-24)}
 .dodont .col{border:1px solid var(--line);border-radius:var(--r-card);padding:var(--s-24);background:var(--surface)}

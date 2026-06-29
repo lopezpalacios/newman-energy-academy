@@ -47,7 +47,7 @@
 .callout .lbl::before{content:"";width:6px;height:6px;background:var(--magenta);flex:none}
 .callout p:last-child{margin-bottom:0}
 .callout.objective{background:var(--accent-tint);border-left-color:var(--accent)}
-.callout.keyterm{border-left-color:var(--magenta)}
+.callout.keyterm{border-left-color:var(--accent)}
 
 /* ---------- worked example box ---------- */
 .worked{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);padding:var(--s-36);margin-bottom:var(--s-24)}
@@ -145,7 +145,7 @@ table.calc-table tr.total td{border-top:2px solid var(--accent);border-bottom:0;
 .hs-fillp{fill:var(--accent-tint)}
 .hs-soft{fill:none;stroke:var(--accent);stroke-width:1.4;opacity:.5;stroke-linecap:round}
 .hs-rays{transform-origin:372px 92px;animation:hs-spin 60s linear infinite}
-.hs-charge{stroke:var(--magenta);stroke-width:3;stroke-linecap:round;stroke-dasharray:5 190;animation:hs-flow 3.2s linear infinite}
+.hs-charge{stroke:var(--accent);stroke-width:3;stroke-linecap:round;stroke-dasharray:5 190;animation:hs-flow 3.2s linear infinite}
 .hs-bar{fill:var(--accent)}
 .hs-b1{animation:hs-pulse 3s ease-in-out infinite}
 .hs-b2{animation:hs-pulse 3s ease-in-out .5s infinite}
@@ -176,7 +176,7 @@ table.calc-table tr.total td{border-top:2px solid var(--accent);border-bottom:0;
 .abbr{border:1px solid var(--line);border-radius:var(--r-card);background:var(--surface);padding:var(--s-24);transition:border-color .2s,transform .2s,box-shadow .25s;opacity:0;transform:translateY(16px)}
 .abbr.in{opacity:1;transform:none}
 .abbr.hide{display:none}
-.abbr:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:var(--shadow)}
+.abbr:hover{border-color:var(--accent);transform:translateY(-3px)}
 .abbr .ab{font-family:var(--display);font-weight:var(--w-light);font-size:30px;line-height:1;color:var(--accent);letter-spacing:.01em}
 .abbr .full{display:block;font-family:var(--display);font-weight:var(--w-med);font-size:14px;color:var(--navy);margin:8px 0 10px}
 .abbr p{font-size:var(--text-body-sm);color:var(--muted);margin:0;max-width:none}
