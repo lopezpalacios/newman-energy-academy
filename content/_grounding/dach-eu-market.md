@@ -175,6 +175,64 @@ A research pass enriches/verifies this file — treat anything unverified as "to
 - **Carbon**: EU member → **EU ETS** (power/industry) + **CBAM** (border carbon, definitive regime
   from 2026). No separate national carbon price on the German nEHS model.
 
+## ITALY (IT) — among the EU's priciest power + the #2 corporate-PPA market
+- **Regulator**: **ARERA** (Autorità di Regolazione per Energia Reti e Ambiente). **TSO**: **Terna**.
+  **Market operator**: **GME** (Gestore dei Mercati Energetici) — runs the day-ahead market
+  **MGP** (Mercato del Giorno Prima) within the power exchange **IPEX**. **GSE** (Gestore dei
+  Servizi Energetici) administers the renewable incentives & auctions.
+- **Zonal market**: Italy is split into **bidding zones** (e.g. North, Centre-North, Centre-South,
+  South, Sicily, Sardinia after a 2021 reconfiguration). Historically a single national buy price
+  (**PUN — Prezzo Unico Nazionale**) was set for consumers. From **1 Jan 2025** the **TIDE**
+  dispatching reform moved wholesale **purchases to zonal prices**; PUN survives only as the **"PUN
+  Index GME"**, a consumption-weighted average reference (with a transitional equalisation). So PUN
+  is now a *reference index*, not the settlement price. **Check current.**
+- **Prices = the pitch**: Italy has **among the highest wholesale power prices in the EU** — its
+  merit order is heavily **gas-dependent**, so gas sets the price most hours. 2025 PUN index ran
+  roughly **€100–130/MWh** (Q2 2025 averaged ~€101.65/MWh; winter peaks higher) — structurally
+  above most of the bloc. Industrial all-in tariffs sit well above that. High prices = a **strong
+  PPA/savings case**. **Check current.**
+- **Support — FER decrees + GSE**: the **FER** decrees run the renewable-incentive regime. The
+  **Transitional FER X decree** (in force **28 Feb 2025**, ~€9.7bn, EU-approved ~€23bn scheme to
+  add ~37 GW) offers **20-year two-way CfDs** via **GSE auctions** (plants >1 MW) or direct access
+  (<1 MW). First competitive results published **1 Dec 2025**: ~**7.7 GW solar** awarded (clearing
+  ~€62.7/MWh) + ~940 MW–1.1 GW wind. The transitional decree lapses end-2025; the **full FER X**
+  takes over, with GSE planning **10 GW solar + 16 GW wind** across 2026–27 auctions. Predecessors:
+  **FER 1** (2019, solar/wind/hydro/gas auctions+registries), **FER 2** (non-PV technologies), and
+  the legacy **Conto Energia** PV feed-in regime (closed 2013). **Check current.**
+- **Renewable energy communities (CER — Comunità Energetiche Rinnovabili)**: a fast-growing
+  self-/shared-consumption model. **GSE** administers a **20-year feed-in incentive tariff** on
+  shared energy **plus** a **PNRR capital grant of up to 40%** for communities in municipalities
+  (a **16 Jul 2025** decree widened eligibility to municipalities **up to 50,000 inhabitants**, up
+  from 5,000). PNRR grant envelope was **reprogrammed down** (from €2.2bn toward ~€0.8bn); grant
+  applications ran to **30 Nov 2025**, with the feed-in tariff continuing. **Check current.**
+- **PPA market — the EU's #2 by volume (behind Spain)**: Italy is now the **second-most-active**
+  corporate-PPA market in Europe. 2025 saw a surge — solar cPPA volumes up ~**184% YoY**, incl.
+  Italy's **largest-ever solar corporate PPA (~420 MW, June 2025)**. Lower solar **cannibalisation**
+  than saturated Spain (an earlier-stage market) lets big deals get done. (Spain ~3.9 GW vs Italy
+  ~1.8 GW in 2025 — orders of magnitude, **check current**.)
+- **Permitting bottleneck — "aree idonee"**: the binding constraint. Authorisation is largely
+  **regional**, and a **June 2024 "aree idonee" (suitable-areas) decree** let regions designate
+  where renewables may go — but it **delegated too much**: the **Lazio administrative court (TAR)
+  partially annulled it in May 2025** for unconstitutional over-delegation, and provisions later
+  migrated into **Decree 175 of 21 Nov 2025**. Net effect: **regional authorisation delays and
+  legal uncertainty** are the #1 development risk. **Check current.**
+- **Storage — Terna's MACSE**: the **MACSE** (Meccanismo di Approvvigionamento di Capacità di
+  Stoccaggio Elettrico) storage-capacity auctions. The **first MACSE (results 1 Oct 2025)**
+  procured **10 GWh** under **15-year contracts from 2028**, ~4× oversubscribed, clearing
+  ~**€12,959/MWh/yr** (well below the ~€37,000 reserve), ~€1bn investment, concentrated in the
+  South/islands. Italy also runs a **capacity market** (Terna). **Check current.**
+- **Funding — PNRR (largest RRF recipient), NOT Modernisation Fund**: Italy is by far the **biggest
+  beneficiary of the RRF / NextGenerationEU** — **~€194.4bn** PNRR (post-2023 revision, incl. a
+  **REPowerEU** energy chapter), administered nationally (**MEF** coordination; **GSE** for the
+  energy measures); deadline **31 Aug 2026** (~72% disbursed by 2026). Italy is **not** a
+  Modernisation Fund country (that's the 13 lower-income states). The **Transizione 5.0** tax-credit
+  scheme rewards efficiency + **self-generation/self-consumption** from renewables (PV/storage) —
+  but its ~€2.5bn ceiling **closed early** in 2025, and **from 1 Jan 2026 it converts to
+  hyper-amortisation** (max ~180%, with a "made-in-Europe" clause). EU **CEEAG + GBER** state-aid
+  caps apply. **Check current.**
+- **Carbon**: EU member → **EU ETS** (power/industry) + **CBAM** (definitive regime from 2026).
+  No separate national carbon price on the German nEHS model.
+
 ## How a salesperson uses the regional lens
 - **Same product, different rails**: a PPA in Germany rides EEG/auction economics and the deepest
   PPA market; in Austria it leans on EAG + hydro; in Czechia on the Modernisation Fund; in
@@ -185,13 +243,13 @@ A research pass enriches/verifies this file — treat anything unverified as "to
   the country's regulator and support scheme.
 
 ## Quick comparison (illustrative)
-| | Czechia | Germany | Austria | Switzerland | Poland | Spain |
-|---|---|---|---|---|---|---|
-| Regulator | ERÚ | BNetzA | E-Control | ElCom | URE | CNMC |
-| TSO | ČEPS | 50Hertz/Amprion/TenneT/TransnetBW | APG | Swissgrid | PSE | REE (Redeia) |
-| Main RES scheme | Modernisation Fund / RES+ | EEG (Marktprämie, auctions) | EAG (premium + grants) | Einmalvergütung (PV grant) | OZE auctions (15-yr CfD) + Modernisation Fund | REER auctions (RD 960/2020, sliding premium) + autoconsumo |
-| In EU internal market? | Yes | Yes | Yes | **Not yet** — bilateral today; EU-CH electricity agreement signed Mar 2026, in force ~2030 if ratified. ETS linked | Yes | Yes (MIBEL, shared with Portugal) |
-| Day-ahead venue | OTE (EU-coupled) | EPEX SPOT | EXAA/EPEX | EPEX/bilateral; not yet EU-coupled | TGE (EU-coupled) | OMIE (MIBEL; futures OMIP) |
+| | Czechia | Germany | Austria | Switzerland | Poland | Spain | Italy |
+|---|---|---|---|---|---|---|---|
+| Regulator | ERÚ | BNetzA | E-Control | ElCom | URE | CNMC | ARERA |
+| TSO | ČEPS | 50Hertz/Amprion/TenneT/TransnetBW | APG | Swissgrid | PSE | REE (Redeia) | Terna |
+| Main RES scheme | Modernisation Fund / RES+ | EEG (Marktprämie, auctions) | EAG (premium + grants) | Einmalvergütung (PV grant) | OZE auctions (15-yr CfD) + Modernisation Fund | REER auctions (RD 960/2020, sliding premium) + autoconsumo | FER X auctions (20-yr two-way CfD, GSE) + CER energy communities |
+| In EU internal market? | Yes | Yes | Yes | **Not yet** — bilateral today; EU-CH electricity agreement signed Mar 2026, in force ~2030 if ratified. ETS linked | Yes | Yes (MIBEL, shared with Portugal) | Yes (zonal; PUN→zonal pricing from Jan 2025) |
+| Day-ahead venue | OTE (EU-coupled) | EPEX SPOT | EXAA/EPEX | EPEX/bilateral; not yet EU-coupled | TGE (EU-coupled) | OMIE (MIBEL; futures OMIP) | GME (MGP, within IPEX; EU-coupled) |
 
 ## Lesson insert map
 Which of the 28 lessons most need a DACH/EU regional callout, and the one-line callout for each
