@@ -64,3 +64,44 @@ return"). It also **de-risks the build**, which later supports a cleaner exit.
 - Industry bodies: **Solární asociace** (CZ solar association), **SolarPower Europe**, **EASE**
   (storage). Good for events, contacts, and call intelligence.
 *(Use these as categories/examples. Always say "verify current contacts on the official site.")*
+
+## EU platform structuring (educational)
+For the capstone lesson `tracks/structuring-eu-platform.html` — how a **non-EU developer** (worked
+example: ~100 MW operating solar in Mexico, fund-backed) structures a European platform to access
+EU grants + institutional capital. **Educational, NOT tax/legal/investment advice; substance is
+mandatory; engage counsel.** Verified mid-2026:
+
+- **Grant beneficiary must be EU-established.** EU Funding & Tenders Portal grants require a **legal
+  entity established in an eligible country**; a foreign (Mexican) parent generally cannot be the
+  direct beneficiary. The **Modernisation Fund** does not take direct applications — **beneficiary
+  member states** select investments (located in that state) and submit them; payout runs through a
+  **national operator** (CZ **SFŽP ČR** / RES+; PL **NFOŚiGW**). So the recipient is a **local
+  project company**, not the foreign parent. The Mexican HoldCo can OWN the platform but cannot be
+  the grant beneficiary, PPA signatory or permit holder. *(Beneficiary list/eligibility — check current.)*
+- **State-aid frame: CEEAG (2022) + GBER.** CEEAG = Guidelines on State aid for climate, environment
+  & energy (adopted 27 Jan 2022) — the criteria the Commission uses to approve notified aid. GBER =
+  General Block Exemption Regulation — aid below set ceilings needs no prior notification. Beneficiary
+  = an **"undertaking"** (any entity in an economic activity, regardless of who owns it). Aid is sized
+  to a **viability gap** with an **incentive effect** (no starting works before applying); foreign
+  ownership of the undertaking does not break eligibility.
+- **Layered architecture (standard practice):** **Group/platform HoldCo → national/intermediate
+  HoldCo → per-project SPV/ProjectCo.** The SPV is the **asset owner, PPA signatory, permit holder
+  and grant beneficiary**, one per project to ring-fence liability and give lenders clean security.
+- **Common EU holding jurisdictions: NL, LUX, IE.** Why: **participation exemptions** (NL ≥5%;
+  LUX SOPARFI; **IE foreign-dividend participation exemption from 1 Jan 2025 — check current**) avoid
+  double taxation of dividends/gains; deep **treaty networks** + EU **Parent-Subsidiary / Interest &
+  Royalties Directives** cut withholding friction; **fund/lender familiarity** eases raises and exits.
+- **Substance is mandatory — no letterbox.** **ATAD** (Dir. 2016/1164: interest limitation, exit tax,
+  CFC, GAAR, anti-hybrid; ATAD2 hybrids from 2020) + treaty **Principal Purpose Test** (BEPS MLI Art. 7)
+  + **UBO registers** (4/5AMLD; CJEU C-37/20 struck down public access Nov 2022 → legitimate-interest
+  access under the 2024 AML package — **check current** transposition) all target empty shells. Need
+  real local management/board decisions/office. **CHECK CURRENT — Unshell/ATAD3** minimum-substance
+  directive was **withdrawn** (Commission 2026 Work Programme); substance principles folded into a
+  **DAC reform** instead. Direction unchanged: substance + transparency required.
+- **Track record + capital.** 100 MW operating MX portfolio = a credential (proven build/finance/
+  operate) that lenders and grant officers weigh. Funds invest at **platform/HoldCo level** (equity or
+  HoldCo facilities for a pipeline) and via **SPV-level project finance / co-investment**.
+- **Exit alignment.** EU infra funds buy operating assets by **share sale of the local SPV** (not asset
+  deal) — preserves permits/PPA/grid connection, scales across portfolios. One-SPV-per-project makes
+  each a clean, independently saleable parcel; participation exemption may shelter the gain at HoldCo
+  level (*check current; fact-specific*). Ties back to the exit/DCF track.

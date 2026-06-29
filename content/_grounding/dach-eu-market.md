@@ -87,6 +87,46 @@ A research pass enriches/verifies this file — treat anything unverified as "to
 - **GOs**: **Herkunftsnachweis**, registry run by **Pronovo**. Hydro-dominated; winter import
   reliance → reserve/backup power a live policy theme.
 
+## POLAND (PL) — coal-heavy grid in fast transition; a strong PPA case
+- **Regulator**: **URE (Urząd Regulacji Energetyki**, the Energy Regulatory Office). **TSO**:
+  **PSE (Polskie Sieci Elektroenergetyczne)**. **Power exchange**: **TGE (Towarowa Giełda
+  Energii)** — the designated NEMO in the Polish bidding zone, coupled into the EU **single
+  day-ahead market (SDAC)** via flow-based coupling since **June 2022**, and the intraday **SIDC**.
+- **Generation mix**: still **coal-dominated but transitioning fast**. Coal fell from ~56.6% of
+  the mix in 2024 to **~52.2% in 2025** (hard coal ~32.9% + lignite ~19.3%); renewables ~29%
+  (wind ~14%, solar ~12%). For one month (June 2025) renewables (45.6%) **beat coal** (42.3%) for
+  the first time. Poland has the **highest carbon intensity in the EU**. **Check current.**
+- **Why prices/carbon are high**: a coal-heavy merit order means **EU ETS carbon cost passes
+  straight through** into the wholesale price, keeping Polish power among the **most expensive and
+  carbon-intensive in the EU** — exactly the conditions that make a clean PPA compelling.
+- **Support — OZE auctions (aukcje)**: under the 2015 RES Act, **URE runs competitive auctions**
+  awarding a **15-year CfD-style** contract (top-up vs a reference price). 2025 round (early July)
+  offered ~75.9 TWh worth ~PLN 31bn; **solar again topped wind** on volume. **Check current.**
+- **Prosumers — net-billing**: **net-metering was replaced by net-billing on 1 April 2022**.
+  Exports are now valued at the **day-ahead market price** (value-offset, not volume). Pre-2022
+  prosumers are grandfathered on net-metering until **April 2027**. Political pressure to soften
+  the regime is live — **check current**.
+- **Corporate PPAs (cPPA)**: Poland is a **CEE leader** and one of Europe's faster-growing PPA
+  markets — it hit **record PPA volumes in Q4 2025** even as overall EU contracting cooled (e.g.
+  the Energa–EDP deal, ~600 GWh/yr from 2026). High grid + carbon cost is the demand driver.
+- **Grid**: severe **connection constraints** — PSE has warned reported RES project potential is
+  ~**4× current system capacity**, and connection **refusals** are common. The **Grid Act (UC84,
+  2026)** overhauls connection rules (conditions valid ~1 year, curbs "zombie projects", frees
+  capacity). The onshore-wind **"10H" rule was liberalised** (amendment in force **April 2023**;
+  min ~700 m from homes), with further loosening toward ~500 m advancing **2025–26**. Check current.
+- **BESS**: storage is booming, pulled by **capacity-market** participation — four capacity
+  auctions (2022–25) contracted on the order of ~11 GW of battery capacity, plus **NFOŚiGW grants
+  (~PLN 4.15bn / ~€1bn)** to ~172 projects. Operating utility BESS ~0.4 GW end-2025 → ~1.3 GW
+  end-2026, heading toward **8+ GW by 2030**. Check current.
+- **Funding**: Poland is the **largest beneficiary of the EU Modernisation Fund** (~43% of the
+  pool, potentially **>€11bn**), disbursed via **NFOŚiGW** (National Fund for Environmental
+  Protection & Water Management). Also **KPO (Krajowy Plan Odbudowy** — the RRF national recovery
+  plan, ~€54.7bn grants+loans), **FEnIKS** (European Funds for Infrastructure, Climate, Environment
+  2021–27, ~€24bn — the **largest cohesion programme in the EU**), and **NFOŚiGW programmes** such
+  as **Mój Prąd** ("My Electricity", prosumer PV+storage; 6.0 round ~PLN 1.85bn, storage now a
+  precondition, financed via FEnIKS). As an EU member, grants sit inside the **CEEAG/GBER**
+  state-aid caps. Check current.
+
 ## How a salesperson uses the regional lens
 - **Same product, different rails**: a PPA in Germany rides EEG/auction economics and the deepest
   PPA market; in Austria it leans on EAG + hydro; in Czechia on the Modernisation Fund; in
@@ -97,13 +137,13 @@ A research pass enriches/verifies this file — treat anything unverified as "to
   the country's regulator and support scheme.
 
 ## Quick comparison (illustrative)
-| | Czechia | Germany | Austria | Switzerland |
-|---|---|---|---|---|
-| Regulator | ERÚ | BNetzA | E-Control | ElCom |
-| TSO | ČEPS | 50Hertz/Amprion/TenneT/TransnetBW | APG | Swissgrid |
-| Main RES scheme | Modernisation Fund / RES+ | EEG (Marktprämie, auctions) | EAG (premium + grants) | Einmalvergütung (PV grant) |
-| In EU internal market? | Yes | Yes | Yes | **Not yet** — bilateral today; EU-CH electricity agreement signed Mar 2026, in force ~2030 if ratified. ETS linked |
-| Day-ahead venue | OTE (EU-coupled) | EPEX SPOT | EXAA/EPEX | EPEX/bilateral; not yet EU-coupled |
+| | Czechia | Germany | Austria | Switzerland | Poland |
+|---|---|---|---|---|---|
+| Regulator | ERÚ | BNetzA | E-Control | ElCom | URE |
+| TSO | ČEPS | 50Hertz/Amprion/TenneT/TransnetBW | APG | Swissgrid | PSE |
+| Main RES scheme | Modernisation Fund / RES+ | EEG (Marktprämie, auctions) | EAG (premium + grants) | Einmalvergütung (PV grant) | OZE auctions (15-yr CfD) + Modernisation Fund |
+| In EU internal market? | Yes | Yes | Yes | **Not yet** — bilateral today; EU-CH electricity agreement signed Mar 2026, in force ~2030 if ratified. ETS linked | Yes |
+| Day-ahead venue | OTE (EU-coupled) | EPEX SPOT | EXAA/EPEX | EPEX/bilateral; not yet EU-coupled | TGE (EU-coupled) |
 
 ## Lesson insert map
 Which of the 28 lessons most need a DACH/EU regional callout, and the one-line callout for each

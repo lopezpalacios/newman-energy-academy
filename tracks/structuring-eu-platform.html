@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Structuring a European platform to access EU funding — Newman Energy Sales Academy</title>
+<meta name="description" content="How a non-EU renewables developer — say, one with 100 MW of operating solar in Mexico — builds a compliant European platform that can legally receive EU grants and institutional capital: why you need an EU-established beneficiary, the HoldCo → national HoldCo → SPV architecture, holding jurisdictions and the real substance rules (ATAD, the withdrawn Unshell proposal, UBO registers), and structuring for a clean share-sale exit. Educational — not tax, legal or investment advice.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/newman.css">
+<link rel="stylesheet" href="../assets/css/academy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="row">
+    <a class="brand" href="../index.html" aria-label="Newman Energy Academy — home">
+      <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman" height="22">
+        <g fill="#fff">
+          <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+          <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+          <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+          <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+          <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+          <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        </g>
+        <g fill="#fff">
+          <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/>
+          <polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/>
+          <polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/>
+          <polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/>
+          <polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+        </g>
+      </svg>
+      <span class="sr-only">Newman Energy Academy</span>
+    </a>
+    <div class="links" id="navlinks">
+      <a href="../index.html#why">Why a business</a>
+      <a href="../index.html#curriculum">Curriculum</a>
+      <a href="../index.html#tools">Tools</a>
+      <a class="btn" href="../index.html#curriculum">All lessons</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- LESSON HEADER -->
+<header class="lesson-head" id="main">
+  <div class="wrap">
+    <div class="trail">Capstone · Structuring for EU funding</div>
+    <h1>Structuring a European platform to access EU funding</h1>
+    <p class="sub">You already own 100 MW of operating solar in Mexico, backed by international funds. Now you want into Europe — to tap the Modernisation Fund, national grant schemes and EU institutional capital. The catch: your Mexican company cannot receive a single euro of EU grant directly. This lesson shows the compliant platform you build so it can — and stresses, throughout, that the structure only works if the substance is real.</p>
+    <div class="facts">
+      <span><b>Level</b> Advanced</span>
+      <span><b>Time</b> 30 min</span>
+      <span><b>Scope</b> EU platform structuring</span>
+      <span><b>Example</b> 100 MW MX developer → CZ/PL</span>
+    </div>
+  </div>
+</header>
+
+<!-- LESSON BODY -->
+<div class="lesson">
+
+  <!-- ASIDE / TOC -->
+  <aside class="lesson-aside">
+    <a class="back" href="../index.html#curriculum">← All tracks</a>
+    <nav aria-label="On this page">
+      <ul class="toc">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#why">Why you need an EU entity</a></li>
+        <li><a href="#architecture">The platform architecture</a></li>
+        <li><a href="#jurisdictions">Choosing the HoldCo location</a></li>
+        <li><a href="#grants">How the grant flows</a></li>
+        <li><a href="#capital">Bringing your funds &amp; track record</a></li>
+        <li><a href="#exit">Structuring for the exit</a></li>
+        <li><a href="#disclaimer">This is not advice</a></li>
+        <li><a href="#script">In the room</a></li>
+        <li><a href="#objections">Objections</a></li>
+        <li><a href="#check">Knowledge check</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="lesson-main">
+
+    <section id="objective">
+      <div class="callout objective" data-rise>
+        <div class="lbl">Learning objective</div>
+        <p>By the end you can <strong>outline a compliant European platform structure that can receive EU grants and institutional capital</strong>, and <strong>explain why a foreign (e.g. Mexican) entity cannot be the grant beneficiary itself</strong> — naming the layers, the holding-jurisdiction trade-offs, and the real substance rules that make the structure stand up.</p>
+      </div>
+    </section>
+
+    <section id="why">
+      <h2>Why you need an EU entity at all</h2>
+      <p data-rise>Start with the rule that decides everything else: <strong>EU and national grants flow to a beneficiary that is established in the European Union — usually in the specific member state where the project sits.</strong> A grant is a transfer of public money under EU and national law; the recipient has to be a legal person the granting authority can contract with, audit, claw back from and hold to the rules. A company incorporated in Mexico is none of those things to a Czech or Polish authority.</p>
+      <p data-rise>The <strong>Modernisation Fund</strong> makes this concrete. It is an EU fund (financed by selling <strong>EU ETS</strong> emission allowances) for a group of lower-income member states, including <strong>Czechia</strong> and <strong>Poland</strong> <em>(check the current beneficiary list)</em>. But money does not flow EU-to-developer: each <strong>beneficiary member state</strong> submits investment proposals, and the support is paid out through a <strong>national operator</strong> under national programmes — <strong>SFŽP ČR</strong> in Czechia (e.g. the <strong>RES+</strong> programme for new solar), <strong>NFOŚiGW</strong> in Poland. You apply to <em>them</em>, against a project located in <em>their</em> country, run by a legal entity registered <em>there</em>. <em>(Check the current call text — programmes and eligibility change.)</em></p>
+      <p data-rise>The same logic governs centrally-managed EU calls (Innovation Fund, Horizon Europe, LIFE) on the <strong>EU Funding &amp; Tenders Portal</strong>: applicants must be <strong>legal entities established in an eligible country</strong>. There is no door marked "foreign parent."</p>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Key term · The beneficiary must be EU-established</div>
+        <p>Your Mexican HoldCo can <strong>own</strong> the European platform — equity ownership is not the issue. What it cannot be is the <strong>grant beneficiary</strong>, the <strong>PPA signatory</strong> or the <strong>permit holder</strong>. Those roles belong to a locally established company. So the question is never "how do I get the grant in Mexico" — it is "what EU entity do I create to be eligible, and how do I own it cleanly?"</p>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <h2>The platform architecture</h2>
+      <p data-rise>The market answer is a <strong>layered structure</strong>. It is not a trick; it is how essentially every cross-border renewables developer and infrastructure fund is built, for reasons of liability, financing and clean exits. Three layers do the work.</p>
+      <p data-rise>At the bottom sits the <strong>SPV</strong> (special-purpose vehicle), one per project — also called the <strong>ProjectCo</strong>. It is incorporated <em>in the country where the asset is</em>. It owns the plant, holds the grid connection and permits, signs the PPA, and is the entity that applies for and receives the grant. Ring-fencing each project in its own SPV means one project's problems (a construction dispute, a lender's security) do not contaminate the others.</p>
+      <p data-rise>Above the SPVs sits a <strong>national / intermediate HoldCo</strong> — typically in the same country (or region) as the projects — that owns the local SPVs and consolidates them. Above that sits the <strong>group (platform) HoldCo</strong>, the top of the European stack, where international capital comes in. Your Mexican parent owns the platform HoldCo, not the SPVs directly.</p>
+      <table class="calc-table" data-rise>
+        <tr><th>Layer</th><th>Role</th><th>Where</th><th>Who invests</th></tr>
+        <tr><td><strong>Mexican HoldCo</strong></td><td>Ultimate owner; sponsor; track record</td><td class="num">Mexico</td><td class="num">You + existing intl. funds</td></tr>
+        <tr><td><strong>Group / platform HoldCo</strong></td><td>Top of EU stack; raises platform equity &amp; debt</td><td class="num">EU holding jurisdiction</td><td class="num">EU infra / institutional funds</td></tr>
+        <tr><td><strong>National / intermediate HoldCo</strong></td><td>Owns &amp; consolidates the local SPVs</td><td class="num">CZ / PL (project country)</td><td class="num">Platform (sometimes co-invest)</td></tr>
+        <tr><td><strong>SPV / ProjectCo</strong></td><td>Owns the asset · PPA signatory · permit &amp; <strong>grant beneficiary</strong></td><td class="num">CZ / PL (asset location)</td><td class="num">Project-finance lenders; SPV co-invest</td></tr>
+      </table>
+      <p data-rise>Worked on your scenario: you enter <strong>Czechia</strong> and <strong>Poland</strong>. You set up a Czech SPV per solar park (the RES+ / Modernisation Fund beneficiary) and a Polish SPV per park (the NFOŚiGW / OZE-auction beneficiary), each under a national HoldCo, all under one European platform HoldCo, which your Mexican group owns. The grant lands in the SPV; the capital comes in at the platform; the asset, contract and permit all live in the right country.</p>
+    </section>
+
+    <section id="jurisdictions">
+      <h2>Choosing the HoldCo location</h2>
+      <p data-rise>Where do you put the <em>platform</em> HoldCo? You can hold local SPVs from anywhere, but developers and funds gravitate to a short list of EU holding jurisdictions — most commonly the <strong>Netherlands</strong>, <strong>Luxembourg</strong> and <strong>Ireland</strong>. The reasons are legitimate and well-worn:</p>
+      <ul>
+        <li data-rise><strong>Holding regimes.</strong> A <strong>participation exemption</strong> (the Netherlands and Luxembourg) means qualifying dividends and capital gains from subsidiaries are not taxed again at the holding level — so profits and a future SPV sale are not taxed twice on the way up. Ireland has moved to a participation exemption for foreign dividends too <em>(check current — phased in recently)</em>.</li>
+        <li data-rise><strong>Treaty networks.</strong> Wide double-tax-treaty coverage plus the EU <strong>Parent-Subsidiary</strong> and <strong>Interest &amp; Royalties</strong> Directives reduce withholding-tax friction when cash moves between the project country and the HoldCo. Luxembourg has 80+ treaties; the Netherlands' network is among the world's deepest.</li>
+        <li data-rise><strong>Fund familiarity.</strong> EU pension and infrastructure funds, and their lawyers and lenders, know these jurisdictions cold — the fund vehicles, governance and reporting are standard. That makes raising platform capital and a future exit <em>easier</em>, which is often the real reason, not the tax line.</li>
+      </ul>
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">Critical caveat · Substance, not a letterbox</div>
+        <p>A holding jurisdiction only works if the entity has <strong>real substance there</strong>: genuine management, local directors who actually decide, an office, and board decisions taken in-country — not a brass plate and a mailing address. This is enforced. The <strong>Anti-Tax-Avoidance Directive (ATAD / ATAD2)</strong> imposes EU-wide anti-abuse, CFC and anti-hybrid rules; tax treaties carry a <strong>Principal Purpose Test</strong> (via the OECD <strong>BEPS Multilateral Instrument</strong>) that denies benefits to arrangements whose main purpose is the tax benefit; and <strong>beneficial-ownership (UBO) registers</strong> under the EU anti-money-laundering regime record who really owns the chain. National tax authorities (the Dutch, for instance, have tightened substance scrutiny markedly) will challenge a structure with no economic reality. <strong>Letterbox / shell structures are exactly what the rules target — do not build one.</strong></p>
+      </div>
+      <p data-rise><strong>Check current — Unshell / ATAD3:</strong> the EU's proposed <strong>"Unshell" Directive (ATAD3)</strong>, which would have set explicit EU-wide minimum-substance tests for holding companies, was <strong>withdrawn by the European Commission</strong> (flagged in its 2026 work programme) after years of deadlock; substance-style principles are instead being folded into a reform of the <strong>DAC</strong> administrative-cooperation rules. The direction of travel is unchanged: substance is mandatory and scrutiny is rising. Treat the precise legal instrument as live and <strong>verify the current status with counsel.</strong></p>
+    </section>
+
+    <section id="grants">
+      <h2>How the grant actually flows</h2>
+      <p data-rise>Trace one euro. A Czech solar SPV — owned up the chain by your platform — applies to <strong>SFŽP ČR</strong> under a Modernisation Fund / RES+ call. If it wins, the grant is paid <strong>to the SPV</strong>, the EU-established beneficiary that owns the asset and signed the PPA. The platform and your Mexican parent never touch the grant; they sit above it as owners.</p>
+      <p data-rise>Two rules shape how much the SPV can take, both set at <strong>EU level</strong> as the state-aid frame national schemes must fit inside:</p>
+      <ul>
+        <li data-rise><strong>CEEAG (2022)</strong> — the <strong>Climate, Energy and Environmental Aid Guidelines</strong> — and the <strong>GBER</strong> (General Block Exemption Regulation) cap how much public support a single project may legally absorb. Aid is sized to close a <em>viability gap</em>, not to make a project "too profitable." In state-aid language the beneficiary is an <strong>"undertaking"</strong> — any entity carrying on an economic activity, regardless of who owns it.</li>
+        <li data-rise><strong>Co-financing.</strong> A grant typically funds only part of eligible capex (often ~30–65%, scheme-dependent — <em>check the call</em>). The SPV must bring the rest: equity from the platform plus project-finance debt. The grant improves the project's returns and de-risks the build; it does not replace the capital stack.</li>
+      </ul>
+      <p data-rise>Note the foreign-ownership point clearly: <strong>CEEAG/GBER eligibility turns on the project and the undertaking, not the nationality of the ultimate parent.</strong> A Czech SPV that is wholly owned, up the chain, by a Mexican group is still a Czech undertaking carrying on a Czech activity — eligible — provided it meets the call's substance and "incentive effect" tests (e.g. you must not have started works before applying).</p>
+    </section>
+
+    <section id="capital">
+      <h2>Bringing your funds &amp; the Mexico track record</h2>
+      <p data-rise>Here your existing portfolio becomes an asset in a second sense. <strong>100 MW of operating solar in Mexico, financed by international funds, is a credential.</strong> It tells EU lenders, grant officers and co-investors that you can permit, build, finance and <em>operate</em> at scale — the single biggest question a counterparty has about a newcomer. A first-timer with a slide deck and a developer with a live, fund-backed operating fleet are not assessed the same way.</p>
+      <p data-rise>Where does capital actually go? Two typical entry points:</p>
+      <ul>
+        <li data-rise><strong>Platform-level equity.</strong> Infrastructure and institutional funds increasingly back a <strong>platform</strong> — they take equity in the group HoldCo to fund a whole pipeline across several SPVs, and platform/HoldCo financing is now standard for renewables portfolios. This is where your existing international funds and new EU funds typically sit.</li>
+        <li data-rise><strong>SPV-level co-investment &amp; project finance.</strong> Project-finance <strong>lenders</strong> lend into the SPV against its contracted cash flow (the PPA), secured on the asset; some funds also co-invest directly at SPV level on a specific project. Lender due diligence will trace ownership up to your Mexican parent — so a clean, substance-backed chain is what gets the deal financed.</li>
+      </ul>
+      <p data-rise>The track record also feeds the grant case: programmes weigh an applicant's <strong>readiness and capacity to deliver</strong>, and a demonstrated 100 MW operating history is direct evidence of both.</p>
+    </section>
+
+    <section id="exit">
+      <h2>Structuring for the exit</h2>
+      <p data-rise>Build the structure on day one for the day you sell. EU infrastructure-fund buyers almost always acquire an operating renewable asset by buying the <strong>shares of the local SPV</strong> (a <em>share deal</em>), not the plant and contracts one by one (an <em>asset deal</em>). A share sale transfers the permits, the grid connection, the PPA and — critically — keeps the asset's history intact, which is cleaner and usually more tax-efficient for both sides.</p>
+      <p data-rise>That is exactly why the one-SPV-per-project architecture pays off: each project is a tidy, ring-fenced parcel of shares the platform can sell on its own, into a competitive process, without disturbing the rest of the fleet. The participation exemption at the HoldCo can mean the gain on that share sale is not taxed again at the holding level <em>(check current; fact-specific)</em> — so the structure that made you grant-eligible is the same structure that makes the exit clean.</p>
+      <p data-rise>This ties straight back to the exit track: you build the SPV at a developer's hurdle rate, de-risk it through construction and a signed PPA, then sell the shares to a fund that accepts a lower yield. The platform is the machine that lets you do that, project after project. (See <a href="exit-npv-dcf.html">NPV, DCF &amp; the exit valuation</a>.)</p>
+    </section>
+
+    <section id="disclaimer">
+      <div class="callout keyterm" data-rise>
+        <div class="lbl">This is not advice</div>
+        <p>This lesson is <strong>educational</strong>. It describes standard, legitimate market practice — it is <strong>not tax, legal or investment advice</strong>, and nothing here is a recommendation to adopt any particular structure. The right structure depends entirely on your specifics: the countries you build in, your investors, your existing group, and the live state of the law. <strong>Engage qualified tax and legal counsel</strong> in each relevant jurisdiction before you incorporate anything. And the non-negotiable: <strong>substance is mandatory.</strong> A holding structure without genuine management, decision-making and presence where it claims to be is not a tax plan — it is a compliance and reputational liability that EU authorities and lenders are built to find. Many figures, programmes and rules here change — <strong>verify the current position</strong> before relying on it.</p>
+      </div>
+    </section>
+
+    <section id="script">
+      <h2>In the room</h2>
+      <p data-rise>How you describe your structure to an EU infrastructure fund or local partner — leading with the track record, not the tax line:</p>
+      <div class="script" data-rise>
+        <div class="lbl">Sales script</div>
+        <p>We already own and operate a hundred megawatts of solar in Mexico, financed alongside international funds — so building, financing and running assets at scale is what we do, not what we hope to do. For Europe we're setting up the standard platform: a project company in-country for each park — that's the entity that holds the permits, signs the PPA and is eligible for the Modernisation Fund grant — under a national holding company, under one European platform you'd invest into. The holding sits where you'd expect, with real management and substance on the ground, not a letterbox. Grants land in the project company; your capital comes in at the platform; and every park is a clean parcel of shares we can exit to a fund like yours down the line. We'll have tax and legal counsel confirm the final shape in each country.</p>
+      </div>
+    </section>
+
+    <section id="objections">
+      <h2>Objections you will hear</h2>
+      <div class="objections">
+        <div class="obj" data-rise>
+          <div class="q">Why not just receive the grant in Mexico and fund the project from there?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Because you can't — and it isn't a loophole to be found. An EU grant is public money paid to a beneficiary the granting authority can contract with, audit and claw back from under EU and national law. The Modernisation Fund pays out through national operators like SFŽP ČR or NFOŚiGW, to a project located in that country, run by a locally registered entity. A Mexican company is not eligible to be that beneficiary. So you create an EU project company to receive it — and your Mexican group simply owns the platform above it.</p>
+        </div>
+        <div class="obj" data-rise>
+          <div class="q">Isn't a Dutch or Luxembourg HoldCo just tax dodging?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">Not when it's done properly, and that's the whole point. These are mainstream holding jurisdictions because of participation exemptions that stop double taxation, deep treaty networks, and the fact that EU funds and lenders are completely comfortable with them — which makes raising capital and exiting easier. What makes it legitimate is <em>substance</em>: real directors, real decisions, a real office. ATAD anti-abuse rules, the treaty Principal Purpose Test and beneficial-ownership registers exist precisely to strike down empty shells. We build a real holding company, not a brass plate, and we have counsel stand behind it.</p>
+        </div>
+        <div class="obj" data-rise>
+          <div class="q">We have no EU presence yet — won't that sink the grant application and the raise?</div>
+          <div class="tag">Rebuttal</div>
+          <p class="a">No EU <em>track record</em> isn't the same as no <em>capability</em>. We have 100 MW operating in Mexico, financed with international funds — direct evidence we can deliver, which is what grant officers and lenders actually assess. The EU presence is exactly what the platform creates: a local project company that becomes the eligible, established beneficiary, with genuine substance at the holding level. We're not pretending to be European overnight — we're building a real European platform and bringing a proven operating record to it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="check">
+      <div class="quiz">
+        <div class="lbl">Knowledge check</div>
+
+        <div class="q-item">
+          <div class="stem">Your Mexican group wants Modernisation Fund money for a Czech solar park. Who is the grant beneficiary?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>The Mexican parent company — it owns everything, so it receives the grant.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q1"><span>The Czech project company (SPV) — the EU-established entity that owns the asset, signs the PPA and applies to SFŽP ČR.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q1"><span>The European platform HoldCo, because it raises the capital.</span></label>
+          </div>
+          <p class="q-feedback">The beneficiary must be established in the member state where the project sits. The grant flows to the local SPV; the Mexican parent and platform sit above it as owners and cannot receive the grant directly.</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">What is the single most important requirement that keeps an EU HoldCo structure legitimate?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>Choosing the jurisdiction with the absolute lowest headline tax rate.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q2"><span>Keeping the ownership chain secret from the authorities.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q2"><span>Real substance — genuine local management, decision-making and presence — not a letterbox.</span></label>
+          </div>
+          <p class="q-feedback">ATAD anti-abuse rules, the treaty Principal Purpose Test and UBO registers all target empty shells. A holding company must have economic reality where it claims to be, or it gets challenged. (And ownership chains are disclosed in beneficial-ownership registers, not hidden.)</p>
+        </div>
+
+        <div class="q-item">
+          <div class="stem">Why does the one-SPV-per-project architecture help at exit?</div>
+          <div class="q-opts">
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>It lets you avoid paying any tax on the sale.</span></label>
+            <label class="q-opt" data-correct="true"><input type="radio" name="q3"><span>EU infra funds typically buy via a share sale of the local SPV, so each ring-fenced project is a clean parcel of shares you can sell on its own.</span></label>
+            <label class="q-opt" data-correct="false"><input type="radio" name="q3"><span>It means you never have to register the project with any authority.</span></label>
+          </div>
+          <p class="q-feedback">Buyers acquire operating assets through a share deal on the SPV — transferring permits, grid connection and PPA intact. One SPV per project makes each one a tidy, independently saleable package. (A participation exemption may shelter the gain at HoldCo level — check current, fact-specific.)</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a class="prev" href="fund-04-where-to-look.html"><small>Back to</small>Where to look</a>
+      <a class="next" href="exit-npv-dcf.html"><small>Next lesson</small>The exit valuation →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <div class="end" style="border-top:0;padding-top:0">
+      <span class="muted">© Newman Energy · Sales Academy</span>
+      <span class="muted">Educational material · not investment advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/newman.js"></script>
+<script src="../assets/js/academy.js"></script>
+</body>
+</html>
