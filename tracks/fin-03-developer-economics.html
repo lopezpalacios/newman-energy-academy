@@ -76,7 +76,8 @@
         <li><a href="#debt">Debt, DSCR &amp; gearing</a></li>
         <li><a href="#equity">Equity returns &amp; leverage</a></li>
         <li><a href="#worked">Worked example</a></li>
-        <li><a href="#calc">Live calculator</a></li>
+        <li><a href="#calc">IRR / NPV calculator</a></li>
+        <li><a href="#devfin">Project-finance calculator</a></li>
         <li><a href="#script">In the room</a></li>
         <li><a href="#objections">Objections</a></li>
         <li><a href="#check">Knowledge check</a></li>
@@ -214,6 +215,54 @@
               <div class="v" data-out="compression">—<small data-out="spread"></small></div>
             </div>
             <p class="note">Level cash-flow approximation for teaching. "Project IRR" solves for the rate that makes NPV zero on the all-equity project; add debt and the equity IRR rises above it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="devfin">
+      <h2>Project-finance calculator — gearing, DSCR &amp; equity IRR</h2>
+      <p>The same project, now financed. Add debt and watch three things move: the <strong>DSCR</strong> a lender checks, the <strong>equity</strong> you must put in, and the <strong>equity IRR</strong> — which rises above the project IRR because cheap debt levers your return. Push gearing too far and DSCR falls below the lender's floor (~1.2–1.4×).</p>
+      <div class="calc" data-calc="devfin" data-rise>
+        <div class="calc-head">
+          <h3>Developer project finance</h3>
+          <p>Debt sizing, coverage and levered equity return on a contracted asset.</p>
+        </div>
+        <div class="calc-body">
+          <div class="inputs">
+            <div class="row">
+              <label for="dcapex">Capex <span class="val" data-val="capex"></span></label>
+              <input id="dcapex" type="number" data-field="capex" value="3000000" step="100000" min="0">
+            </div>
+            <div class="row">
+              <label for="drev">Annual net cash flow (CFADS) <span class="val" data-val="rev"></span></label>
+              <input id="drev" type="number" data-field="rev" value="350000" step="10000" min="0">
+            </div>
+            <div class="row">
+              <label for="ddebt">Debt share (gearing) <span class="val" data-val="debt"></span></label>
+              <input id="ddebt" type="range" data-field="debt" data-val-target data-suffix="%" value="70" min="0" max="90" step="5">
+            </div>
+            <div class="row">
+              <label for="drate">Loan interest rate <span class="val" data-val="rate"></span></label>
+              <input id="drate" type="range" data-field="rate" data-val-target data-suffix="%" value="5" min="2" max="12" step="0.5">
+            </div>
+            <div class="row">
+              <label for="dtenor">Loan tenor <span class="val" data-val="tenor"></span></label>
+              <input id="dtenor" type="range" data-field="tenor" data-val-target data-suffix=" yrs" value="15" min="5" max="25" step="1">
+            </div>
+            <div class="row">
+              <label for="dlife">Asset life <span class="val" data-val="life"></span></label>
+              <input id="dlife" type="range" data-field="life" data-val-target data-suffix=" yrs" value="25" min="10" max="35" step="1">
+            </div>
+          </div>
+          <div class="outputs">
+            <div class="kpi hero"><div class="k">Equity IRR (levered)</div><div class="v" data-out="equityirr">—</div></div>
+            <div class="kpi"><div class="k">Project IRR (unlevered)</div><div class="v" data-out="projirr">—</div></div>
+            <div class="kpi"><div class="k">DSCR (year 1)</div><div class="v" data-out="dscr">—</div></div>
+            <div class="kpi"><div class="k">Equity required</div><div class="v" data-out="equity">—</div></div>
+            <div class="kpi"><div class="k">Annual debt service</div><div class="v" data-out="debtservice">—</div></div>
+            <div class="kpi"><div class="k">Equity payback</div><div class="v" data-out="payback">—</div></div>
+            <p class="note">Level-cashflow teaching model: level annual debt service over the tenor, CFADS flat. A lender sizes debt so DSCR stays above its floor; the gap between project and equity IRR is the leverage effect.</p>
           </div>
         </div>
       </div>

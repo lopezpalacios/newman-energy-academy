@@ -30,6 +30,14 @@
     for (var i = 0; i < 80; i++) { mid = (lo + hi) / 2; var v = f(mid); if (Math.abs(v) < 1) break; if (f(lo) * v < 0) hi = mid; else lo = mid; }
     return mid;
   }
+  /* general IRR over an explicit cashflow array (cf[0] is t=0, usually negative) */
+  function npvArr(r, cfs) { var v = 0; for (var t = 0; t < cfs.length; t++) v += cfs[t] / Math.pow(1 + r, t); return v; }
+  function irrArr(cfs) {
+    var lo = -0.9, hi = 2.0, mid = 0;
+    if (npvArr(lo, cfs) * npvArr(hi, cfs) > 0) return NaN;
+    for (var i = 0; i < 100; i++) { mid = (lo + hi) / 2; var v = npvArr(mid, cfs); if (Math.abs(v) < 1) break; if (npvArr(lo, cfs) * v < 0) hi = mid; else lo = mid; }
+    return mid;
+  }
 
   /* ---------- animated output rendering (tween numbers) ---------- */
   function render(root, map) {
@@ -162,6 +170,34 @@
         capacity: { n: capacity, fmt: fmt.eur },
         ancillary: { n: ancillary, fmt: fmt.eur },
         payback: { n: payback, fmt: fmt.yrs }
+      });
+    }
+    f.onchange = calc; calc();
+  };
+
+  /* 5 — DEVELOPER PROJECT FINANCE (equity IRR, DSCR, debt sizing) */
+  CALCS.devfin = function (root) {
+    var f = bind(root);
+    function calc() {
+      var capex = f.capex, dpct = f.debt / 100, rate = f.rate / 100, tenor = f.tenor, rev = f.rev, life = f.life;
+      var debt = capex * dpct, equity = capex - debt;
+      var ds = tenor > 0 ? (rate > 0 ? debt * rate / (1 - Math.pow(1 + rate, -tenor)) : debt / tenor) : 0; // level annual debt service
+      var dscr = ds > 0 ? rev / ds : Infinity;
+      var projIrr = irrFlat(capex, rev, life, 0);
+      // equity cashflow stream: -equity now; rev-ds during loan; rev after loan repaid
+      var stream = [-equity];
+      for (var t = 1; t <= life; t++) stream.push(t <= tenor ? rev - ds : rev);
+      var eqIrr = irrArr(stream);
+      // equity payback (cumulative crosses zero)
+      var cum = -equity, pb = NaN;
+      for (var y = 1; y <= life; y++) { cum += (y <= tenor ? rev - ds : rev); if (cum >= 0) { pb = y - (cum / (y <= tenor ? rev - ds : rev)); break; } }
+      render(root, {
+        projirr: { n: isNaN(projIrr) ? NaN : projIrr * 100, fmt: fmt.pct },
+        equityirr: { n: isNaN(eqIrr) ? NaN : eqIrr * 100, fmt: fmt.pct },
+        dscr: { n: dscr, fmt: function (x) { return isFinite(x) ? x.toFixed(2) + "×" : "—"; } },
+        equity: { n: equity, fmt: fmt.eur },
+        debtservice: { n: ds, fmt: fmt.eur },
+        payback: { n: pb, fmt: fmt.yrs }
       });
     }
     f.onchange = calc; calc();
