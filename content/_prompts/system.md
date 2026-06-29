@@ -22,8 +22,11 @@ defined the first time it appears.
 - Define every acronym on first use. Bold the **key terms**.
 - Every quantitative claim is illustrative and **clearly framed as an example** — never imply a
   guaranteed return or give investment advice. Footer on every page already disclaims this.
-- **Scope: European single energy market, with Czechia as the recurring worked example** (OTE
-  spot market, ERÚ tariff stack, the Modernisation Fund). Principles are EU-wide.
+- **Scope: European single energy market, taught through four lenses** — **Czechia** (the
+  recurring worked example: OTE spot, ERÚ, Modernisation Fund), the **DACH region** (Germany,
+  Austria, Switzerland), and the **EU-government** layer (Commission/DG ENER, ACER, ENTSO-E,
+  directives, market-design reform). Keep Czechia as the spine; add regional lenses via callouts.
+  See `dach-eu-market.md` and apply the `didactic-council.md` personas + e-learning doctrine.
 - Numbers must survive a "fund-analyst laugh test": realistic capex (€/kWp), yields
   (kWh/kWp/yr), tariffs (€/MWh), discount rates. When unsure, round conservatively and label it.
 
